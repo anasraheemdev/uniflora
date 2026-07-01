@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  *{box-sizing:border-box;} body{margin:0;}
+  .uf-navlink:hover{color:#fff !important;}
+  .uf-login:hover{background:#3a7d47 !important;}
+  .uf-card{transition:transform .2s,box-shadow .2s,border-color .2s;}
+  .uf-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(20,50,28,.16);border-color:#cfe0c4 !important;}
+  .uf-chip:hover{color:#245730 !important;}
+  image-slot{--is-bg:#16351f;}
+</style>
+</helmet>
+<div style="font-family:'Source Sans 3',system-ui,sans-serif; background:#f5f1e6; color:#1e2b1f; min-height:100%; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header style="background:#0e2a17; color:#dfe9dc; position:sticky; top:0; z-index:50;">
+    <div style="max-width:1400px; margin:0 auto; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="UniFlora Home.dc.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(160deg,#4f8f43,#2e6b3a); display:flex; align-items:center; justify-content:center; flex:0 0 auto;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#eaf5e4" stroke="none"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg></div>
+        <div style="line-height:1;"><div style="font-size:23px; font-weight:700; color:#fff;">UniFlora</div><div style="font-size:9.5px; font-weight:600; letter-spacing:2.4px; color:#8fb890; margin-top:4px;">EXPLORE · LEARN · CONSERVE</div></div>
+      </a>
+      <nav style="display:flex; align-items:center; gap:30px; font-size:15px; font-weight:500;">
+        <a class="uf-navlink" href="UniFlora Home.dc.html" style="color:#c3d4bf; text-decoration:none;">Home</a>
+        <a class="uf-navlink" href="UniFlora Explore.dc.html" style="color:#c3d4bf; text-decoration:none;">Explore Plants</a>
+        <a class="uf-navlink" href="UniFlora Families.dc.html" style="color:#c3d4bf; text-decoration:none;">Families</a>
+        <a class="uf-navlink" href="UniFlora Map.dc.html" style="color:#c3d4bf; text-decoration:none;">Map</a>
+        <a class="uf-navlink" href="UniFlora Collections.dc.html" style="color:#c3d4bf; text-decoration:none;">Collections</a>
+        <a class="uf-navlink" href="UniFlora Learn.dc.html" style="color:#fff; text-decoration:none; padding-bottom:4px; border-bottom:2px solid #7dbf6b;">Learn</a>
+        <a class="uf-navlink" href="UniFlora About.dc.html" style="color:#c3d4bf; text-decoration:none;">About</a>
+        <a class="uf-navlink" href="UniFlora Contact.dc.html" style="color:#c3d4bf; text-decoration:none;">Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <button style="background:none; border:none; color:#c3d4bf; cursor:pointer; padding:6px; display:flex;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <a class="uf-login" href="UniFlora Admin.dc.html" style="display:flex; align-items:center; gap:8px; background:#2e6b3a; color:#fff; padding:10px 20px; border-radius:9px; font-size:14.5px; font-weight:600; text-decoration:none;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg>Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+  <div style="background:#12341f; color:#fff;">
+    <div style="max-width:1400px; margin:0 auto; padding:30px 40px 40px;">
+      <div style="font-size:13.5px; color:#8fb890; font-weight:600;">Home &nbsp;/&nbsp; Learn</div>
+      <h1 style="font-family:'Playfair Display',serif; font-weight:600; font-size:42px; margin:12px 0 8px; letter-spacing:-.5px;">Learning &amp; Resources</h1>
+      <p style="color:rgba(255,255,255,.82); font-size:17px; margin:0; max-width:660px;">Identification keys, botanical glossaries, field manuals, videos and quizzes to help you learn campus flora.</p>
+    </div>
+  </div>
+
+  <!-- RESOURCE CARDS -->
+  <div style="max-width:1400px; margin:0 auto; padding:32px 40px 8px;">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+
+      <a class="uf-card" href="#" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m6 3 6 6 6-6"/><path d="M12 9v12"/><path d="M4 21h16"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Plant Identification</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Interactive dichotomous keys to identify trees, shrubs and herbs by leaf, flower and habit.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Start key <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="uf-card" href="#" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Botanical Glossary</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Over 400 illustrated botanical terms — morphology, phenology and taxonomy explained.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Browse terms <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="uf-card" href="#" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Practical Manuals</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Downloadable field guides for herbarium technique, specimen pressing and plant collection.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Open manuals <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="uf-card" href="#" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Video Library</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Short lessons on plant morphology, campus walks and identification techniques.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Watch videos <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="uf-card" href="#" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Quizzes</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Test your knowledge of families, genera and species with self-graded quizzes.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Take a quiz <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+      <a class="uf-card" href="UniFlora Collections.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:16px; padding:26px; text-decoration:none; color:inherit;">
+        <div style="width:52px; height:52px; border-radius:13px; background:#e2ecda; display:flex; align-items:center; justify-content:center; color:#2e6b3a;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <div style="font-family:'Playfair Display',serif; font-weight:600; font-size:22px; margin-top:16px;">Virtual Herbarium</div>
+        <p style="font-size:14.5px; color:#6b7360; line-height:1.55; margin:8px 0 0;">Explore digitised voucher specimens with zoomable high-resolution scans.</p>
+        <span class="uf-chip" style="display:inline-flex; align-items:center; gap:6px; color:#2e6b3a; font-weight:600; font-size:14px; margin-top:16px;">Enter herbarium <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- FEATURED GUIDE -->
+  <div style="max-width:1400px; margin:0 auto; padding:32px 40px 64px;">
+    <div style="background:#12341f; border-radius:20px; overflow:hidden; display:grid; grid-template-columns:1fr 1fr;">
+      <div style="padding:44px;">
+        <span style="display:inline-block; background:rgba(255,255,255,.14); color:#a7d493; font-size:12.5px; font-weight:700; padding:6px 13px; border-radius:999px; letter-spacing:.5px;">FEATURED GUIDE</span>
+        <h2 style="font-family:'Playfair Display',serif; font-weight:600; font-size:32px; color:#fff; margin:18px 0 12px; line-height:1.2;">How to Identify a Tree in 5 Steps</h2>
+        <p style="color:rgba(255,255,255,.82); font-size:16px; line-height:1.6; margin:0 0 24px;">A beginner-friendly walkthrough: observe the habit, examine leaf arrangement, inspect the bark, note the flowers and fruit, then confirm with the campus key.</p>
+        <a href="#" style="display:inline-flex; align-items:center; gap:8px; background:#2e6b3a; color:#fff; padding:13px 26px; border-radius:10px; font-size:15px; font-weight:600; text-decoration:none;">Read the guide <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      </div>
+      <image-slot id="ln-feat" style="display:block; width:100%; height:100%; min-height:300px;" shape="rect" placeholder="Field guide photo"></image-slot>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#0e2a17; color:#c3d4bf;">
+    <div style="max-width:1400px; margin:0 auto; padding:52px 40px 30px; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:40px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:11px; margin-bottom:16px;"><div style="width:40px; height:40px; border-radius:50%; background:linear-gradient(160deg,#4f8f43,#2e6b3a); display:flex; align-items:center; justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#eaf5e4" stroke="none"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg></div><div style="font-size:20px; font-weight:700; color:#fff;">UniFlora</div></div>
+        <p style="font-size:14px; line-height:1.6; max-width:300px; color:#a9bda4;">A digital platform for documenting, mapping, learning, and conserving the plant diversity of our university campus.</p>
+      </div>
+      <div><div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Explore</div><div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Big Trees</a><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Shrubs</a><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Medicinal Plants</a><a href="UniFlora Families.dc.html" style="color:#a9bda4; text-decoration:none;">Families</a></div></div>
+      <div><div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Resources</div><div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora Collections.dc.html" style="color:#a9bda4; text-decoration:none;">Herbarium</a><a href="UniFlora Gallery.dc.html" style="color:#a9bda4; text-decoration:none;">Gallery</a><a href="UniFlora Learn.dc.html" style="color:#a9bda4; text-decoration:none;">Learning</a><a href="UniFlora Map.dc.html" style="color:#a9bda4; text-decoration:none;">Campus Map</a></div></div>
+      <div><div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Institute</div><div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora About.dc.html" style="color:#a9bda4; text-decoration:none;">About</a><a href="UniFlora Contact.dc.html" style="color:#a9bda4; text-decoration:none;">Contact</a><a href="UniFlora Admin.dc.html" style="color:#a9bda4; text-decoration:none;">Admin Portal</a></div></div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.12);"><div style="max-width:1400px; margin:0 auto; padding:18px 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:13px; color:#7f9a7a;"><span>© 2026 UniFlora · Campus Flora Information System</span><span>Documenting our green heritage · English · اردو</span></div></div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  *{box-sizing:border-box;} body{margin:0;}
+  .uf-navlink:hover{color:#fff !important;}
+  .uf-card{transition:transform .2s,box-shadow .2s,border-color .2s;}
+  .uf-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(20,50,28,.16);border-color:#cfe0c4 !important;}
+  .uf-chip:hover{color:#245730 !important;}
+  .uf-btn:hover{background:#245730 !important;}
+  .uf-login:hover{background:#3a7d47 !important;}
+  .uf-filter:hover{color:#2e6b3a !important;}
+  .uf-tab:hover{background:#e2ecda !important;}
+  image-slot{--is-bg:#16351f;}
+</style>
+</helmet>
+<div style="font-family:'Source Sans 3',system-ui,sans-serif; background:#f5f1e6; color:#1e2b1f; min-height:100%; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header style="background:#0e2a17; color:#dfe9dc; position:sticky; top:0; z-index:50;">
+    <div style="max-width:1400px; margin:0 auto; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="UniFlora Home.dc.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(160deg,#4f8f43,#2e6b3a); display:flex; align-items:center; justify-content:center; flex:0 0 auto;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="#eaf5e4" stroke="none"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg>
+        </div>
+        <div style="line-height:1;"><div style="font-size:23px; font-weight:700; color:#fff;">UniFlora</div><div style="font-size:9.5px; font-weight:600; letter-spacing:2.4px; color:#8fb890; margin-top:4px;">EXPLORE · LEARN · CONSERVE</div></div>
+      </a>
+      <nav style="display:flex; align-items:center; gap:30px; font-size:15px; font-weight:500;">
+        <a class="uf-navlink" href="UniFlora Home.dc.html" style="color:#c3d4bf; text-decoration:none;">Home</a>
+        <a class="uf-navlink" href="UniFlora Explore.dc.html" style="color:#fff; text-decoration:none; padding-bottom:4px; border-bottom:2px solid #7dbf6b;">Explore Plants</a>
+        <a class="uf-navlink" href="UniFlora Families.dc.html" style="color:#c3d4bf; text-decoration:none;">Families</a>
+        <a class="uf-navlink" href="UniFlora Map.dc.html" style="color:#c3d4bf; text-decoration:none;">Map</a>
+        <a class="uf-navlink" href="UniFlora Collections.dc.html" style="color:#c3d4bf; text-decoration:none;">Collections</a>
+        <a class="uf-navlink" href="UniFlora Learn.dc.html" style="color:#c3d4bf; text-decoration:none;">Learn</a>
+        <a class="uf-navlink" href="UniFlora About.dc.html" style="color:#c3d4bf; text-decoration:none;">About</a>
+        <a class="uf-navlink" href="UniFlora Contact.dc.html" style="color:#c3d4bf; text-decoration:none;">Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <button style="background:none; border:none; color:#c3d4bf; cursor:pointer; padding:6px; display:flex;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <a class="uf-login" href="UniFlora Admin.dc.html" style="display:flex; align-items:center; gap:8px; background:#2e6b3a; color:#fff; border:none; padding:10px 20px; border-radius:9px; font-size:14.5px; font-weight:600; cursor:pointer; text-decoration:none;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg>Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <div style="background:#12341f; color:#fff;">
+    <div style="max-width:1400px; margin:0 auto; padding:30px 40px 40px;">
+      <div style="font-size:13.5px; color:#8fb890; font-weight:600;">Home &nbsp;/&nbsp; Explore Plants</div>
+      <h1 style="font-family:'Playfair Display',serif; font-weight:600; font-size:42px; margin:12px 0 8px; letter-spacing:-.5px;">Explore Campus Flora</h1>
+      <p style="color:rgba(255,255,255,.82); font-size:17px; margin:0; max-width:640px;">Browse every documented species by name, family, habit, habitat and more. <span style="color:#a7d493; font-weight:600;">512 species</span> across <span style="color:#a7d493; font-weight:600;">128 families</span>.</p>
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div style="max-width:1400px; margin:0 auto; padding:32px 40px 64px; display:grid; grid-template-columns:280px 1fr; gap:28px; align-items:start;">
+
+    <!-- FILTERS -->
+    <aside style="background:#fbf9f1; border:1px solid #e6e1cf; border-radius:16px; padding:24px; position:sticky; top:96px;">
+      <div style="display:flex; align-items:center; gap:8px; background:#fff; border:1px solid #e6e1cf; border-radius:10px; padding:9px 12px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6b7360" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search species…" style="flex:1; border:none; outline:none; font-size:14px; font-family:inherit; background:transparent;">
+      </div>
+
+      <div style="height:1px; background:#e6e1cf; margin:22px 0;"></div>
+      <div style="font-weight:700; font-size:13px; letter-spacing:.5px; text-transform:uppercase; color:#3f4a3a; margin-bottom:12px;">Plant Type</div>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" checked style="accent-color:#2e6b3a; width:16px; height:16px;"> Big Trees <span style="margin-left:auto; color:#8a9682; font-size:13px;">86</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> Small Trees <span style="margin-left:auto; color:#8a9682; font-size:13px;">64</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> Palms <span style="margin-left:auto; color:#8a9682; font-size:13px;">21</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" checked style="accent-color:#2e6b3a; width:16px; height:16px;"> Shrubs <span style="margin-left:auto; color:#8a9682; font-size:13px;">98</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> Herbs <span style="margin-left:auto; color:#8a9682; font-size:13px;">112</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> Climbers <span style="margin-left:auto; color:#8a9682; font-size:13px;">31</span></label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> Medicinal <span style="margin-left:auto; color:#8a9682; font-size:13px;">74</span></label>
+
+      <div style="height:1px; background:#e6e1cf; margin:22px 0;"></div>
+      <div style="font-weight:700; font-size:13px; letter-spacing:.5px; text-transform:uppercase; color:#3f4a3a; margin-bottom:12px;">Family</div>
+      <select style="width:100%; border:1px solid #e6e1cf; border-radius:10px; padding:10px; font-size:14px; font-family:inherit; background:#fff; color:#3f4a3a;">
+        <option>All families</option><option>Fabaceae</option><option>Meliaceae</option><option>Moraceae</option><option>Nyctaginaceae</option><option>Apocynaceae</option>
+      </select>
+
+      <div style="height:1px; background:#e6e1cf; margin:22px 0;"></div>
+      <div style="font-weight:700; font-size:13px; letter-spacing:.5px; text-transform:uppercase; color:#3f4a3a; margin-bottom:12px;">Native / Exotic</div>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="radio" name="ne" checked style="accent-color:#2e6b3a; width:16px; height:16px;"> All</label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="radio" name="ne" style="accent-color:#2e6b3a; width:16px; height:16px;"> Native</label>
+      <label class="uf-filter" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:5px 0; cursor:pointer;"><input type="radio" name="ne" style="accent-color:#2e6b3a; width:16px; height:16px;"> Exotic</label>
+
+      <div style="height:1px; background:#e6e1cf; margin:22px 0;"></div>
+      <div style="font-weight:700; font-size:13px; letter-spacing:.5px; text-transform:uppercase; color:#3f4a3a; margin-bottom:12px;">Flower Colour</div>
+      <div style="display:flex; flex-wrap:wrap; gap:9px;">
+        <span title="White" style="width:26px; height:26px; border-radius:50%; background:#fff; border:1px solid #d6d0bd; cursor:pointer;"></span>
+        <span title="Yellow" style="width:26px; height:26px; border-radius:50%; background:#e8c141; cursor:pointer;"></span>
+        <span title="Pink" style="width:26px; height:26px; border-radius:50%; background:#d76a95; cursor:pointer;"></span>
+        <span title="Red" style="width:26px; height:26px; border-radius:50%; background:#c0492f; cursor:pointer;"></span>
+        <span title="Purple" style="width:26px; height:26px; border-radius:50%; background:#8163a8; cursor:pointer;"></span>
+        <span title="Orange" style="width:26px; height:26px; border-radius:50%; background:#dd8a3a; cursor:pointer;"></span>
+      </div>
+
+      <button class="uf-btn" style="width:100%; margin-top:24px; background:#2e6b3a; color:#fff; border:none; padding:12px; border-radius:10px; font-size:14.5px; font-weight:600; cursor:pointer; font-family:inherit;">Apply Filters</button>
+    </aside>
+
+    <!-- RESULTS -->
+    <div>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:18px; flex-wrap:wrap; gap:12px;">
+        <div style="font-size:14.5px; color:#6b7360;">Showing <span style="font-weight:700; color:#1e2b1f;">1–12</span> of <span style="font-weight:700; color:#1e2b1f;">512</span> species</div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <span style="font-size:14px; color:#6b7360;">Sort by</span>
+          <select style="border:1px solid #e6e1cf; border-radius:9px; padding:8px 12px; font-size:14px; font-family:inherit; background:#fff; color:#3f4a3a;"><option>Scientific name (A–Z)</option><option>Recently added</option><option>Family</option><option>Most viewed</option></select>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:18px;">
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-neem" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Neem"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Azadirachta indica</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Neem</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Meliaceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-boug" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Bougainvillea"></image-slot><span style="position:absolute; top:10px; left:10px; background:#8163a8; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Climber</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Bougainvillea glabra</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Paper Flower</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Nyctaginaceae · Exotic</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-peep" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Peepal"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Ficus religiosa</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Peepal</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Moraceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-cass" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Golden Shower"></image-slot><span style="position:absolute; top:10px; left:10px; background:#c99a2e; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Small Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Cassia fistula</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Golden Shower</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Fabaceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-cali" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Powder Puff"></image-slot><span style="position:absolute; top:10px; left:10px; background:#a63b6b; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Shrub</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Calliandra haematocephala</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Pink Powder Puff</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Fabaceae · Exotic</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-pong" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Pongamia"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Pongamia pinnata</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Indian Beech</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Fabaceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-aca" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Acacia"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Acacia nilotica</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Gum Arabic Tree</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Fabaceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-ner" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Oleander"></image-slot><span style="position:absolute; top:10px; left:10px; background:#a63b6b; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Shrub</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Nerium oleander</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Oleander</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Apocynaceae · Exotic</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-del" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Gulmohar"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Delonix regia</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Gulmohar</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Fabaceae · Exotic</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-jas" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Jasmine"></image-slot><span style="position:absolute; top:10px; left:10px; background:#a63b6b; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Shrub</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Jasminum sambac</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Arabian Jasmine</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Oleaceae · Exotic</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-oci" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Tulsi"></image-slot><span style="position:absolute; top:10px; left:10px; background:#5a8a2e; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Herb</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Ocimum tenuiflorum</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Holy Basil (Tulsi)</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Lamiaceae · Native</div></div>
+        </a>
+
+        <a class="uf-card" href="UniFlora Species.dc.html" style="background:#fff; border:1px solid #e6e1cf; border-radius:14px; overflow:hidden; text-decoration:none; color:inherit;">
+          <div style="position:relative;"><image-slot id="ex-term" style="display:block; width:100%; height:150px;" shape="rect" placeholder="Arjuna"></image-slot><span style="position:absolute; top:10px; left:10px; background:#2e6b3a; color:#fff; font-size:11px; font-weight:600; padding:4px 9px; border-radius:6px;">Big Tree</span></div>
+          <div style="padding:15px;"><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:16px; font-weight:600;">Terminalia arjuna</div><div style="font-size:13.5px; color:#3f4a3a; margin-top:5px;">Arjuna</div><div style="font-size:12.5px; color:#8a9682; margin-top:3px;">Combretaceae · Native</div></div>
+        </a>
+
+      </div>
+
+      <!-- PAGINATION -->
+      <div style="display:flex; align-items:center; justify-content:center; gap:8px; margin-top:36px;">
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:1px solid #e6e1cf; background:#fff; color:#6b7360; cursor:pointer; font-family:inherit;">‹</button>
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:none; background:#2e6b3a; color:#fff; cursor:pointer; font-weight:700; font-family:inherit;">1</button>
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:1px solid #e6e1cf; background:#fff; color:#3f4a3a; cursor:pointer; font-family:inherit;">2</button>
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:1px solid #e6e1cf; background:#fff; color:#3f4a3a; cursor:pointer; font-family:inherit;">3</button>
+        <span style="color:#8a9682; padding:0 4px;">…</span>
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:1px solid #e6e1cf; background:#fff; color:#3f4a3a; cursor:pointer; font-family:inherit;">43</button>
+        <button class="uf-tab" style="width:38px; height:38px; border-radius:9px; border:1px solid #e6e1cf; background:#fff; color:#6b7360; cursor:pointer; font-family:inherit;">›</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="background:#0e2a17; color:#c3d4bf;">
+    <div style="max-width:1400px; margin:0 auto; padding:52px 40px 30px; display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:40px;">
+      <div>
+        <div style="display:flex; align-items:center; gap:11px; margin-bottom:16px;">
+          <div style="width:40px; height:40px; border-radius:50%; background:linear-gradient(160deg,#4f8f43,#2e6b3a); display:flex; align-items:center; justify-content:center;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#eaf5e4" stroke="none"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg></div>
+          <div style="font-size:20px; font-weight:700; color:#fff;">UniFlora</div>
+        </div>
+        <p style="font-size:14px; line-height:1.6; max-width:300px; color:#a9bda4;">A digital platform for documenting, mapping, learning, and conserving the plant diversity of our university campus.</p>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Explore</div>
+        <div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Big Trees</a><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Shrubs</a><a href="UniFlora Explore.dc.html" style="color:#a9bda4; text-decoration:none;">Medicinal Plants</a><a href="UniFlora Families.dc.html" style="color:#a9bda4; text-decoration:none;">Families</a></div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Resources</div>
+        <div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora Collections.dc.html" style="color:#a9bda4; text-decoration:none;">Herbarium</a><a href="UniFlora Gallery.dc.html" style="color:#a9bda4; text-decoration:none;">Gallery</a><a href="UniFlora Learn.dc.html" style="color:#a9bda4; text-decoration:none;">Learning</a><a href="UniFlora Map.dc.html" style="color:#a9bda4; text-decoration:none;">Campus Map</a></div>
+      </div>
+      <div>
+        <div style="font-weight:700; color:#fff; font-size:14px; margin-bottom:14px;">Institute</div>
+        <div style="display:flex; flex-direction:column; gap:9px; font-size:14px;"><a href="UniFlora About.dc.html" style="color:#a9bda4; text-decoration:none;">About</a><a href="UniFlora Contact.dc.html" style="color:#a9bda4; text-decoration:none;">Contact</a><a href="UniFlora Admin.dc.html" style="color:#a9bda4; text-decoration:none;">Admin Portal</a></div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.12);"><div style="max-width:1400px; margin:0 auto; padding:18px 40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:13px; color:#7f9a7a;"><span>© 2026 UniFlora · Campus Flora Information System</span><span>Documenting our green heritage · English · اردو</span></div></div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

@@ -1,0 +1,39 @@
+import { DashboardShell } from "@/components/dashboard/DashboardShell";
+import { Panel, QuickAction } from "@/components/dashboard/DashboardUI";
+import { QrCodeSvg } from "@/components/icons";
+import { QR_CODE_IMAGE } from "@/lib/images";
+import { requireRole } from "@/lib/require-role";
+
+export default async function AdminQrPage() {
+  const user = await requireRole("admin");
+
+  return (
+    <DashboardShell user={user} title="QR Code Labels" subtitle="Generate printable QR labels for campus living collections." activePath="/dashboard/admin/qr">
+      <div className="uf-grid-3">
+        {["Zone A — Main Avenue", "Zone B — Science Block", "Zone C — Library Lawn"].map((zone) => (
+          <div key={zone} className="uf-card" style={{ background: "#fff", border: "1px solid #e6e1cf", borderRadius: 14, padding: 22 }}>
+            <div style={{ display: "flex", gap: 16, alignItems: "flex-start", marginBottom: 16 }}>
+              <div style={{ background: "#fbf9f1", border: "1px solid #e6e1cf", borderRadius: 10, padding: 10, flexShrink: 0 }}>
+                <QrCodeSvg size={72} />
+              </div>
+              <div>
+                <div style={{ fontWeight: 700, fontSize: 16, marginBottom: 8 }}>{zone}</div>
+                <div style={{ fontSize: 13, color: "#6b7360" }}>14 trees · labels ready</div>
+              </div>
+            </div>
+            <QuickAction label="Generate batch PDF" desc="Print-ready A4 sheet" />
+            <a
+              href={QR_CODE_IMAGE}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", textAlign: "center", marginTop: 12, fontSize: 13, fontWeight: 600, color: "#2e6b3a", textDecoration: "none" }}
+            >
+              Download QR image
+            </a>
+          </div>
+        ))}
+      </div>
+    </DashboardShell>
+  );
+}

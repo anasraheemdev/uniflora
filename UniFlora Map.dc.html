@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="image-slot.js"></script>
+<style>
+  *{box-sizing:border-box;} body{margin:0;}
+  .uf-navlink:hover{color:#fff !important;}
+  .uf-login:hover{background:#3a7d47 !important;}
+  .uf-marker{cursor:pointer; transition:transform .15s;}
+  .uf-marker:hover{transform:scale(1.25);}
+  .uf-layer:hover{background:#eef0e2 !important;}
+  .uf-listitem:hover{background:#f5f1e6 !important;}
+  .uf-zoom:hover{background:#eef0e2 !important;}
+  image-slot{--is-bg:#16351f;}
+</style>
+</helmet>
+<div style="font-family:'Source Sans 3',system-ui,sans-serif; background:#f5f1e6; color:#1e2b1f; min-height:100%; overflow-x:hidden;">
+
+  <!-- NAV -->
+  <header style="background:#0e2a17; color:#dfe9dc; position:sticky; top:0; z-index:50;">
+    <div style="max-width:1400px; margin:0 auto; padding:14px 40px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="UniFlora Home.dc.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <div style="width:44px; height:44px; border-radius:50%; background:linear-gradient(160deg,#4f8f43,#2e6b3a); display:flex; align-items:center; justify-content:center; flex:0 0 auto;"><svg width="24" height="24" viewBox="0 0 24 24" fill="#eaf5e4" stroke="none"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/></svg></div>
+        <div style="line-height:1;"><div style="font-size:23px; font-weight:700; color:#fff;">UniFlora</div><div style="font-size:9.5px; font-weight:600; letter-spacing:2.4px; color:#8fb890; margin-top:4px;">EXPLORE · LEARN · CONSERVE</div></div>
+      </a>
+      <nav style="display:flex; align-items:center; gap:30px; font-size:15px; font-weight:500;">
+        <a class="uf-navlink" href="UniFlora Home.dc.html" style="color:#c3d4bf; text-decoration:none;">Home</a>
+        <a class="uf-navlink" href="UniFlora Explore.dc.html" style="color:#c3d4bf; text-decoration:none;">Explore Plants</a>
+        <a class="uf-navlink" href="UniFlora Families.dc.html" style="color:#c3d4bf; text-decoration:none;">Families</a>
+        <a class="uf-navlink" href="UniFlora Map.dc.html" style="color:#fff; text-decoration:none; padding-bottom:4px; border-bottom:2px solid #7dbf6b;">Map</a>
+        <a class="uf-navlink" href="UniFlora Collections.dc.html" style="color:#c3d4bf; text-decoration:none;">Collections</a>
+        <a class="uf-navlink" href="UniFlora Learn.dc.html" style="color:#c3d4bf; text-decoration:none;">Learn</a>
+        <a class="uf-navlink" href="UniFlora About.dc.html" style="color:#c3d4bf; text-decoration:none;">About</a>
+        <a class="uf-navlink" href="UniFlora Contact.dc.html" style="color:#c3d4bf; text-decoration:none;">Contact</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <button style="background:none; border:none; color:#c3d4bf; cursor:pointer; padding:6px; display:flex;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+        <a class="uf-login" href="UniFlora Admin.dc.html" style="display:flex; align-items:center; gap:8px; background:#2e6b3a; color:#fff; padding:10px 20px; border-radius:9px; font-size:14.5px; font-weight:600; text-decoration:none;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg>Login</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAP LAYOUT -->
+  <div style="display:grid; grid-template-columns:340px 1fr; height:calc(100vh - 72px); min-height:640px;">
+
+    <!-- SIDEBAR -->
+    <aside style="background:#fbf9f1; border-right:1px solid #e6e1cf; padding:24px; overflow-y:auto;">
+      <h1 style="font-family:'Playfair Display',serif; font-weight:600; font-size:26px; margin:0 0 4px;">Campus Map</h1>
+      <p style="font-size:14px; color:#6b7360; margin:0 0 18px;">346 plants mapped across 6 campus zones.</p>
+
+      <div style="display:flex; align-items:center; gap:8px; background:#fff; border:1px solid #e6e1cf; border-radius:10px; padding:9px 12px; margin-bottom:20px;">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6b7360" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Search this map…" style="flex:1; border:none; outline:none; font-size:14px; font-family:inherit; background:transparent;">
+      </div>
+
+      <div style="font-weight:700; font-size:12.5px; letter-spacing:.5px; text-transform:uppercase; color:#8a9682; margin-bottom:10px;">Map Layers</div>
+      <label class="uf-layer" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:8px 10px; border-radius:8px; cursor:pointer;"><input type="checkbox" checked style="accent-color:#2e6b3a; width:16px; height:16px;"> <span style="width:11px; height:11px; border-radius:50%; background:#2e6b3a;"></span> Trees <span style="margin-left:auto; color:#8a9682; font-size:13px;">180</span></label>
+      <label class="uf-layer" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:8px 10px; border-radius:8px; cursor:pointer;"><input type="checkbox" checked style="accent-color:#2e6b3a; width:16px; height:16px;"> <span style="width:11px; height:11px; border-radius:50%; background:#c99a2e;"></span> Shrubs <span style="margin-left:auto; color:#8a9682; font-size:13px;">92</span></label>
+      <label class="uf-layer" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:8px 10px; border-radius:8px; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> <span style="width:11px; height:11px; border-radius:50%; background:#d76a95;"></span> Herbs <span style="margin-left:auto; color:#8a9682; font-size:13px;">48</span></label>
+      <label class="uf-layer" style="display:flex; align-items:center; gap:9px; font-size:14.5px; color:#3f4a3a; padding:8px 10px; border-radius:8px; cursor:pointer;"><input type="checkbox" style="accent-color:#2e6b3a; width:16px; height:16px;"> <span style="width:11px; height:11px; border-radius:50%; background:#8163a8;"></span> Heat map <span style="margin-left:auto; color:#8a9682; font-size:13px;">density</span></label>
+
+      <div style="height:1px; background:#e6e1cf; margin:20px 0;"></div>
+      <div style="font-weight:700; font-size:12.5px; letter-spacing:.5px; text-transform:uppercase; color:#8a9682; margin-bottom:10px;">Nearby Plants</div>
+
+      <a class="uf-listitem" href="UniFlora Species.dc.html" style="display:flex; gap:12px; padding:10px; border-radius:10px; text-decoration:none; color:inherit; align-items:center;">
+        <image-slot id="mp-1" style="display:block; width:46px; height:46px; border-radius:9px; overflow:hidden; flex:0 0 auto;" shape="rounded" radius="9" placeholder="N"></image-slot>
+        <div><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:14.5px; font-weight:600;">Azadirachta indica</div><div style="font-size:12.5px; color:#8a9682;">Zone A · Main Avenue</div></div>
+      </a>
+      <a class="uf-listitem" href="UniFlora Species.dc.html" style="display:flex; gap:12px; padding:10px; border-radius:10px; text-decoration:none; color:inherit; align-items:center;">
+        <image-slot id="mp-2" style="display:block; width:46px; height:46px; border-radius:9px; overflow:hidden; flex:0 0 auto;" shape="rounded" radius="9" placeholder="F"></image-slot>
+        <div><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:14.5px; font-weight:600;">Ficus religiosa</div><div style="font-size:12.5px; color:#8a9682;">Zone C · Library Lawn</div></div>
+      </a>
+      <a class="uf-listitem" href="UniFlora Species.dc.html" style="display:flex; gap:12px; padding:10px; border-radius:10px; text-decoration:none; color:inherit; align-items:center;">
+        <image-slot id="mp-3" style="display:block; width:46px; height:46px; border-radius:9px; overflow:hidden; flex:0 0 auto;" shape="rounded" radius="9" placeholder="C"></image-slot>
+        <div><div style="font-family:'Playfair Display',serif; font-style:italic; font-size:14.5px; font-weight:600;">Cassia fistula</div><div style="font-size:12.5px; color:#8a9682;">Zone B · Science Block</div></div>
+      </a>
+    </aside>
+
+    <!-- MAP AREA -->
+    <div style="position:relative; overflow:hidden; background:linear-gradient(135deg,#dfe8d2,#cbdcbe);">
+      <!-- grid -->
+      <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.4) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.4) 1px,transparent 1px); background-size:46px 46px;"></div>
+      <!-- green zones -->
+      <div style="position:absolute; top:12%; left:8%; width:26%; height:34%; background:rgba(46,107,58,.16); border:1.5px dashed rgba(46,107,58,.4); border-radius:20px;"></div>
+      <div style="position:absolute; top:54%; left:30%; width:30%; height:32%; background:rgba(46,107,58,.16); border:1.5px dashed rgba(46,107,58,.4); border-radius:20px;"></div>
+      <div style="position:absolute; top:20%; right:12%; width:24%; height:40%; background:rgba(46,107,58,.16); border:1.5px dashed rgba(46,107,58,.4); border-radius:20px;"></div>
+      <!-- paths -->
+      <div style="position:absolute; top:0; left:44%; width:44px; height:100%; background:rgba(200,190,160,.55);"></div>
+      <div style="position:absolute; top:48%; left:0; width:100%; height:40px; background:rgba(200,190,160,.55);"></div>
+
+      <!-- markers -->
+      <div class="uf-marker" style="position:absolute; top:24%; left:18%; width:22px; height:22px; border-radius:50%; background:#2e6b3a; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+      <div class="uf-marker" style="position:absolute; top:34%; left:26%; width:22px; height:22px; border-radius:50%; background:#2e6b3a; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+      <div class="uf-marker" style="position:absolute; top:66%; left:40%; width:22px; height:22px; border-radius:50%; background:#c99a2e; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+      <div class="uf-marker" style="position:absolute; top:72%; left:48%; width:22px; height:22px; border-radius:50%; background:#c99a2e; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+      <div class="uf-marker" style="position:absolute; top:30%; right:20%; width:22px; height:22px; border-radius:50%; background:#2e6b3a; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+      <div class="uf-marker" style="position:absolute; top:46%; right:26%; width:22px; height:22px; border-radius:50%; background:#d76a95; border:3px solid #fff; box-shadow:0 3px 8px rgba(0,0,0,.35);"></div>
+
+      <!-- active marker + popup -->
+      <div style="position:absolute; top:44%; left:40%;">
+        <div style="width:28px; height:28px; border-radius:50%; background:#2e6b3a; border:4px solid #fff; box-shadow:0 4px 12px rgba(0,0,0,.4);"></div>
+        <div style="position:absolute; bottom:40px; left:-120px; width:270px; background:#fff; border-radius:14px; box-shadow:0 18px 40px rgba(0,0,0,.25); overflow:hidden;">
+          <image-slot id="mp-pop" style="display:block; width:100%; height:120px;" shape="rect" placeholder="Neem photo"></image-slot>
+          <div style="padding:14px;">
+            <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:17px; font-weight:600;">Azadirachta indica</div>
+            <div style="font-size:13px; color:#3f4a3a; margin-top:3px;">Neem · Meliaceae</div>
+            <div style="font-size:12.5px; color:#8a9682; margin-top:6px;">📍 Zone A · Main Avenue · Tree #A-042</div>
+            <a href="UniFlora Species.dc.html" style="display:block; text-align:center; margin-top:12px; background:#2e6b3a; color:#fff; padding:9px; border-radius:8px; font-size:13.5px; font-weight:600; text-decoration:none;">View full species page ›</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- controls: view toggle -->
+      <div style="position:absolute; top:20px; left:20px; display:flex; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,.15);">
+        <button style="border:none; background:#2e6b3a; color:#fff; padding:10px 16px; font-size:13.5px; font-weight:600; cursor:pointer; font-family:inherit;">Street</button>
+        <button style="border:none; background:#fff; color:#3f4a3a; padding:10px 16px; font-size:13.5px; font-weight:600; cursor:pointer; font-family:inherit;">Satellite</button>
+      </div>
+
+      <!-- zoom -->
+      <div style="position:absolute; top:20px; right:20px; display:flex; flex-direction:column; background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,.15);">
+        <button class="uf-zoom" style="border:none; background:#fff; color:#3f4a3a; width:42px; height:42px; font-size:22px; cursor:pointer; border-bottom:1px solid #eee;">+</button>
+        <button class="uf-zoom" style="border:none; background:#fff; color:#3f4a3a; width:42px; height:42px; font-size:22px; cursor:pointer;">−</button>
+      </div>
+
+      <!-- legend -->
+      <div style="position:absolute; bottom:20px; right:20px; background:#fff; border-radius:12px; padding:14px 16px; box-shadow:0 4px 14px rgba(0,0,0,.15); font-size:13px;">
+        <div style="font-weight:700; margin-bottom:8px;">Legend</div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:5px;"><span style="width:12px; height:12px; border-radius:50%; background:#2e6b3a;"></span> Trees</div>
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:5px;"><span style="width:12px; height:12px; border-radius:50%; background:#c99a2e;"></span> Shrubs</div>
+        <div style="display:flex; align-items:center; gap:8px;"><span style="width:12px; height:12px; border-radius:50%; background:#d76a95;"></span> Herbs</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
