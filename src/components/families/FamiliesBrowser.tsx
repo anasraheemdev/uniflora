@@ -4,32 +4,39 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import type { Family } from "@/data/families";
 
-type FamilyWithCounts = Family & { campusSpecies: number; campusGenera: number };
+type SortKey = "name" | "species" | "mapped";
 
 type FamiliesBrowserProps = {
-  families: FamilyWithCounts[];
+  families: Family[];
   letters: string[];
 };
 
 export function FamiliesBrowser({ families, letters }: FamiliesBrowserProps) {
   const [query, setQuery] = useState("");
   const [activeLetter, setActiveLetter] = useState<string | null>(null);
+  const [sort, setSort] = useState<SortKey>("name");
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return families.filter((f) => {
-      const matchesLetter = !activeLetter || f.letter === activeLetter;
-      const matchesQuery =
-        !q ||
+    const rows = families.filter((f) => {
+      if (activeLetter && f.letter !== activeLetter) return false;
+      if (!q) return true;
+      return (
         f.name.toLowerCase().includes(q) ||
-        f.commonName.toLowerCase().includes(q) ||
-        f.order.toLowerCase().includes(q) ||
-        f.description.toLowerCase().includes(q);
-      return matchesLetter && matchesQuery;
+        (f.commonName?.toLowerCase().includes(q) ?? false) ||
+        (f.order?.toLowerCase().includes(q) ?? false) ||
+        f.genera.some((g) => g.toLowerCase().includes(q))
+      );
     });
-  }, [families, query, activeLetter]);
 
-  const totalCampus = families.reduce((sum, f) => sum + f.campusSpecies, 0);
+    return rows.sort((a, b) => {
+      if (sort === "species") return b.speciesCount - a.speciesCount || a.name.localeCompare(b.name);
+      if (sort === "mapped") return b.occurrences - a.occurrences || a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
+    });
+  }, [families, query, activeLetter, sort]);
+
+  const totalSpecies = families.reduce((sum, f) => sum + f.speciesCount, 0);
 
   return (
     <>
@@ -44,27 +51,36 @@ export function FamiliesBrowser({ families, letters }: FamiliesBrowserProps) {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search families by name, order, or description…"
+              placeholder="Search families or genera…"
               style={{ flex: 1, border: "none", outline: "none", fontSize: 15, fontFamily: "inherit", background: "transparent" }}
             />
           </div>
+
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as SortKey)}
+            style={{ border: "1px solid #e6e1cf", borderRadius: 10, padding: "11px 12px", fontSize: 14, fontFamily: "inherit", background: "#fff", color: "#3f4a3a" }}
+          >
+            <option value="name">Sort: A–Z</option>
+            <option value="species">Sort: most species</option>
+            <option value="mapped">Sort: most mapped plants</option>
+          </select>
+
           <div style={{ fontSize: 14, color: "#6b7360" }}>
-            Showing <b style={{ color: "#1e2b1f" }}>{filtered.length}</b> of {families.length} families ·{" "}
-            <b style={{ color: "#2e6b3a" }}>{totalCampus}</b> documented on campus
+            <b style={{ color: "#1e2b1f" }}>{filtered.length}</b> of {families.length} families ·{" "}
+            <b style={{ color: "#2e6b3a" }}>{totalSpecies}</b> species
           </div>
         </div>
 
         <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
           <button
             type="button"
-            className="uf-az"
             onClick={() => setActiveLetter(null)}
             style={{
               height: 34,
               padding: "0 12px",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
               borderRadius: 8,
               background: activeLetter === null ? "#2e6b3a" : "#fbf9f1",
               border: `1px solid ${activeLetter === null ? "#2e6b3a" : "#e6e1cf"}`,
@@ -81,7 +97,6 @@ export function FamiliesBrowser({ families, letters }: FamiliesBrowserProps) {
             <button
               key={letter}
               type="button"
-              className="uf-az"
               onClick={() => setActiveLetter(letter === activeLetter ? null : letter)}
               style={{
                 width: 34,
@@ -125,34 +140,31 @@ export function FamiliesBrowser({ families, letters }: FamiliesBrowserProps) {
                       <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
                     </svg>
                   </div>
-                  <span style={{ background: "#eef0e2", color: "#6b7360", fontSize: 11, fontWeight: 700, padding: "4px 8px", borderRadius: 6, letterSpacing: 0.3 }}>{family.order}</span>
+                  {family.order && (
+                    <span style={{ background: "#eef0e2", color: "#6b7360", fontSize: 12, fontWeight: 700, padding: "4px 8px", borderRadius: 6, letterSpacing: 0.3 }}>{family.order}</span>
+                  )}
                 </div>
 
                 <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontWeight: 600, fontSize: 21, marginTop: 14 }}>{family.name}</div>
-                <div style={{ fontSize: 13.5, color: "#8a9682", marginTop: 2 }}>{family.commonName}</div>
-                <p style={{ fontSize: 13.5, color: "#6b7360", lineHeight: 1.5, margin: "12px 0 0", flex: 1, display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
-                  {family.description}
+                {family.commonName && <div style={{ fontSize: 13.5, color: "#8a9682", marginTop: 2 }}>{family.commonName}</div>}
+
+                <p style={{ fontSize: 13.5, color: "#6b7360", lineHeight: 1.5, margin: "12px 0 0", flex: 1 }}>
+                  {family.description
+                    ? family.description.slice(0, 150) + (family.description.length > 150 ? "…" : "")
+                    : `${family.habits.join(", ")} · ${family.cultivated} cultivated, ${family.wild} wild.`}
                 </p>
 
-                <div style={{ display: "flex", flexWrap: "wrap", gap: 12, marginTop: 16, paddingTop: 14, borderTop: "1px solid #f0ecdd", fontSize: 13, color: "#3f4a3a" }}>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginTop: 16, paddingTop: 14, borderTop: "1px solid #f0ecdd", fontSize: 13, color: "#3f4a3a" }}>
                   <span>
-                    <b style={{ fontSize: 16, color: "#2e6b3a" }}>{family.campusSpecies}</b> on campus
+                    <b style={{ fontSize: 16 }}>{family.speciesCount}</b> species
                   </span>
                   <span>
-                    <b style={{ fontSize: 16 }}>{family.species}</b> total spp.
+                    <b style={{ fontSize: 16 }}>{family.generaCount}</b> genera
                   </span>
                   <span>
-                    <b style={{ fontSize: 16 }}>{family.genera}</b> genera
+                    <b style={{ fontSize: 16, color: "#2e6b3a" }}>{family.occurrences}</b> mapped
                   </span>
                 </div>
-
-                <span style={{ display: "inline-flex", alignItems: "center", gap: 6, color: "#2e6b3a", fontWeight: 600, fontSize: 14, marginTop: 14 }}>
-                  View family
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M5 12h14" />
-                    <path d="m12 5 7 7-7 7" />
-                  </svg>
-                </span>
               </Link>
             ))}
           </div>

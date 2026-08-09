@@ -12,7 +12,7 @@ export default async function ContributorIdentifyPage() {
           <div key={key} className="uf-card" style={{ background: "#fff", border: "1px solid #e6e1cf", borderRadius: 14, padding: 24 }}>
             <div style={{ fontFamily: "var(--font-playfair), serif", fontWeight: 600, fontSize: 20 }}>{key} Key</div>
             <p style={{ fontSize: 14, color: "#6b7360", margin: "8px 0 16px" }}>Branching identification guide for campus {key.toLowerCase()}.</p>
-            <Link href="/learn" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Open key →</Link>
+            <Link href="/learn" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>Open key →</Link>
           </div>
         ))}
       </div>

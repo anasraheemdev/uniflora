@@ -1,0 +1,7396 @@
+[
+ {
+  "scientificName": "Eranthemum pulchellum",
+  "author": "Andrews",
+  "genus": "Eranthemum",
+  "family": "Acanthaceae",
+  "localNames": [
+   "Neelam"
+  ],
+  "commonName": "Neelam",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "eranthemum-pulchellum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ruellia simplex",
+  "author": "C.Wright",
+  "genus": "Ruellia",
+  "family": "Acanthaceae",
+  "localNames": [],
+  "commonName": "Ruellia simplex",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "ruellia-simplex",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ruellia tuberosa",
+  "author": "L.",
+  "genus": "Ruellia",
+  "family": "Acanthaceae",
+  "localNames": [
+   "Bluebell",
+   "Minnieroot"
+  ],
+  "commonName": "Bluebell",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "ruellia-tuberosa",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Sanchezia oblonga",
+  "author": "Ruiz & Pav.",
+  "genus": "Sanchezia",
+  "family": "Acanthaceae",
+  "localNames": [
+   "Gold vein plant"
+  ],
+  "commonName": "Gold vein plant",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "sanchezia-oblonga",
+  "occurrences": 2,
+  "zones": [
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Trianthema portulacastrum",
+  "author": "L.",
+  "genus": "Trianthema",
+  "family": "Aizoaceae",
+  "localNames": [
+   "It sit",
+   "Wisah"
+  ],
+  "commonName": "It sit",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "trianthema-portulacastrum",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Trianthema triquetrum",
+  "author": "Willd. ex Spring.",
+  "genus": "Trianthema",
+  "family": "Aizoaceae",
+  "localNames": [
+   "Choti ulwati",
+   "Alettie"
+  ],
+  "commonName": "Choti ulwati",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "trianthema-triquetrum",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Zaleya pentandra",
+  "author": "(L.) C. Jeffrey",
+  "genus": "Zaleya",
+  "family": "Aizoaceae",
+  "localNames": [
+   "It sit"
+  ],
+  "commonName": "It sit",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "zaleya-pentandra",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Achyranthes aspera",
+  "author": "L.",
+  "genus": "Achyranthes",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Phut kanda"
+  ],
+  "commonName": "Phut kanda",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "achyranthes-aspera",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Aerva javanica",
+  "author": "(Burm. f.) Juss. ex Schult.",
+  "genus": "Aerva",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Bui"
+  ],
+  "commonName": "Bui",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "aerva-javanica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Alternanthera bettzickiana",
+  "author": "(Regel) G.Nicholson",
+  "genus": "Alternanthera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Calico plant"
+  ],
+  "commonName": "Calico plant",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alternanthera-bettzickiana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Alternanthera brasiliana",
+  "author": "(L.) Kuntze",
+  "genus": "Alternanthera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Ruby leaf alternanthera"
+  ],
+  "commonName": "Ruby leaf alternanthera",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alternanthera-brasiliana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Alternanthera philoxeroides",
+  "author": "(Mart.) Griseb.",
+  "genus": "Alternanthera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Alligator weed"
+  ],
+  "commonName": "Alligator weed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alternanthera-philoxeroides",
+  "occurrences": 2,
+  "zones": [
+   "zone-b",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Alternanthera pungens",
+  "author": "Kunth",
+  "genus": "Alternanthera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Khaki weed"
+  ],
+  "commonName": "Khaki weed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alternanthera-pungens",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Alternanthera sessilis",
+  "author": "(L.) DC.",
+  "genus": "Alternanthera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Gandal booti"
+  ],
+  "commonName": "Gandal booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alternanthera-sessilis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Amaranthus blitum",
+  "author": "L.",
+  "genus": "Amaranthus",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Purple Amaranth"
+  ],
+  "commonName": "Purple Amaranth",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "amaranthus-blitum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Amaranthus graecizans",
+  "author": "subsp. graecizans",
+  "genus": "Amaranthus",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Tumble weed"
+  ],
+  "commonName": "Tumble weed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "amaranthus-graecizans",
+  "occurrences": 2,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Amaranthus spinosus",
+  "author": "L.",
+  "genus": "Amaranthus",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Chulai"
+  ],
+  "commonName": "Chulai",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "amaranthus-spinosus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Amaranthus viridis",
+  "author": "L.",
+  "genus": "Amaranthus",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Jangli chulai"
+  ],
+  "commonName": "Jangli chulai",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "amaranthus-viridis",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Bassia hyssopifolia",
+  "author": "(Pall.) Kuntze",
+  "genus": "Bassia",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Kochia"
+  ],
+  "commonName": "Kochia",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "bassia-hyssopifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Chenopodium album",
+  "author": "L.",
+  "genus": "Chenopodium",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Bathu"
+  ],
+  "commonName": "Bathu",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "chenopodium-album",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Chenopodiastrum murale",
+  "author": "(L.) S.Fuentes, Uotila & Borsch",
+  "genus": "Chenopodiastrum",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Krund"
+  ],
+  "commonName": "Krund",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "chenopodiastrum-murale",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Digera muricata",
+  "author": "(L.) Mart.",
+  "genus": "Digera",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Tandula",
+   "False Amaranth"
+  ],
+  "commonName": "Tandula",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "digera-muricata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dysphania ambrosioides",
+  "author": "(L.)Mosyakin & Clemants",
+  "genus": "Dysphania",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Laani bathu"
+  ],
+  "commonName": "Laani bathu",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "dysphania-ambrosioides",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Gomphrena celosioides",
+  "author": "Mart.",
+  "genus": "Gomphrena",
+  "family": "Amaranthaceae",
+  "localNames": [],
+  "commonName": "Gomphrena celosioides",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "gomphrena-celosioides",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Suaeda fruticosa",
+  "author": "Forssk. ex J.F.Gmel.",
+  "genus": "Suaeda",
+  "family": "Amaranthaceae",
+  "localNames": [
+   "Laani",
+   "Lana"
+  ],
+  "commonName": "Laani",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Annual",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "suaeda-fruticosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Allium cepa",
+  "author": "L.",
+  "genus": "Allium",
+  "family": "Amaryllidaceae",
+  "localNames": [
+   "Piaz",
+   "Onion"
+  ],
+  "commonName": "Piaz",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "allium-cepa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Allium sativum",
+  "author": "L.",
+  "genus": "Allium",
+  "family": "Amaryllidaceae",
+  "localNames": [
+   "Garlic",
+   "lahsin",
+   "Lassan"
+  ],
+  "commonName": "Garlic",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "allium-sativum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Crinum asiaticum",
+  "author": "L.",
+  "genus": "Crinum",
+  "family": "Amaryllidaceae",
+  "localNames": [
+   "Spider lily"
+  ],
+  "commonName": "Spider lily",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "crinum-asiaticum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Mangifera indica",
+  "author": "L.",
+  "genus": "Mangifera",
+  "family": "Anacardiaceae",
+  "localNames": [
+   "Aam",
+   "Mango"
+  ],
+  "commonName": "Aam",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "mangifera-indica",
+  "occurrences": 19,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Schinus terebinthifolia",
+  "author": "Raddi",
+  "genus": "Schinus",
+  "family": "Anacardiaceae",
+  "localNames": [
+   "Brazilian Black pepper"
+  ],
+  "commonName": "Brazilian Black pepper",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "schinus-terebinthifolia",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Artabotrys hexapetalus",
+  "author": "(L.f.) Bhandari",
+  "genus": "Artabotrys",
+  "family": "Annonaceae",
+  "localNames": [
+   "Hari Champa"
+  ],
+  "commonName": "Hari Champa",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "artabotrys-hexapetalus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Monoon longifolium",
+  "author": "(Sonn.) B.Xue & R.M.K.Saunders",
+  "genus": "Monoon",
+  "family": "Annonaceae",
+  "localNames": [
+   "Ulta Ashok"
+  ],
+  "commonName": "Ulta Ashok",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "monoon-longifolium",
+  "occurrences": 321,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Coriandrum sativum",
+  "author": "L.",
+  "genus": "Coriandrum",
+  "family": "Apiaceae",
+  "localNames": [
+   "Dhaniya",
+   "Coriander"
+  ],
+  "commonName": "Dhaniya",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "coriandrum-sativum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Foeniculum vulgare",
+  "author": "Mill.",
+  "genus": "Foeniculum",
+  "family": "Apiaceae",
+  "localNames": [
+   "Sonf",
+   "Fennel"
+  ],
+  "commonName": "Sonf",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "foeniculum-vulgare",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Oenanthe javanica",
+  "author": "(Blume) DC.",
+  "genus": "Oenanthe",
+  "family": "Apiaceae",
+  "localNames": [
+   "Water Celery"
+  ],
+  "commonName": "Water Celery",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "oenanthe-javanica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Alstonia scholaris",
+  "author": "(L.) R.Br.",
+  "genus": "Alstonia",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Gul-shetaan"
+  ],
+  "commonName": "Gul-shetaan",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "alstonia-scholaris",
+  "occurrences": 176,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Calotropis procera",
+  "author": "(Aiton) W.T.Aiton",
+  "genus": "Calotropis",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Ak"
+  ],
+  "commonName": "Ak",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "calotropis-procera",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Carissa carandas",
+  "author": "L.",
+  "genus": "Carissa",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Karonda",
+   "karavanda"
+  ],
+  "commonName": "Karonda",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "carissa-carandas",
+  "occurrences": 2,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Carissa macrocarpa",
+  "author": "(Eckl.) A.DC.",
+  "genus": "Carissa",
+  "family": "Apocynaceae",
+  "localNames": [],
+  "commonName": "Carissa macrocarpa",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "carissa-macrocarpa",
+  "occurrences": 3,
+  "zones": [
+   "zone-a",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Carissa spinarum",
+  "author": "L.",
+  "genus": "Carissa",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Karanjwa"
+  ],
+  "commonName": "Karanjwa",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "carissa-spinarum",
+  "occurrences": 2,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Cascabela thevetia",
+  "author": "(L.) Lippold",
+  "genus": "Cascabela",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Peeli kaner"
+  ],
+  "commonName": "Peeli kaner",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cascabela-thevetia",
+  "occurrences": 2,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Catharanthus roseus",
+  "author": "(L.) G.Don",
+  "genus": "Catharanthus",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Sada bahar",
+   "Vinca"
+  ],
+  "commonName": "Sada bahar",
+  "growthStatus": "Cultivated",
+  "habit": "SubShrub",
+  "lifeForm": "Perennial",
+  "type": "Subshrub",
+  "layer": "shrubs",
+  "badgeColor": "#b8862b",
+  "slug": "catharanthus-roseus",
+  "occurrences": 6,
+  "zones": [
+   "zone-a",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cryptostegia grandiflora",
+  "author": "Roxb.ex R.Br.",
+  "genus": "Cryptostegia",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Vilayti-vakundi"
+  ],
+  "commonName": "Vilayti-vakundi",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Annual",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "cryptostegia-grandiflora",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Holarrhena pubescens",
+  "author": "Wall.ex G.Don",
+  "genus": "Holarrhena",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Chiti chandni"
+  ],
+  "commonName": "Chiti chandni",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "holarrhena-pubescens",
+  "occurrences": 5,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Nerium oleander",
+  "author": "L.",
+  "genus": "Nerium",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Kaner"
+  ],
+  "commonName": "Kaner",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "nerium-oleander",
+  "occurrences": 19,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Pentatropis nivalis",
+  "author": "(J.F.Gmel.)D.V.Field &J.R.I.Wood",
+  "genus": "Pentatropis",
+  "family": "Apocynaceae",
+  "localNames": [
+   "White milkweed"
+  ],
+  "commonName": "White milkweed",
+  "growthStatus": "Wild",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "pentatropis-nivalis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Plumeria obtusa",
+  "author": "L.",
+  "genus": "Plumeria",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Safed Gul cheen"
+  ],
+  "commonName": "Safed Gul cheen",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "plumeria-obtusa",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Plumeria rubra",
+  "author": "L.",
+  "genus": "Plumeria",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Frangipanni",
+   "Gul Cheen"
+  ],
+  "commonName": "Frangipanni",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "plumeria-rubra",
+  "occurrences": 8,
+  "zones": [
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Tabernaemontana corymbosa",
+  "author": "Roxb. ex Wall.",
+  "genus": "Tabernaemontana",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Chiti chandni"
+  ],
+  "commonName": "Chiti chandni",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "tabernaemontana-corymbosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Tabernaemontana divaricata",
+  "author": "(L.) R.Br. ex Roem. & Schult.",
+  "genus": "Tabernaemontana",
+  "family": "Apocynaceae",
+  "localNames": [
+   "Chandni",
+   "Pin wheel"
+  ],
+  "commonName": "Chandni",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "tabernaemontana-divaricata",
+  "occurrences": 34,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Epipremnum aureum",
+  "author": "(Linden & André) G.S.Bunting",
+  "genus": "Epipremnum",
+  "family": "Araceae",
+  "localNames": [
+   "Money plant"
+  ],
+  "commonName": "Money plant",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "epipremnum-aureum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Monstera deliciosa",
+  "author": "Liebm.",
+  "genus": "Monstera",
+  "family": "Araceae",
+  "localNames": [
+   "Hathi kan"
+  ],
+  "commonName": "Hathi kan",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "monstera-deliciosa",
+  "occurrences": 2,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Syngonium podophyllum",
+  "author": "Schott",
+  "genus": "Syngonium",
+  "family": "Araceae",
+  "localNames": [
+   "Arrowhead plant"
+  ],
+  "commonName": "Arrowhead plant",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "syngonium-podophyllum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Araucaria cunninghamii",
+  "author": "Mudie",
+  "genus": "Araucaria",
+  "family": "Araucariaceae",
+  "localNames": [
+   "Monkey puzzle"
+  ],
+  "commonName": "Monkey puzzle",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "araucaria-cunninghamii",
+  "occurrences": 9,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Bismarckia nobilis",
+  "author": "Hildebr. & H.Wendl.",
+  "genus": "Bismarckia",
+  "family": "Arecaceae",
+  "localNames": [
+   "Bismarkia Palm"
+  ],
+  "commonName": "Bismarkia Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "bismarckia-nobilis",
+  "occurrences": 20,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Caryota mitis",
+  "author": "Lour.",
+  "genus": "Caryota",
+  "family": "Arecaceae",
+  "localNames": [
+   "Fishtail Palm"
+  ],
+  "commonName": "Fishtail Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "caryota-mitis",
+  "occurrences": 17,
+  "zones": [
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Livistona chinensis",
+  "author": "(jacq.)R.Br. ex Mart.",
+  "genus": "Livistona",
+  "family": "Arecaceae",
+  "localNames": [
+   "Fan Palm",
+   "Table Palm"
+  ],
+  "commonName": "Fan Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "livistona-chinensis",
+  "occurrences": 64,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Phoenix dactylifera",
+  "author": "L.",
+  "genus": "Phoenix",
+  "family": "Arecaceae",
+  "localNames": [
+   "Khajor",
+   "Datepalm"
+  ],
+  "commonName": "Khajor",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "phoenix-dactylifera",
+  "occurrences": 10,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Phoenix roebelenii",
+  "author": "O' Brien",
+  "genus": "Phoenix",
+  "family": "Arecaceae",
+  "localNames": [
+   "Pygmy Datepalm"
+  ],
+  "commonName": "Pygmy Datepalm",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "phoenix-roebelenii",
+  "occurrences": 19,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Phoenix sylvestris",
+  "author": "(L.) Roxb.",
+  "genus": "Phoenix",
+  "family": "Arecaceae",
+  "localNames": [
+   "Khaji",
+   "Datepalm"
+  ],
+  "commonName": "Khaji",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "phoenix-sylvestris",
+  "occurrences": 3,
+  "zones": [
+   "zone-b",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Rhapis excelsa",
+  "author": "(Thunb.) A.Henry",
+  "genus": "Rhapis",
+  "family": "Arecaceae",
+  "localNames": [
+   "Lady palm"
+  ],
+  "commonName": "Lady palm",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "rhapis-excelsa",
+  "occurrences": 2,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Roystonea regia",
+  "author": "(Kunth) O.F.Cook",
+  "genus": "Roystonea",
+  "family": "Arecaceae",
+  "localNames": [
+   "Royal Palm"
+  ],
+  "commonName": "Royal Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "roystonea-regia",
+  "occurrences": 196,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Washingtonia filifera",
+  "author": "(T.Moore & Mast.) H.Wendl. Ex de Bary",
+  "genus": "Washingtonia",
+  "family": "Arecaceae",
+  "localNames": [
+   "California fan palm"
+  ],
+  "commonName": "California fan palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "washingtonia-filifera",
+  "occurrences": 64,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Wodyetia bifurcata",
+  "author": "A.K.irvine",
+  "genus": "Wodyetia",
+  "family": "Arecaceae",
+  "localNames": [
+   "Foxtail Palm"
+  ],
+  "commonName": "Foxtail Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Palm",
+  "layer": "trees",
+  "badgeColor": "#3f8f5c",
+  "slug": "wodyetia-bifurcata",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Agave angustifolia",
+  "author": "Haw.",
+  "genus": "Agave",
+  "family": "Asparagaceae",
+  "localNames": [],
+  "commonName": "Agave angustifolia",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "agave-angustifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Agave americana",
+  "author": "L.",
+  "genus": "Agave",
+  "family": "Asparagaceae",
+  "localNames": [],
+  "commonName": "Agave americana",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "agave-americana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Agave demeesteriana",
+  "author": "Jacobi",
+  "genus": "Agave",
+  "family": "Asparagaceae",
+  "localNames": [],
+  "commonName": "Agave demeesteriana",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "agave-demeesteriana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Agave sisalana",
+  "author": "Perrine",
+  "genus": "Agave",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Sisal"
+  ],
+  "commonName": "Sisal",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "agave-sisalana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Asparagus officinalis",
+  "author": "L.",
+  "genus": "Asparagus",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Asparagus"
+  ],
+  "commonName": "Asparagus",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "asparagus-officinalis",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Beaucarnea recurvata",
+  "author": "(K.Koch&Fintelm.)Lem",
+  "genus": "Beaucarnea",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Ponytail Palm"
+  ],
+  "commonName": "Ponytail Palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "beaucarnea-recurvata",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Chlorophytum comosum",
+  "author": "(Thunb.) Jacques",
+  "genus": "Chlorophytum",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Spider plant"
+  ],
+  "commonName": "Spider plant",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "chlorophytum-comosum",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cordyline fruticosa",
+  "author": "(L.) A.Chev.",
+  "genus": "Cordyline",
+  "family": "Asparagaceae",
+  "localNames": [],
+  "commonName": "Cordyline fruticosa",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "cordyline-fruticosa",
+  "occurrences": 4,
+  "zones": [
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Dracaena angustifolia",
+  "author": "(Medik.) Roxb.",
+  "genus": "Dracaena",
+  "family": "Asparagaceae",
+  "localNames": [],
+  "commonName": "Dracaena angustifolia",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "dracaena-angustifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dracaena reflexa",
+  "author": "Lam.",
+  "genus": "Dracaena",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Song of India"
+  ],
+  "commonName": "Song of India",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "dracaena-reflexa",
+  "occurrences": 5,
+  "zones": [
+   "zone-a",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Dracaena trifasciata",
+  "author": "(Prain) Mabb.",
+  "genus": "Dracaena",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Snake plant"
+  ],
+  "commonName": "Snake plant",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "dracaena-trifasciata",
+  "occurrences": 2,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Frucraea foetida",
+  "author": "(L.) Haw.",
+  "genus": "Frucraea",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Makai pata"
+  ],
+  "commonName": "Makai pata",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "frucraea-foetida",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Yucca gloriosa",
+  "author": "L.",
+  "genus": "Yucca",
+  "family": "Asparagaceae",
+  "localNames": [
+   "Yucca"
+  ],
+  "commonName": "Yucca",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "yucca-gloriosa",
+  "occurrences": 6,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Aloe vera",
+  "author": "(L.) Burm.f.",
+  "genus": "Aloe",
+  "family": "Asphodelaceae",
+  "localNames": [
+   "Kanwar Gandal"
+  ],
+  "commonName": "Kanwar Gandal",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "aloe-vera",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Eclipta prostrata",
+  "author": "(L.) L.",
+  "genus": "Eclipta",
+  "family": "Asteraceae",
+  "localNames": [
+   "Bhangra"
+  ],
+  "commonName": "Bhangra",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "eclipta-prostrata",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Erigeron bonariensis",
+  "author": "L.",
+  "genus": "Erigeron",
+  "family": "Asteraceae",
+  "localNames": [
+   "Phulni"
+  ],
+  "commonName": "Phulni",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "erigeron-bonariensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Erigeron canadensis",
+  "author": "L.",
+  "genus": "Erigeron",
+  "family": "Asteraceae",
+  "localNames": [
+   "Phulni"
+  ],
+  "commonName": "Phulni",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "erigeron-canadensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Helianthus annuus",
+  "author": "L.",
+  "genus": "Helianthus",
+  "family": "Asteraceae",
+  "localNames": [
+   "Soraj mukhi",
+   "Sun flower"
+  ],
+  "commonName": "Soraj mukhi",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "helianthus-annuus",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Lactuca dissecta",
+  "author": "D.Don",
+  "genus": "Lactuca",
+  "family": "Asteraceae",
+  "localNames": [
+   "Split leaf lettuce"
+  ],
+  "commonName": "Split leaf lettuce",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lactuca-dissecta",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lactuca serriola",
+  "author": "L.",
+  "genus": "Lactuca",
+  "family": "Asteraceae",
+  "localNames": [
+   "Prickly lettuce"
+  ],
+  "commonName": "Prickly lettuce",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lactuca-serriola",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Launaea nudicaulis",
+  "author": "(L.) Hook.f.",
+  "genus": "Launaea",
+  "family": "Asteraceae",
+  "localNames": [
+   "Bhattal"
+  ],
+  "commonName": "Bhattal",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "launaea-nudicaulis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Parthenium hysterophorus",
+  "author": "L.",
+  "genus": "Parthenium",
+  "family": "Asteraceae",
+  "localNames": [
+   "Gajjar Boti"
+  ],
+  "commonName": "Gajjar Boti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "parthenium-hysterophorus",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Pseudoconyza viscosa",
+  "author": "(Mill.) D'Arcy",
+  "genus": "Pseudoconyza",
+  "family": "Asteraceae",
+  "localNames": [],
+  "commonName": "Pseudoconyza viscosa",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "pseudoconyza-viscosa",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Pseudognaphalium luteoalbum",
+  "author": "(L.) Hilliard & B.L.Burtt",
+  "genus": "Pseudognaphalium",
+  "family": "Asteraceae",
+  "localNames": [
+   "Weedy cudweed"
+  ],
+  "commonName": "Weedy cudweed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "pseudognaphalium-luteoalbum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Jurinea heteromalla",
+  "author": "(D.Don) N.Garcia, Herrando & Susana",
+  "genus": "Jurinea",
+  "family": "Asteraceae",
+  "localNames": [],
+  "commonName": "Jurinea heteromalla",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "jurinea-heteromalla",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Silybum marianum",
+  "author": "(L.) Gaertner",
+  "genus": "Silybum",
+  "family": "Asteraceae",
+  "localNames": [
+   "Milk Thistle"
+  ],
+  "commonName": "Milk Thistle",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "silybum-marianum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Soliva sessilis",
+  "author": "Ruiz & Pav.",
+  "genus": "Soliva",
+  "family": "Asteraceae",
+  "localNames": [
+   "lawn burrweed"
+  ],
+  "commonName": "lawn burrweed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "soliva-sessilis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sonchus arvensis",
+  "author": "L.",
+  "genus": "Sonchus",
+  "family": "Asteraceae",
+  "localNames": [
+   "Daimi dodhak"
+  ],
+  "commonName": "Daimi dodhak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "sonchus-arvensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sonchus asper",
+  "author": "(L.) Hill.",
+  "genus": "Sonchus",
+  "family": "Asteraceae",
+  "localNames": [
+   "Kandiyali dodhak"
+  ],
+  "commonName": "Kandiyali dodhak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "sonchus-asper",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sonchus oleraceus",
+  "author": "(L.) L.",
+  "genus": "Sonchus",
+  "family": "Asteraceae",
+  "localNames": [
+   "Common sowthistle"
+  ],
+  "commonName": "Common sowthistle",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "sonchus-oleraceus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sphagneticola trilobata",
+  "author": "(L.) Pruski",
+  "genus": "Sphagneticola",
+  "family": "Asteraceae",
+  "localNames": [],
+  "commonName": "Sphagneticola trilobata",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "sphagneticola-trilobata",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Tarlmounia elliptica",
+  "author": "(DC.) H.Rob., S.C.Keeley, Skvarla &R.Chan",
+  "genus": "Tarlmounia",
+  "family": "Asteraceae",
+  "localNames": [
+   "Parda Bail",
+   "Bombay Creeper"
+  ],
+  "commonName": "Parda Bail",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "tarlmounia-elliptica",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Xanthium strumarium",
+  "author": "L.",
+  "genus": "Xanthium",
+  "family": "Asteraceae",
+  "localNames": [
+   "Leedha"
+  ],
+  "commonName": "Leedha",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "xanthium-strumarium",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Youngia japonica",
+  "author": "(L.) DC.",
+  "genus": "Youngia",
+  "family": "Asteraceae",
+  "localNames": [
+   "Oriental Hawkweed"
+  ],
+  "commonName": "Oriental Hawkweed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "youngia-japonica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Campsis radicans",
+  "author": "(Linn.) Seem.",
+  "genus": "Campsis",
+  "family": "Bignoniaceae",
+  "localNames": [
+   "Tecoma Bail"
+  ],
+  "commonName": "Tecoma Bail",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "campsis-radicans",
+  "occurrences": 3,
+  "zones": [
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Fernandoa adenophylla",
+  "author": "(Wall. ex G.Don) Steenis",
+  "genus": "Fernandoa",
+  "family": "Bignoniaceae",
+  "localNames": [
+   "Biri pata"
+  ],
+  "commonName": "Biri pata",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "fernandoa-adenophylla",
+  "occurrences": 30,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Jacaranda mimosifolia",
+  "author": "D.Don",
+  "genus": "Jacaranda",
+  "family": "Bignoniaceae",
+  "localNames": [
+   "Gul e Neelum"
+  ],
+  "commonName": "Gul e Neelum",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "jacaranda-mimosifolia",
+  "occurrences": 2,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Kigelia africana",
+  "author": "(Lam.) Benth.",
+  "genus": "Kigelia",
+  "family": "Bignoniaceae",
+  "localNames": [
+   "Gul e Fanoos"
+  ],
+  "commonName": "Gul e Fanoos",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "kigelia-africana",
+  "occurrences": 2,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Tecoma stans",
+  "author": "(L.) Juss. Ex Kunth",
+  "genus": "Tecoma",
+  "family": "Bignoniaceae",
+  "localNames": [
+   "Tecoma"
+  ],
+  "commonName": "Tecoma",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "tecoma-stans",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Cordia myxa",
+  "author": "L.",
+  "genus": "Cordia",
+  "family": "Boraginaceae",
+  "localNames": [
+   "Lasora"
+  ],
+  "commonName": "Lasora",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cordia-myxa",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ehretia acuminata",
+  "author": "R. Br.",
+  "genus": "Ehretia",
+  "family": "Boraginaceae",
+  "localNames": [
+   "Puna",
+   "Brown Cedar"
+  ],
+  "commonName": "Puna",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ehretia-acuminata",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Brassica rapa",
+  "author": "L.",
+  "genus": "Brassica",
+  "family": "Brassicaceae",
+  "localNames": [
+   "Sarsoon",
+   "Mustard"
+  ],
+  "commonName": "Sarsoon",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "brassica-rapa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Capsella bursa-pastoris",
+  "author": "(L.)Medik.",
+  "genus": "Capsella",
+  "family": "Brassicaceae",
+  "localNames": [
+   "Shepherd's Purse"
+  ],
+  "commonName": "Shepherd's Purse",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "capsella-bursa-pastoris",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lepidium draba",
+  "author": "L.",
+  "genus": "Lepidium",
+  "family": "Brassicaceae",
+  "localNames": [
+   "White top"
+  ],
+  "commonName": "White top",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lepidium-draba",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lepidium didymum",
+  "author": "L.",
+  "genus": "Lepidium",
+  "family": "Brassicaceae",
+  "localNames": [
+   "Jangli Haloon"
+  ],
+  "commonName": "Jangli Haloon",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lepidium-didymum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Rorippa palustris",
+  "author": "(L.) Besser",
+  "genus": "Rorippa",
+  "family": "Brassicaceae",
+  "localNames": [
+   "Marsh Yellow cress"
+  ],
+  "commonName": "Marsh Yellow cress",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "rorippa-palustris",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sisymbrium loeselii",
+  "author": "L.",
+  "genus": "Sisymbrium",
+  "family": "Brassicaceae",
+  "localNames": [
+   "Sparrow's broom"
+  ],
+  "commonName": "Sparrow's broom",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "sisymbrium-loeselii",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Opuntia stricta",
+  "author": "(Haw.) Haw.",
+  "genus": "Opuntia",
+  "family": "Cactaceae",
+  "localNames": [
+   "Chittar Thor"
+  ],
+  "commonName": "Chittar Thor",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "opuntia-stricta",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Canna flaccida",
+  "author": "Salisb.",
+  "genus": "Canna",
+  "family": "Cannaceae",
+  "localNames": [
+   "Gul-aqeeq peeli"
+  ],
+  "commonName": "Gul-aqeeq peeli",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "canna-flaccida",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Canna indica",
+  "author": "L.",
+  "genus": "Canna",
+  "family": "Cannaceae",
+  "localNames": [
+   "Gul-aqeeq surkh"
+  ],
+  "commonName": "Gul-aqeeq surkh",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "canna-indica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cannabis sativa",
+  "author": "L.",
+  "genus": "Cannabis",
+  "family": "Cannabaceae",
+  "localNames": [
+   "Marijuana",
+   "Hemp",
+   "Bhang"
+  ],
+  "commonName": "Marijuana",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "cannabis-sativa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Celtis australis",
+  "author": "L.",
+  "genus": "Celtis",
+  "family": "Cannabaceae",
+  "localNames": [
+   "Karr"
+  ],
+  "commonName": "Karr",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "celtis-australis",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Carica papaya",
+  "author": "L.",
+  "genus": "Carica",
+  "family": "Caricaceae",
+  "localNames": [
+   "Papeeta"
+  ],
+  "commonName": "Papeeta",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "carica-papaya",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Spergula arvensis",
+  "author": "L.",
+  "genus": "Spergula",
+  "family": "Caryophyllaceae",
+  "localNames": [
+   "Kalri booti"
+  ],
+  "commonName": "Kalri booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "spergula-arvensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Spergularia marina",
+  "author": "(L.) Besser",
+  "genus": "Spergularia",
+  "family": "Caryophyllaceae",
+  "localNames": [
+   "Kalri booti"
+  ],
+  "commonName": "Kalri booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "spergularia-marina",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Stellaria media",
+  "author": "(L.) Vill",
+  "genus": "Stellaria",
+  "family": "Caryophyllaceae",
+  "localNames": [
+   "Phullan Booti",
+   "Chickweed"
+  ],
+  "commonName": "Phullan Booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "stellaria-media",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euonymus japonicus",
+  "author": "Thunb.",
+  "genus": "Euonymus",
+  "family": "Celasteraceae",
+  "localNames": [],
+  "commonName": "Euonymus japonicus",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "euonymus-japonicus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cleome viscosa",
+  "author": "L.",
+  "genus": "Cleome",
+  "family": "Cleomaceae",
+  "localNames": [],
+  "commonName": "Cleome viscosa",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "cleome-viscosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Combretum indicum",
+  "author": "(L.) DeFilipps",
+  "genus": "Combretum",
+  "family": "Combretaceae",
+  "localNames": [
+   "Jhumka bail"
+  ],
+  "commonName": "Jhumka bail",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "combretum-indicum",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Conocorpus erectus",
+  "author": "L.",
+  "genus": "Conocorpus",
+  "family": "Combretaceae",
+  "localNames": [
+   "Buttonwood mangrove",
+   "Cono"
+  ],
+  "commonName": "Buttonwood mangrove",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "conocorpus-erectus",
+  "occurrences": 50,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Terminalia arjuna",
+  "author": "(Roxb. ex DC.) Wight & Arn.",
+  "genus": "Terminalia",
+  "family": "Combretaceae",
+  "localNames": [
+   "Arjan"
+  ],
+  "commonName": "Arjan",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "terminalia-arjuna",
+  "occurrences": 25,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Terminalia catappa",
+  "author": "L.",
+  "genus": "Terminalia",
+  "family": "Combretaceae",
+  "localNames": [
+   "Jangli badam",
+   "Indian Almond"
+  ],
+  "commonName": "Jangli badam",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "terminalia-catappa",
+  "occurrences": 5,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Terminalia mantaly",
+  "author": "H.Perrier",
+  "genus": "Terminalia",
+  "family": "Combretaceae",
+  "localNames": [
+   "Madgascar almond Tree"
+  ],
+  "commonName": "Madgascar almond Tree",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "terminalia-mantaly",
+  "occurrences": 33,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Tradescantia pallida",
+  "author": "(Rose) D.R.Hunt",
+  "genus": "Tradescantia",
+  "family": "Commelinaceae",
+  "localNames": [
+   "Purple heart"
+  ],
+  "commonName": "Purple heart",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "tradescantia-pallida",
+  "occurrences": 3,
+  "zones": [
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Dichondra repens",
+  "author": "J.R.Forst. & G. Forst.",
+  "genus": "Dichondra",
+  "family": "Convolvulaceae",
+  "localNames": [
+   "Kidney weed"
+  ],
+  "commonName": "Kidney weed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "dichondra-repens",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Convolvulus arvensis",
+  "author": "L.",
+  "genus": "Convolvulus",
+  "family": "Convolvulaceae",
+  "localNames": [
+   "Vanvari",
+   "Lehli"
+  ],
+  "commonName": "Vanvari",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "convolvulus-arvensis",
+  "occurrences": 3,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Convolvulus prostratus",
+  "author": "Forssk.",
+  "genus": "Convolvulus",
+  "family": "Convolvulaceae",
+  "localNames": [
+   "Hiran booti"
+  ],
+  "commonName": "Hiran booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "convolvulus-prostratus",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Cuscuta reflexa",
+  "author": "Roxb.",
+  "genus": "Cuscuta",
+  "family": "Convolvulaceae",
+  "localNames": [
+   "Akas-bail"
+  ],
+  "commonName": "Akas-bail",
+  "growthStatus": "Wild",
+  "habit": "Succulent",
+  "lifeForm": "Annual",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "cuscuta-reflexa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ipomoea cairica",
+  "author": "(L.) Sweet",
+  "genus": "Ipomoea",
+  "family": "Convolvulaceae",
+  "localNames": [
+   "Railway Creeper"
+  ],
+  "commonName": "Railway Creeper",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "ipomoea-cairica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Kalanchoe pinnata",
+  "author": "(Lam.) Pers.",
+  "genus": "Kalanchoe",
+  "family": "Crassulaceae",
+  "localNames": [
+   "Pathar chat"
+  ],
+  "commonName": "Pathar chat",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "kalanchoe-pinnata",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Cucumis melo",
+  "author": "L.",
+  "genus": "Cucumis",
+  "family": "Cucurbitaceae",
+  "localNames": [
+   "Chibhar"
+  ],
+  "commonName": "Chibhar",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "cucumis-melo",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Cucumis maderaspatana",
+  "author": "L.",
+  "genus": "Cucumis",
+  "family": "Cucurbitaceae",
+  "localNames": [
+   "Madras Pea Pumpkin"
+  ],
+  "commonName": "Madras Pea Pumpkin",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "cucumis-maderaspatana",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cupressus sempervirens",
+  "author": "L.",
+  "genus": "Cupressus",
+  "family": "Cupressaceae",
+  "localNames": [
+   "Saroo"
+  ],
+  "commonName": "Saroo",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cupressus-sempervirens",
+  "occurrences": 19,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Platycladus orientalis",
+  "author": "(L.)Franco",
+  "genus": "Platycladus",
+  "family": "Cupressaceae",
+  "localNames": [
+   "Mor-pankh"
+  ],
+  "commonName": "Mor-pankh",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "platycladus-orientalis",
+  "occurrences": 6,
+  "zones": [
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cycas revoluta",
+  "author": "Thunb.",
+  "genus": "Cycas",
+  "family": "Cycadaceae",
+  "localNames": [
+   "Kanghi palm",
+   "Sago palm"
+  ],
+  "commonName": "Kanghi palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cycas-revoluta",
+  "occurrences": 27,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cycas rumphii",
+  "author": "Miq.",
+  "genus": "Cycas",
+  "family": "Cycadaceae",
+  "localNames": [
+   "Queen sago palm",
+   "False sago palm"
+  ],
+  "commonName": "Queen sago palm",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cycas-rumphii",
+  "occurrences": 5,
+  "zones": [
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cyperus alternifolius",
+  "author": "L.",
+  "genus": "Cyperus",
+  "family": "Cyperaceae",
+  "localNames": [
+   "Umbrella sedge"
+  ],
+  "commonName": "Umbrella sedge",
+  "growthStatus": "Wild",
+  "habit": "Sedge",
+  "lifeForm": "Perennial",
+  "type": "Sedge",
+  "layer": "herbs",
+  "badgeColor": "#6f8a4a",
+  "slug": "cyperus-alternifolius",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cyperus brevifolius",
+  "author": "(Rottb.)Hassk.",
+  "genus": "Cyperus",
+  "family": "Cyperaceae",
+  "localNames": [
+   "Green kyllinga"
+  ],
+  "commonName": "Green kyllinga",
+  "growthStatus": "Wild",
+  "habit": "Sedge",
+  "lifeForm": "Annual",
+  "type": "Sedge",
+  "layer": "herbs",
+  "badgeColor": "#6f8a4a",
+  "slug": "cyperus-brevifolius",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cyperus rotundus",
+  "author": "L.",
+  "genus": "Cyperus",
+  "family": "Cyperaceae",
+  "localNames": [
+   "Murki",
+   "Motha",
+   "Deela"
+  ],
+  "commonName": "Murki",
+  "growthStatus": "Wild",
+  "habit": "Sedge",
+  "lifeForm": "Perennial",
+  "type": "Sedge",
+  "layer": "herbs",
+  "badgeColor": "#6f8a4a",
+  "slug": "cyperus-rotundus",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Diospyros malabarica",
+  "author": "(Desr.) Kostel.",
+  "genus": "Diospyros",
+  "family": "Ebenaceae",
+  "localNames": [
+   "Gaab"
+  ],
+  "commonName": "Gaab",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "diospyros-malabarica",
+  "occurrences": 21,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Acalypha wilkesiana",
+  "author": "Müll.Arg.",
+  "genus": "Acalypha",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Copper leaf"
+  ],
+  "commonName": "Copper leaf",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "acalypha-wilkesiana",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Chrozophora plicata",
+  "author": "(Vahl) A. Juss. ex Spreng.",
+  "genus": "Chrozophora",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Neel-kari"
+  ],
+  "commonName": "Neel-kari",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "chrozophora-plicata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Croton bonplandianus",
+  "author": "Baill.",
+  "genus": "Croton",
+  "family": "Euphorbiaceae",
+  "localNames": [],
+  "commonName": "Croton bonplandianus",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "croton-bonplandianus",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia cotinifolia",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Red Spurge"
+  ],
+  "commonName": "Red Spurge",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "euphorbia-cotinifolia",
+  "occurrences": 7,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia helioscopia",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Chatri dodhak"
+  ],
+  "commonName": "Chatri dodhak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-helioscopia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euphorbia hirta",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Dhodal",
+   "Lal dodhak"
+  ],
+  "commonName": "Dhodal",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-hirta",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euphorbia hypericifolia",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Graceful spurge"
+  ],
+  "commonName": "Graceful spurge",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-hypericifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euphorbia indica",
+  "author": "Lam.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Hazar dani"
+  ],
+  "commonName": "Hazar dani",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-indica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euphorbia prostrata",
+  "author": "Aiton",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Hazar dani dodhak"
+  ],
+  "commonName": "Hazar dani dodhak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-prostrata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Euphorbia pulcherrima",
+  "author": "Willd. ex Klotzsch",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Poinsettia"
+  ],
+  "commonName": "Poinsettia",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "euphorbia-pulcherrima",
+  "occurrences": 3,
+  "zones": [
+   "zone-a",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia royleana",
+  "author": "Boiss.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [],
+  "commonName": "Euphorbia royleana",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "euphorbia-royleana",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia splendens",
+  "author": "Bojer ex Hook",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Crown of thorns"
+  ],
+  "commonName": "Crown of thorns",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent Shrub",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "euphorbia-splendens",
+  "occurrences": 12,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia tirucalli",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Pencil tree"
+  ],
+  "commonName": "Pencil tree",
+  "growthStatus": "Cultivated",
+  "habit": "Succulent Shrub",
+  "lifeForm": "Perennial",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "euphorbia-tirucalli",
+  "occurrences": 6,
+  "zones": [
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Euphorbia thymifolia",
+  "author": "L.",
+  "genus": "Euphorbia",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Dwarf spurge"
+  ],
+  "commonName": "Dwarf spurge",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "euphorbia-thymifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Excoecaria cochinchinensis",
+  "author": "Lour.",
+  "genus": "Excoecaria",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Chinese croton"
+  ],
+  "commonName": "Chinese croton",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "excoecaria-cochinchinensis",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Jatropha integerrima",
+  "author": "Jacq.",
+  "genus": "Jatropha",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Jatropha"
+  ],
+  "commonName": "Jatropha",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "jatropha-integerrima",
+  "occurrences": 108,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ricinus communis",
+  "author": "L.",
+  "genus": "Ricinus",
+  "family": "Euphorbiaceae",
+  "localNames": [
+   "Arind",
+   "Harnoli"
+  ],
+  "commonName": "Arind",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "ricinus-communis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Albizia lebbeck",
+  "author": "(L.) Benth.",
+  "genus": "Albizia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Shareen",
+   "Siris"
+  ],
+  "commonName": "Shareen",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "albizia-lebbeck",
+  "occurrences": 21,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Alhagi maurorum",
+  "author": "Medik.",
+  "genus": "Alhagi",
+  "family": "Fabaceae",
+  "localNames": [
+   "Juvansa",
+   "Camel thorn"
+  ],
+  "commonName": "Juvansa",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alhagi-maurorum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Alysicarpus monilifer",
+  "author": "(L.) DC.",
+  "genus": "Alysicarpus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Alyce clover"
+  ],
+  "commonName": "Alyce clover",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "alysicarpus-monilifer",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Arachis hypogaea",
+  "author": "L.",
+  "genus": "Arachis",
+  "family": "Fabaceae",
+  "localNames": [
+   "Peanut",
+   "Moog Phali"
+  ],
+  "commonName": "Peanut",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "arachis-hypogaea",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Bauhinia purpurea",
+  "author": "L.",
+  "genus": "Bauhinia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Kachnar"
+  ],
+  "commonName": "Kachnar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "bauhinia-purpurea",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Bauhinia variegata",
+  "author": "L.",
+  "genus": "Bauhinia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Kachnar"
+  ],
+  "commonName": "Kachnar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "bauhinia-variegata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Calliandra tergemina",
+  "author": "var. emarginata (Humb. & Bonpl. ex Willd.) Barneb",
+  "genus": "Calliandra",
+  "family": "Fabaceae",
+  "localNames": [],
+  "commonName": "Calliandra tergemina",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "calliandra-tergemina",
+  "occurrences": 4,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Cassia fistula",
+  "author": "L.",
+  "genus": "Cassia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Amal tas"
+  ],
+  "commonName": "Amal tas",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "cassia-fistula",
+  "occurrences": 6,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cassia javanica",
+  "author": "subsp. nodosa (Buch.-Ham. ex Roxb.) K.Larsen & S.S.Larsen",
+  "genus": "Cassia",
+  "family": "Fabaceae",
+  "localNames": [],
+  "commonName": "Cassia javanica",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "cassia-javanica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cicer arietinum",
+  "author": "L.",
+  "genus": "Cicer",
+  "family": "Fabaceae",
+  "localNames": [
+   "Channy",
+   "Chickpea"
+  ],
+  "commonName": "Channy",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "cicer-arietinum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Clitoria ternatea",
+  "author": "L.",
+  "genus": "Clitoria",
+  "family": "Fabaceae",
+  "localNames": [
+   "Butterfly pea"
+  ],
+  "commonName": "Butterfly pea",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "clitoria-ternatea",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dalbergia lanceolaria",
+  "author": "L.f.",
+  "genus": "Dalbergia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Tahla",
+   "Kala Sheesham"
+  ],
+  "commonName": "Tahla",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "dalbergia-lanceolaria",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dalbergia sissoo",
+  "author": "Roxb. Ex DC.",
+  "genus": "Dalbergia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Tahli",
+   "Sheesham"
+  ],
+  "commonName": "Tahli",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "dalbergia-sissoo",
+  "occurrences": 43,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Delonix regia",
+  "author": "(Bojer ex Hook.)Raf.",
+  "genus": "Delonix",
+  "family": "Fabaceae",
+  "localNames": [
+   "Gold mohar"
+  ],
+  "commonName": "Gold mohar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "delonix-regia",
+  "occurrences": 2,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Erythrina suberosa",
+  "author": "Roxb.",
+  "genus": "Erythrina",
+  "family": "Fabaceae",
+  "localNames": [
+   "Gul -e- nishtar"
+  ],
+  "commonName": "Gul -e- nishtar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "erythrina-suberosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Grona triflora",
+  "author": "(L.) H.Ohashi & K.Ohashi",
+  "genus": "Grona",
+  "family": "Fabaceae",
+  "localNames": [
+   "Ran-Methi"
+  ],
+  "commonName": "Ran-Methi",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "grona-triflora",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Indigofera linifolia",
+  "author": "(L.f.) Retz.",
+  "genus": "Indigofera",
+  "family": "Fabaceae",
+  "localNames": [
+   "Narrow leaf indigo"
+  ],
+  "commonName": "Narrow leaf indigo",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "indigofera-linifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lablab purpureus",
+  "author": "(L.) Sweet",
+  "genus": "Lablab",
+  "family": "Fabaceae",
+  "localNames": [
+   "Sem phalli"
+  ],
+  "commonName": "Sem phalli",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lablab-purpureus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lathyrus aphaca",
+  "author": "L.",
+  "genus": "Lathyrus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Dokanni",
+   "Jangli matri"
+  ],
+  "commonName": "Dokanni",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lathyrus-aphaca",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lathyrus sativus",
+  "author": "L.",
+  "genus": "Lathyrus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Grass pea",
+   "Rawri"
+  ],
+  "commonName": "Grass pea",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lathyrus-sativus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Leucaena leucocephala",
+  "author": "(Lam.) de Wit",
+  "genus": "Leucaena",
+  "family": "Fabaceae",
+  "localNames": [
+   "Ipil-Ipil",
+   "Jungli Imli"
+  ],
+  "commonName": "Ipil-Ipil",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "leucaena-leucocephala",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Medicago lupulina",
+  "author": "L.",
+  "genus": "Medicago",
+  "family": "Fabaceae",
+  "localNames": [
+   "Black medick"
+  ],
+  "commonName": "Black medick",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "medicago-lupulina",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Medicago polymorpha",
+  "author": "L.",
+  "genus": "Medicago",
+  "family": "Fabaceae",
+  "localNames": [
+   "Maina"
+  ],
+  "commonName": "Maina",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "medicago-polymorpha",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Medicago sativa",
+  "author": "L.",
+  "genus": "Medicago",
+  "family": "Fabaceae",
+  "localNames": [
+   "Alfalfa",
+   "Lucern"
+  ],
+  "commonName": "Alfalfa",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "medicago-sativa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Melilotus albus",
+  "author": "Medik.",
+  "genus": "Melilotus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Safed Sinji"
+  ],
+  "commonName": "Safed Sinji",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "melilotus-albus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Melilotus officinalis",
+  "author": "(L.) Lam.",
+  "genus": "Melilotus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Peeli Sinji"
+  ],
+  "commonName": "Peeli Sinji",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "melilotus-officinalis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Neltuma juliflora",
+  "author": "(Sw.) Raf.",
+  "genus": "Neltuma",
+  "family": "Fabaceae",
+  "localNames": [
+   "Maskit"
+  ],
+  "commonName": "Maskit",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "neltuma-juliflora",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Pongamia pinnata",
+  "author": "(L.) Pierre",
+  "genus": "Pongamia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Sukh chain"
+  ],
+  "commonName": "Sukh chain",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "pongamia-pinnata",
+  "occurrences": 30,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Rhynchosia minima",
+  "author": "(L.) DC.",
+  "genus": "Rhynchosia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Burn mouth vine"
+  ],
+  "commonName": "Burn mouth vine",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "rhynchosia-minima",
+  "occurrences": 2,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Senna occidentalis",
+  "author": "(L). Link",
+  "genus": "Senna",
+  "family": "Fabaceae",
+  "localNames": [
+   "Chasko"
+  ],
+  "commonName": "Chasko",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Annual",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "senna-occidentalis",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Sesbania bispinosa",
+  "author": "(Jacq.) W. Wight",
+  "genus": "Sesbania",
+  "family": "Fabaceae",
+  "localNames": [
+   "Dhancha"
+  ],
+  "commonName": "Dhancha",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "sesbania-bispinosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sesbania sesban",
+  "author": "subsp. sesban",
+  "genus": "Sesbania",
+  "family": "Fabaceae",
+  "localNames": [
+   "Jantar"
+  ],
+  "commonName": "Jantar",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Annual",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "sesbania-sesban",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Tamarindus indica",
+  "author": "L.",
+  "genus": "Tamarindus",
+  "family": "Fabaceae",
+  "localNames": [
+   "Imli"
+  ],
+  "commonName": "Imli",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "tamarindus-indica",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Trifolium alexandrinum",
+  "author": "L.",
+  "genus": "Trifolium",
+  "family": "Fabaceae",
+  "localNames": [
+   "Berseem",
+   "Shatala"
+  ],
+  "commonName": "Berseem",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "trifolium-alexandrinum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Trifolium repens",
+  "author": "L.",
+  "genus": "Trifolium",
+  "family": "Fabaceae",
+  "localNames": [
+   "Berseem",
+   "Clover"
+  ],
+  "commonName": "Berseem",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "trifolium-repens",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Trigonella foenum-graecum",
+  "author": "L.",
+  "genus": "Trigonella",
+  "family": "Fabaceae",
+  "localNames": [
+   "Meethi",
+   "Qasoori Meethi"
+  ],
+  "commonName": "Meethi",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "trigonella-foenum-graecum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Vachellia nilotica",
+  "author": "(L.) P.J.H.Hurter & Mabb.",
+  "genus": "Vachellia",
+  "family": "Fabaceae",
+  "localNames": [
+   "Kikar"
+  ],
+  "commonName": "Kikar",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "vachellia-nilotica",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Funaria hygrometrica",
+  "author": "Hedw.",
+  "genus": "Funaria",
+  "family": "Funariaceae",
+  "localNames": [
+   "Bonefire Moss"
+  ],
+  "commonName": "Bonefire Moss",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "funaria-hygrometrica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Centaurium pulchellum",
+  "author": "(Sw.) Hayek ex Hand.-Mazz., Stadlm., Janch.& Faltis",
+  "genus": "Centaurium",
+  "family": "Gentianaceae",
+  "localNames": [
+   "Pink centaury"
+  ],
+  "commonName": "Pink centaury",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "centaurium-pulchellum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Hydrilla verticillata",
+  "author": "(L.f.) Royle",
+  "genus": "Hydrilla",
+  "family": "Hydrocharitaceae",
+  "localNames": [
+   "Jala"
+  ],
+  "commonName": "Jala",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "hydrilla-verticillata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Clerodendrum splendens",
+  "author": "G.Don",
+  "genus": "Clerodendrum",
+  "family": "Lamiaceae",
+  "localNames": [
+   "Flaming Glorybower"
+  ],
+  "commonName": "Flaming Glorybower",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "clerodendrum-splendens",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Mentha spicata",
+  "author": "subsp. spicata",
+  "genus": "Mentha",
+  "family": "Lamiaceae",
+  "localNames": [
+   "Mint",
+   "Poodina"
+  ],
+  "commonName": "Mint",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "mentha-spicata",
+  "occurrences": 2,
+  "zones": [
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Ocimum basilicum",
+  "author": "L.",
+  "genus": "Ocimum",
+  "family": "Lamiaceae",
+  "localNames": [
+   "Niazbo",
+   "Pabri"
+  ],
+  "commonName": "Niazbo",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "ocimum-basilicum",
+  "occurrences": 8,
+  "zones": [
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Salvia plebeia",
+  "author": "R.Br.",
+  "genus": "Salvia",
+  "family": "Lamiaceae",
+  "localNames": [
+   "Sage weed"
+  ],
+  "commonName": "Sage weed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "salvia-plebeia",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Vitex negundo",
+  "author": "L.",
+  "genus": "Vitex",
+  "family": "Lamiaceae",
+  "localNames": [
+   "Sambhalo"
+  ],
+  "commonName": "Sambhalo",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "vitex-negundo",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Lagerstroemia indica",
+  "author": "L.",
+  "genus": "Lagerstroemia",
+  "family": "Lythraceae",
+  "localNames": [
+   "Gul e dasta",
+   "Crape-myrtle"
+  ],
+  "commonName": "Gul e dasta",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "lagerstroemia-indica",
+  "occurrences": 26,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Lagerstroemia speciosa",
+  "author": "(L.) Pers.",
+  "genus": "Lagerstroemia",
+  "family": "Lythraceae",
+  "localNames": [
+   "Jarul",
+   "Queen Crape-myrtle"
+  ],
+  "commonName": "Jarul",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "lagerstroemia-speciosa",
+  "occurrences": 3,
+  "zones": [
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Lawsonia inermis",
+  "author": "L.",
+  "genus": "Lawsonia",
+  "family": "Lythraceae",
+  "localNames": [
+   "Mehndi"
+  ],
+  "commonName": "Mehndi",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "lawsonia-inermis",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Punica granatum",
+  "author": "L.",
+  "genus": "Punica",
+  "family": "Lythraceae",
+  "localNames": [
+   "Anar"
+  ],
+  "commonName": "Anar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "punica-granatum",
+  "occurrences": 10,
+  "zones": [
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Bombax ceiba",
+  "author": "L.",
+  "genus": "Bombax",
+  "family": "Malvaceae",
+  "localNames": [
+   "Simbal"
+  ],
+  "commonName": "Simbal",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "bombax-ceiba",
+  "occurrences": 15,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ceiba speciosa",
+  "author": "(A.St.-Hil., A. Juss.& Cambess.) Ravenna",
+  "genus": "Ceiba",
+  "family": "Malvaceae",
+  "localNames": [
+   "Silk floss tree"
+  ],
+  "commonName": "Silk floss tree",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ceiba-speciosa",
+  "occurrences": 22,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Corchorus trilocularis",
+  "author": "L.",
+  "genus": "Corchorus",
+  "family": "Malvaceae",
+  "localNames": [
+   "Jangli patsun"
+  ],
+  "commonName": "Jangli patsun",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "corchorus-trilocularis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Grewia asiatica",
+  "author": "L.",
+  "genus": "Grewia",
+  "family": "Malvaceae",
+  "localNames": [
+   "Falsa"
+  ],
+  "commonName": "Falsa",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "grewia-asiatica",
+  "occurrences": 3,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Hibiscus rosa-sinensis",
+  "author": "L.",
+  "genus": "Hibiscus",
+  "family": "Malvaceae",
+  "localNames": [
+   "China rose",
+   "Shoe flower"
+  ],
+  "commonName": "China rose",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "hibiscus-rosa-sinensis",
+  "occurrences": 66,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Hibiscus tiliaceus",
+  "author": "L.",
+  "genus": "Hibiscus",
+  "family": "Malvaceae",
+  "localNames": [
+   "Cotton Tree"
+  ],
+  "commonName": "Cotton Tree",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "hibiscus-tiliaceus",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Malva neglecta",
+  "author": "Wallr.",
+  "genus": "Malva",
+  "family": "Malvaceae",
+  "localNames": [
+   "Saunchal",
+   "Chiri chogha"
+  ],
+  "commonName": "Saunchal",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "malva-neglecta",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Malva sylvestris",
+  "author": "L.",
+  "genus": "Malva",
+  "family": "Malvaceae",
+  "localNames": [
+   "Puchki"
+  ],
+  "commonName": "Puchki",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "malva-sylvestris",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Malvastrum coromendelianum",
+  "author": "(L.) Garcke",
+  "genus": "Malvastrum",
+  "family": "Malvaceae",
+  "localNames": [
+   "False mallow"
+  ],
+  "commonName": "False mallow",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "malvastrum-coromendelianum",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Pterospermum acerifolium",
+  "author": "(L.) Willd.",
+  "genus": "Pterospermum",
+  "family": "Malvaceae",
+  "localNames": [
+   "Kanak Champa"
+  ],
+  "commonName": "Kanak Champa",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "pterospermum-acerifolium",
+  "occurrences": 7,
+  "zones": [
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Marchantia polymorpha",
+  "author": "L.",
+  "genus": "Marchantia",
+  "family": "Marchantiaceae",
+  "localNames": [
+   "Common liverwort"
+  ],
+  "commonName": "Common liverwort",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "marchantia-polymorpha",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Marsilea quadrifolia",
+  "author": "L.",
+  "genus": "Marsilea",
+  "family": "Marsileaceae",
+  "localNames": [
+   "Chaupatti"
+  ],
+  "commonName": "Chaupatti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "marsilea-quadrifolia",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Mazus pumilus",
+  "author": "var. pumilus",
+  "genus": "Mazus",
+  "family": "Mazaceae",
+  "localNames": [
+   "Asian mazus"
+  ],
+  "commonName": "Asian mazus",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "mazus-pumilus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Azadirachta indica",
+  "author": "A. Juss.",
+  "genus": "Azadirachta",
+  "family": "Meliaceae",
+  "localNames": [
+   "Neem"
+  ],
+  "commonName": "Neem",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "azadirachta-indica",
+  "occurrences": 43,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Melia azedarach",
+  "author": "L.",
+  "genus": "Melia",
+  "family": "Meliaceae",
+  "localNames": [
+   "Bakain",
+   "Dhareek"
+  ],
+  "commonName": "Bakain",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "melia-azedarach",
+  "occurrences": 278,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Tinospora cordifolia",
+  "author": "(Willd.)Hook.f. & Thomson",
+  "genus": "Tinospora",
+  "family": "Menispermaceae",
+  "localNames": [
+   "Gilu",
+   "Galo bail"
+  ],
+  "commonName": "Gilu",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "tinospora-cordifolia",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Broussonetia papyrifera",
+  "author": "(L.) L'Hér. ex Vent.",
+  "genus": "Broussonetia",
+  "family": "Moraceae",
+  "localNames": [
+   "Paper Mulberry",
+   "Khagzi toot"
+  ],
+  "commonName": "Paper Mulberry",
+  "growthStatus": "Wild",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "broussonetia-papyrifera",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Ficus benghalensis",
+  "author": "L.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Bohr",
+   "Bargad",
+   "Banyan tree"
+  ],
+  "commonName": "Bohr",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-benghalensis",
+  "occurrences": 9,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus benjamina",
+  "author": "L.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Weeping fig"
+  ],
+  "commonName": "Weeping fig",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "ficus-benjamina",
+  "occurrences": 81,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus carica",
+  "author": "L.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Anjeer"
+  ],
+  "commonName": "Anjeer",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-carica",
+  "occurrences": 2,
+  "zones": [
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Ficus elastica",
+  "author": "Roxb. ex Hornem.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Rubber plant"
+  ],
+  "commonName": "Rubber plant",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-elastica",
+  "occurrences": 2,
+  "zones": [
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus maclellandii",
+  "author": "King",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "King ficus"
+  ],
+  "commonName": "King ficus",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-maclellandii",
+  "occurrences": 56,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus microcarpa",
+  "author": "L.f.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [],
+  "commonName": "Ficus microcarpa",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-microcarpa",
+  "occurrences": 8,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus racemosa",
+  "author": "L.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Gullar"
+  ],
+  "commonName": "Gullar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-racemosa",
+  "occurrences": 2,
+  "zones": [
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus religiosa",
+  "author": "L.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Peepal"
+  ],
+  "commonName": "Peepal",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-religiosa",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus virens",
+  "author": "Aiton",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [
+   "Pilkhan"
+  ],
+  "commonName": "Pilkhan",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-virens",
+  "occurrences": 46,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ficus rubiginosa",
+  "author": "Deaf. ex Vent.",
+  "genus": "Ficus",
+  "family": "Moraceae",
+  "localNames": [],
+  "commonName": "Ficus rubiginosa",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ficus-rubiginosa",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Morus alba",
+  "author": "L.",
+  "genus": "Morus",
+  "family": "Moraceae",
+  "localNames": [
+   "Toot Safaid"
+  ],
+  "commonName": "Toot Safaid",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "morus-alba",
+  "occurrences": 5,
+  "zones": [
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Morus macroura",
+  "author": "Miq.",
+  "genus": "Morus",
+  "family": "Moraceae",
+  "localNames": [
+   "Shahtoot"
+  ],
+  "commonName": "Shahtoot",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "morus-macroura",
+  "occurrences": 6,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Morus nigra",
+  "author": "L.",
+  "genus": "Morus",
+  "family": "Moraceae",
+  "localNames": [
+   "Toot Siyah"
+  ],
+  "commonName": "Toot Siyah",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "morus-nigra",
+  "occurrences": 56,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Moringa oleifera",
+  "author": "Lam.",
+  "genus": "Moringa",
+  "family": "Moringaceae",
+  "localNames": [
+   "Suhanjna",
+   "Moringa"
+  ],
+  "commonName": "Suhanjna",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "moringa-oleifera",
+  "occurrences": 8,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Musa ×",
+  "author": "paradisiaca L.",
+  "genus": "Musa",
+  "family": "Musaceae",
+  "localNames": [
+   "Keela",
+   "Banana"
+  ],
+  "commonName": "Keela",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "musa",
+  "occurrences": 8,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Eucalyptus camaldulensis",
+  "author": "Dehnh.",
+  "genus": "Eucalyptus",
+  "family": "Myrtaceae",
+  "localNames": [
+   "Safeeda"
+  ],
+  "commonName": "Safeeda",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "eucalyptus-camaldulensis",
+  "occurrences": 79,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Melaleuca citrina",
+  "author": "(Curtis) Dum.Cours",
+  "genus": "Melaleuca",
+  "family": "Myrtaceae",
+  "localNames": [
+   "Bottle brush"
+  ],
+  "commonName": "Bottle brush",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "melaleuca-citrina",
+  "occurrences": 53,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Myrtus communis",
+  "author": "L.",
+  "genus": "Myrtus",
+  "family": "Myrtaceae",
+  "localNames": [],
+  "commonName": "Myrtus communis",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "myrtus-communis",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Psidium guajava",
+  "author": "L.",
+  "genus": "Psidium",
+  "family": "Myrtaceae",
+  "localNames": [
+   "Amrood"
+  ],
+  "commonName": "Amrood",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "psidium-guajava",
+  "occurrences": 24,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Syzygium cumini",
+  "author": "(L.) Skeels.",
+  "genus": "Syzygium",
+  "family": "Myrtaceae",
+  "localNames": [
+   "Jaman"
+  ],
+  "commonName": "Jaman",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "syzygium-cumini",
+  "occurrences": 138,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Boerhavia erecta",
+  "author": "L.",
+  "genus": "Boerhavia",
+  "family": "Nyctaginaceae",
+  "localNames": [],
+  "commonName": "Boerhavia erecta",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "boerhavia-erecta",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Boerhavia procumbens",
+  "author": "Banks ex Roxb.",
+  "genus": "Boerhavia",
+  "family": "Nyctaginaceae",
+  "localNames": [
+   "Biskhapra"
+  ],
+  "commonName": "Biskhapra",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "boerhavia-procumbens",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Bougainvillea glabra",
+  "author": "Choisy",
+  "genus": "Bougainvillea",
+  "family": "Nyctaginaceae",
+  "localNames": [
+   "Paper flower"
+  ],
+  "commonName": "Paper flower",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "bougainvillea-glabra",
+  "occurrences": 8,
+  "zones": [
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Bougainvillea spectabilis",
+  "author": "Willd.",
+  "genus": "Bougainvillea",
+  "family": "Nyctaginaceae",
+  "localNames": [
+   "Paper flower"
+  ],
+  "commonName": "Paper flower",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "bougainvillea-spectabilis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Jasminum grandiflorum",
+  "author": "L.",
+  "genus": "Jasminum",
+  "family": "Oleaceae",
+  "localNames": [
+   "Chambali"
+  ],
+  "commonName": "Chambali",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "jasminum-grandiflorum",
+  "occurrences": 2,
+  "zones": [
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Jasminum multiflorum",
+  "author": "(Burm.f.) Andrews",
+  "genus": "Jasminum",
+  "family": "Oleaceae",
+  "localNames": [
+   "Star jasmine"
+  ],
+  "commonName": "Star jasmine",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "jasminum-multiflorum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Jasminum sambac",
+  "author": "(L.) Aiton",
+  "genus": "Jasminum",
+  "family": "Oleaceae",
+  "localNames": [
+   "Motia"
+  ],
+  "commonName": "Motia",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "jasminum-sambac",
+  "occurrences": 36,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Olea europaea",
+  "author": "subsp. cuspidata (Wall. & G.Don) Cif.",
+  "genus": "Olea",
+  "family": "Oleaceae",
+  "localNames": [
+   "Zaitoon",
+   "Kahu"
+  ],
+  "commonName": "Zaitoon",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "olea-europaea",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Oxalis corniculata",
+  "author": "L.",
+  "genus": "Oxalis",
+  "family": "Oxalidaceae",
+  "localNames": [
+   "Khatti booti"
+  ],
+  "commonName": "Khatti booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "oxalis-corniculata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Oxalis debilis",
+  "author": "Kunth",
+  "genus": "Oxalis",
+  "family": "Oxalidaceae",
+  "localNames": [
+   "Khatkal",
+   "Changeri"
+  ],
+  "commonName": "Khatkal",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "oxalis-debilis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Fumaria indica",
+  "author": "(Hausskn.) Pugsley",
+  "genus": "Fumaria",
+  "family": "Papaveraceae",
+  "localNames": [
+   "Pit-papra"
+  ],
+  "commonName": "Pit-papra",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "fumaria-indica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Passiflora incarnata",
+  "author": "L.",
+  "genus": "Passiflora",
+  "family": "Passifloraceae",
+  "localNames": [
+   "Passion flower"
+  ],
+  "commonName": "Passion flower",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "passiflora-incarnata",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Phyllanthus amarus",
+  "author": "Schumach. & Thonn.",
+  "genus": "Phyllanthus",
+  "family": "Phyllanthaceae",
+  "localNames": [
+   "Jantri"
+  ],
+  "commonName": "Jantri",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "phyllanthus-amarus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Phyllanthus emblica",
+  "author": "L.",
+  "genus": "Phyllanthus",
+  "family": "Phyllanthaceae",
+  "localNames": [
+   "Amla",
+   "Indian gooseberry"
+  ],
+  "commonName": "Amla",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "phyllanthus-emblica",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Pinus roxburghii",
+  "author": "Sarg.",
+  "genus": "Pinus",
+  "family": "Pinaceae",
+  "localNames": [
+   "Pinus",
+   "Chir pine"
+  ],
+  "commonName": "Pinus",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "pinus-roxburghii",
+  "occurrences": 11,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Pittosporum tobira",
+  "author": "(Thunb.) W.T.Aiton",
+  "genus": "Pittosporum",
+  "family": "Pittosporaceae",
+  "localNames": [],
+  "commonName": "Pittosporum tobira",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "pittosporum-tobira",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Veronica agrestis",
+  "author": "L.",
+  "genus": "Veronica",
+  "family": "Plantaginaceae",
+  "localNames": [
+   "Chandni booti"
+  ],
+  "commonName": "Chandni booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "veronica-agrestis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Veronica anagallis-aquatica",
+  "author": "L.",
+  "genus": "Veronica",
+  "family": "Plantaginaceae",
+  "localNames": [
+   "Water speedwell"
+  ],
+  "commonName": "Water speedwell",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "veronica-anagallis-aquatica",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Avena sativa",
+  "author": "L.",
+  "genus": "Avena",
+  "family": "Poaceae",
+  "localNames": [
+   "Javi",
+   "jaodri",
+   "Oat"
+  ],
+  "commonName": "Javi",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "avena-sativa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Bothriochloa ischaemum",
+  "author": "(L.) Keng",
+  "genus": "Bothriochloa",
+  "family": "Poaceae",
+  "localNames": [
+   "Yellow bluestem grass"
+  ],
+  "commonName": "Yellow bluestem grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "bothriochloa-ischaemum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cenchrus biflorus",
+  "author": "Roxb.",
+  "genus": "Cenchrus",
+  "family": "Poaceae",
+  "localNames": [
+   "Leedha"
+  ],
+  "commonName": "Leedha",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "cenchrus-biflorus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cenchrus ciliaris",
+  "author": "L.",
+  "genus": "Cenchrus",
+  "family": "Poaceae",
+  "localNames": [
+   "Dhaman"
+  ],
+  "commonName": "Dhaman",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "cenchrus-ciliaris",
+  "occurrences": 4,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Cenchrus setigerus",
+  "author": "Vahl",
+  "genus": "Cenchrus",
+  "family": "Poaceae",
+  "localNames": [
+   "Choti dhaman"
+  ],
+  "commonName": "Choti dhaman",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "cenchrus-setigerus",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Chloris barbata",
+  "author": "Sw.",
+  "genus": "Chloris",
+  "family": "Poaceae",
+  "localNames": [
+   "Swollen finger grass"
+  ],
+  "commonName": "Swollen finger grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "chloris-barbata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Chloris flagellifera",
+  "author": "(Nees)P.M.Peterson",
+  "genus": "Chloris",
+  "family": "Poaceae",
+  "localNames": [
+   "Ghandhel"
+  ],
+  "commonName": "Ghandhel",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "chloris-flagellifera",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cymbopogon citratus",
+  "author": "(DC.) Stapf",
+  "genus": "Cymbopogon",
+  "family": "Poaceae",
+  "localNames": [
+   "Lemon grass"
+  ],
+  "commonName": "Lemon grass",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "cymbopogon-citratus",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Cynodon dactylon",
+  "author": "(L.) Pers.",
+  "genus": "Cynodon",
+  "family": "Poaceae",
+  "localNames": [
+   "Khabar",
+   "talla",
+   "Lawn grass"
+  ],
+  "commonName": "Khabar",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "cynodon-dactylon",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Dactyloctenium aegyptium",
+  "author": "(L.) Willd.",
+  "genus": "Dactyloctenium",
+  "family": "Poaceae",
+  "localNames": [
+   "Madhana ghaa"
+  ],
+  "commonName": "Madhana ghaa",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "dactyloctenium-aegyptium",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Desmostachya bipinnata",
+  "author": "(L.) Stapf",
+  "genus": "Desmostachya",
+  "family": "Poaceae",
+  "localNames": [
+   "Dhabb"
+  ],
+  "commonName": "Dhabb",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "desmostachya-bipinnata",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Dichanthium annulatum",
+  "author": "(Forssk.) Stapf",
+  "genus": "Dichanthium",
+  "family": "Poaceae",
+  "localNames": [
+   "Pehlwan"
+  ],
+  "commonName": "Pehlwan",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "dichanthium-annulatum",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Digitaria sanguinalis",
+  "author": "(L.) Scop.",
+  "genus": "Digitaria",
+  "family": "Poaceae",
+  "localNames": [
+   "Kara bara",
+   "large Crab grass"
+  ],
+  "commonName": "Kara bara",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "digitaria-sanguinalis",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Dinebra chinensis",
+  "author": "(L.)P.M.Peterson and N.Snow",
+  "genus": "Dinebra",
+  "family": "Poaceae",
+  "localNames": [
+   "Kallar ghas"
+  ],
+  "commonName": "Kallar ghas",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "dinebra-chinensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dinebra panicoides",
+  "author": "(J.Presl)P.M.Peterson & N.Snow",
+  "genus": "Dinebra",
+  "family": "Poaceae",
+  "localNames": [
+   "Salt meadow grass"
+  ],
+  "commonName": "Salt meadow grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "dinebra-panicoides",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Echinochloa colonum",
+  "author": "(L.) Link",
+  "genus": "Echinochloa",
+  "family": "Poaceae",
+  "localNames": [
+   "Sawanki",
+   "Sawank"
+  ],
+  "commonName": "Sawanki",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "echinochloa-colonum",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Eleusine indica",
+  "author": "(L.) Gaertn.",
+  "genus": "Eleusine",
+  "family": "Poaceae",
+  "localNames": [
+   "Goose grass"
+  ],
+  "commonName": "Goose grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "eleusine-indica",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Eragrostis barrelieri",
+  "author": "Daveau",
+  "genus": "Eragrostis",
+  "family": "Poaceae",
+  "localNames": [
+   "Pitted lovegrass"
+  ],
+  "commonName": "Pitted lovegrass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "eragrostis-barrelieri",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Eragrostis minor",
+  "author": "Host",
+  "genus": "Eragrostis",
+  "family": "Poaceae",
+  "localNames": [
+   "little lovegrass"
+  ],
+  "commonName": "little lovegrass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "eragrostis-minor",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Hemarthria compressa",
+  "author": "(L.f) R. Br.",
+  "genus": "Hemarthria",
+  "family": "Poaceae",
+  "localNames": [
+   "Whip grass"
+  ],
+  "commonName": "Whip grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "hemarthria-compressa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Hordeum vulgare",
+  "author": "L.",
+  "genus": "Hordeum",
+  "family": "Poaceae",
+  "localNames": [
+   "Jo"
+  ],
+  "commonName": "Jo",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "hordeum-vulgare",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Imperata cylindrica",
+  "author": "(L.) Raeusch.",
+  "genus": "Imperata",
+  "family": "Poaceae",
+  "localNames": [
+   "Cotton Grass"
+  ],
+  "commonName": "Cotton Grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "imperata-cylindrica",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Janochloa antidotalis",
+  "author": "(Retz.)Zuloaga & Delfini",
+  "genus": "Janochloa",
+  "family": "Poaceae",
+  "localNames": [
+   "Murrat"
+  ],
+  "commonName": "Murrat",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "janochloa-antidotalis",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Oryza sativa",
+  "author": "L.",
+  "genus": "Oryza",
+  "family": "Poaceae",
+  "localNames": [
+   "Chawal",
+   "Dhan"
+  ],
+  "commonName": "Chawal",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "oryza-sativa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Paspalum distichum",
+  "author": "L.",
+  "genus": "Paspalum",
+  "family": "Poaceae",
+  "localNames": [
+   "Knotgrass"
+  ],
+  "commonName": "Knotgrass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "paspalum-distichum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Phalaris minor",
+  "author": "Retz.",
+  "genus": "Phalaris",
+  "family": "Poaceae",
+  "localNames": [
+   "Dumbi Sitti"
+  ],
+  "commonName": "Dumbi Sitti",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "phalaris-minor",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Poa annua",
+  "author": "L.",
+  "genus": "Poa",
+  "family": "Poaceae",
+  "localNames": [
+   "Annual meadow grass"
+  ],
+  "commonName": "Annual meadow grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "poa-annua",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Polypogon monspeliensis",
+  "author": "(L.) Desf.",
+  "genus": "Polypogon",
+  "family": "Poaceae",
+  "localNames": [
+   "Dumbi Sitti"
+  ],
+  "commonName": "Dumbi Sitti",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "polypogon-monspeliensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Saccharum officinarum",
+  "author": "L.",
+  "genus": "Saccharum",
+  "family": "Poaceae",
+  "localNames": [
+   "Sugarcane",
+   "Ganna"
+  ],
+  "commonName": "Sugarcane",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "saccharum-officinarum",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Setaria flavida",
+  "author": "(Retz)Veldkamp",
+  "genus": "Setaria",
+  "family": "Poaceae",
+  "localNames": [
+   "Yellow watercrown grass"
+  ],
+  "commonName": "Yellow watercrown grass",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "setaria-flavida",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Setaria pumila",
+  "author": "(Poir.) Roem. & Schult.",
+  "genus": "Setaria",
+  "family": "Poaceae",
+  "localNames": [
+   "Yellow foxtail"
+  ],
+  "commonName": "Yellow foxtail",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "setaria-pumila",
+  "occurrences": 2,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Setaria verticillata",
+  "author": "(L.) P.Beauv.",
+  "genus": "Setaria",
+  "family": "Poaceae",
+  "localNames": [
+   "Chirchira"
+  ],
+  "commonName": "Chirchira",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "setaria-verticillata",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Sorghum bicolor",
+  "author": "(L.)Moench",
+  "genus": "Sorghum",
+  "family": "Poaceae",
+  "localNames": [
+   "Jawar"
+  ],
+  "commonName": "Jawar",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "sorghum-bicolor",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Sorghum halepense",
+  "author": "(L.) Pers.",
+  "genus": "Sorghum",
+  "family": "Poaceae",
+  "localNames": [
+   "Baroo",
+   "Jhonson grass"
+  ],
+  "commonName": "Baroo",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "sorghum-halepense",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Tripidium bengalense",
+  "author": "(Retz.)H.Scholz",
+  "genus": "Tripidium",
+  "family": "Poaceae",
+  "localNames": [
+   "Sarkanda",
+   "Kana"
+  ],
+  "commonName": "Sarkanda",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Perennial",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "tripidium-bengalense",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Triticum aestivum",
+  "author": "L.",
+  "genus": "Triticum",
+  "family": "Poaceae",
+  "localNames": [
+   "Gandam",
+   "Wheat",
+   "Kanak"
+  ],
+  "commonName": "Gandam",
+  "growthStatus": "Cultivated",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "triticum-aestivum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Urochloa reptans",
+  "author": "(L.) Stapf",
+  "genus": "Urochloa",
+  "family": "Poaceae",
+  "localNames": [
+   "Madhani"
+  ],
+  "commonName": "Madhani",
+  "growthStatus": "Wild",
+  "habit": "Grass",
+  "lifeForm": "Annual",
+  "type": "Grass",
+  "layer": "herbs",
+  "badgeColor": "#8a9a3a",
+  "slug": "urochloa-reptans",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Persicaria barbata",
+  "author": "(L.)H.Hara",
+  "genus": "Persicaria",
+  "family": "Polygonaceae",
+  "localNames": [
+   "Bearded knotweed"
+  ],
+  "commonName": "Bearded knotweed",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "persicaria-barbata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Persicaria glabra",
+  "author": "(Willd.) M. Gomez",
+  "genus": "Persicaria",
+  "family": "Polygonaceae",
+  "localNames": [
+   "Kala vera"
+  ],
+  "commonName": "Kala vera",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "persicaria-glabra",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Persicaria hydropiper",
+  "author": "(L.) Delarbre",
+  "genus": "Persicaria",
+  "family": "Polygonaceae",
+  "localNames": [
+   "Pani mirch"
+  ],
+  "commonName": "Pani mirch",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "persicaria-hydropiper",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Polygonum plebeium",
+  "author": "R.Br.",
+  "genus": "Polygonum",
+  "family": "Polygonaceae",
+  "localNames": [
+   "Phog",
+   "Dranak"
+  ],
+  "commonName": "Phog",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "polygonum-plebeium",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Rumex dentatus",
+  "author": "L.",
+  "genus": "Rumex",
+  "family": "Polygonaceae",
+  "localNames": [
+   "Jangli palak"
+  ],
+  "commonName": "Jangli palak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "rumex-dentatus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Portulaca oleracea",
+  "author": "L.",
+  "genus": "Portulaca",
+  "family": "Portulacaceae",
+  "localNames": [
+   "Launak",
+   "Salonak",
+   "Kulfa"
+  ],
+  "commonName": "Launak",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "portulaca-oleracea",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Portulaca quadrifida",
+  "author": "L.",
+  "genus": "Portulaca",
+  "family": "Portulacaceae",
+  "localNames": [
+   "Choti Launak"
+  ],
+  "commonName": "Choti Launak",
+  "growthStatus": "Wild",
+  "habit": "Succulent",
+  "lifeForm": "Annual",
+  "type": "Succulent",
+  "layer": "herbs",
+  "badgeColor": "#4f8f77",
+  "slug": "portulaca-quadrifida",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lysimachia arvensis",
+  "author": "(L.) U.Manns & Anderb.",
+  "genus": "Lysimachia",
+  "family": "Primulaceae",
+  "localNames": [
+   "Billi Booti"
+  ],
+  "commonName": "Billi Booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "lysimachia-arvensis",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Grevillea robusta",
+  "author": "A.Cunn.ex.R.Br.",
+  "genus": "Grevillea",
+  "family": "Proteaceae",
+  "localNames": [
+   "Silk Oak"
+  ],
+  "commonName": "Silk Oak",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "grevillea-robusta",
+  "occurrences": 1,
+  "zones": [
+   "zone-b"
+  ]
+ },
+ {
+  "scientificName": "Adiantum capillus-veneris",
+  "author": "L.",
+  "genus": "Adiantum",
+  "family": "Pteridaceae",
+  "localNames": [
+   "Maiden Hair Fern"
+  ],
+  "commonName": "Maiden Hair Fern",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "adiantum-capillus-veneris",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Pteris vittata",
+  "author": "L.",
+  "genus": "Pteris",
+  "family": "Pteridaceae",
+  "localNames": [
+   "Fern"
+  ],
+  "commonName": "Fern",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "pteris-vittata",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Putranjiva roxburghii",
+  "author": "Wall.",
+  "genus": "Putranjiva",
+  "family": "Putranjivaceae",
+  "localNames": [
+   "Putranjiva",
+   "Jiaputa"
+  ],
+  "commonName": "Putranjiva",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "putranjiva-roxburghii",
+  "occurrences": 16,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Ranunculus muricatus",
+  "author": "L.",
+  "genus": "Ranunculus",
+  "family": "Ranunculaceae",
+  "localNames": [
+   "Chambal",
+   "Buttercup"
+  ],
+  "commonName": "Chambal",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "ranunculus-muricatus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ranunculus sceleratus",
+  "author": "L.",
+  "genus": "Ranunculus",
+  "family": "Ranunculaceae",
+  "localNames": [
+   "Jal Dhania",
+   "Buttercup"
+  ],
+  "commonName": "Jal Dhania",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "ranunculus-sceleratus",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ziziphus mauritiana",
+  "author": "Lam.",
+  "genus": "Ziziphus",
+  "family": "Rhamnaceae",
+  "localNames": [
+   "Ber",
+   "Beri"
+  ],
+  "commonName": "Ber",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ziziphus-mauritiana",
+  "occurrences": 1,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Ziziphus nummularia",
+  "author": "(Burm.f.) Wight & Arn.",
+  "genus": "Ziziphus",
+  "family": "Rhamnaceae",
+  "localNames": [
+   "Ber",
+   "Beri"
+  ],
+  "commonName": "Ber",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ziziphus-nummularia",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Eriobotrya japonica",
+  "author": "(Thunb.) Lindl.",
+  "genus": "Eriobotrya",
+  "family": "Rosaceae",
+  "localNames": [
+   "Lookat"
+  ],
+  "commonName": "Lookat",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "eriobotrya-japonica",
+  "occurrences": 8,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Prunus persica",
+  "author": "(L.) Batsch",
+  "genus": "Prunus",
+  "family": "Rosaceae",
+  "localNames": [],
+  "commonName": "Prunus persica",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "prunus-persica",
+  "occurrences": 2,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Rosa indica",
+  "author": "L.",
+  "genus": "Rosa",
+  "family": "Rosaceae",
+  "localNames": [
+   "Gulab"
+  ],
+  "commonName": "Gulab",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "rosa-indica",
+  "occurrences": 9,
+  "zones": [
+   "zone-a",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Hamelia patens",
+  "author": "Jacq.",
+  "genus": "Hamelia",
+  "family": "Rubiaceae",
+  "localNames": [
+   "Fire bush",
+   "Scarlet Bush"
+  ],
+  "commonName": "Fire bush",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "hamelia-patens",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Ixora polyantha",
+  "author": "Wight",
+  "genus": "Ixora",
+  "family": "Rubiaceae",
+  "localNames": [],
+  "commonName": "Ixora polyantha",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "ixora-polyantha",
+  "occurrences": 1,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Aegle marmelos",
+  "author": "(L.) Correa",
+  "genus": "Aegle",
+  "family": "Rutaceae",
+  "localNames": [
+   "Bail giri"
+  ],
+  "commonName": "Bail giri",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "aegle-marmelos",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Bergera koenigii",
+  "author": "L.",
+  "genus": "Bergera",
+  "family": "Rutaceae",
+  "localNames": [
+   "Karri patta"
+  ],
+  "commonName": "Karri patta",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "bergera-koenigii",
+  "occurrences": 25,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Citrus aurantifolia",
+  "author": "(Christm.) Swingle",
+  "genus": "Citrus",
+  "family": "Rutaceae",
+  "localNames": [
+   "Kaghzi nimbo"
+  ],
+  "commonName": "Kaghzi nimbo",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "citrus-aurantifolia",
+  "occurrences": 7,
+  "zones": [
+   "zone-b",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Citrus limon",
+  "author": "(L.) Osbeck",
+  "genus": "Citrus",
+  "family": "Rutaceae",
+  "localNames": [
+   "limon"
+  ],
+  "commonName": "limon",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "citrus-limon",
+  "occurrences": 19,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Citrus maxima",
+  "author": "(Burm.) Merr.",
+  "genus": "Citrus",
+  "family": "Rutaceae",
+  "localNames": [
+   "Chakotra"
+  ],
+  "commonName": "Chakotra",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "citrus-maxima",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Citrus sinensis",
+  "author": "(L.) Osbeck",
+  "genus": "Citrus",
+  "family": "Rutaceae",
+  "localNames": [
+   "Malta"
+  ],
+  "commonName": "Malta",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "citrus-sinensis",
+  "occurrences": 16,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Murraya paniculata",
+  "author": "(L.) Jack",
+  "genus": "Murraya",
+  "family": "Rutaceae",
+  "localNames": [
+   "Marva",
+   "Orange Jasmine"
+  ],
+  "commonName": "Marva",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "murraya-paniculata",
+  "occurrences": 57,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Populus nigra",
+  "author": "L.",
+  "genus": "Populus",
+  "family": "Salicaceae",
+  "localNames": [
+   "Poplar"
+  ],
+  "commonName": "Poplar",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "populus-nigra",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Dodonaea viscosa",
+  "author": "Jacq.",
+  "genus": "Dodonaea",
+  "family": "Sapindaceae",
+  "localNames": [
+   "Santha"
+  ],
+  "commonName": "Santha",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "dodonaea-viscosa",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Litchi chinensis",
+  "author": "Sonn.",
+  "genus": "Litchi",
+  "family": "Sapindaceae",
+  "localNames": [
+   "Litchi"
+  ],
+  "commonName": "Litchi",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "litchi-chinensis",
+  "occurrences": 17,
+  "zones": [
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Manilkara zapota",
+  "author": "(L.) P.Royen",
+  "genus": "Manilkara",
+  "family": "Sapotaceae",
+  "localNames": [
+   "Chiku"
+  ],
+  "commonName": "Chiku",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "manilkara-zapota",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Mimusops elengi",
+  "author": "L.",
+  "genus": "Mimusops",
+  "family": "Sapotaceae",
+  "localNames": [
+   "Maulsari"
+  ],
+  "commonName": "Maulsari",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "mimusops-elengi",
+  "occurrences": 6,
+  "zones": [
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Leucophyllum candidum",
+  "author": "I.M.Jhonst.",
+  "genus": "Leucophyllum",
+  "family": "Scrophulariaceae",
+  "localNames": [
+   "Silvri"
+  ],
+  "commonName": "Silvri",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "leucophyllum-candidum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Capsicum annuum",
+  "author": "L.",
+  "genus": "Capsicum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Lal mirch"
+  ],
+  "commonName": "Lal mirch",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "capsicum-annuum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Cestrum diurnum",
+  "author": "L.",
+  "genus": "Cestrum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Din-ka-raja"
+  ],
+  "commonName": "Din-ka-raja",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "cestrum-diurnum",
+  "occurrences": 5,
+  "zones": [
+   "zone-a",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Cestrum nocturnum",
+  "author": "L.",
+  "genus": "Cestrum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Rat-ki-rani"
+  ],
+  "commonName": "Rat-ki-rani",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "cestrum-nocturnum",
+  "occurrences": 10,
+  "zones": [
+   "zone-a",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Datura innoxia",
+  "author": "Mill.",
+  "genus": "Datura",
+  "family": "Solanaceae",
+  "localNames": [
+   "Dhatora"
+  ],
+  "commonName": "Dhatora",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "datura-innoxia",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Nicotiana plumbaginifolia",
+  "author": "Viv.",
+  "genus": "Nicotiana",
+  "family": "Solanaceae",
+  "localNames": [
+   "Jangli tambakoo"
+  ],
+  "commonName": "Jangli tambakoo",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "nicotiana-plumbaginifolia",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Physalis halicacabum",
+  "author": "Crantz",
+  "genus": "Physalis",
+  "family": "Solanaceae",
+  "localNames": [
+   "Mamoolay"
+  ],
+  "commonName": "Mamoolay",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "physalis-halicacabum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Solanum lycopersicum",
+  "author": "L.",
+  "genus": "Solanum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Tamater"
+  ],
+  "commonName": "Tamater",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "solanum-lycopersicum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Solanum nigrum",
+  "author": "L.",
+  "genus": "Solanum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Mako"
+  ],
+  "commonName": "Mako",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "solanum-nigrum",
+  "occurrences": 2,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Solanum virginianum",
+  "author": "L.",
+  "genus": "Solanum",
+  "family": "Solanaceae",
+  "localNames": [
+   "Kaindari"
+  ],
+  "commonName": "Kaindari",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "solanum-virginianum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Withania somnifera",
+  "author": "(L.) Dunal",
+  "genus": "Withania",
+  "family": "Solanaceae",
+  "localNames": [
+   "Ak sin",
+   "Asgandh"
+  ],
+  "commonName": "Ak sin",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "withania-somnifera",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ },
+ {
+  "scientificName": "Ravenala madagascariensis",
+  "author": "Sonn.",
+  "genus": "Ravenala",
+  "family": "Strelitziaceae",
+  "localNames": [
+   "Madgascar banana"
+  ],
+  "commonName": "Madgascar banana",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "ravenala-madagascariensis",
+  "occurrences": 3,
+  "zones": [
+   "zone-b",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Tamarix aphylla",
+  "author": "(L.) H.Karst.",
+  "genus": "Tamarix",
+  "family": "Tamaricaceae",
+  "localNames": [
+   "Farash",
+   "Ukhan",
+   "Guggal",
+   "Shokna"
+  ],
+  "commonName": "Farash",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "tamarix-aphylla",
+  "occurrences": 2,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Citharexylum spinosum",
+  "author": "L.",
+  "genus": "Citharexylum",
+  "family": "Verbenaceae",
+  "localNames": [],
+  "commonName": "Citharexylum spinosum",
+  "growthStatus": "Cultivated",
+  "habit": "Tree",
+  "lifeForm": "Perennial",
+  "type": "Tree",
+  "layer": "trees",
+  "badgeColor": "#2e6b3a",
+  "slug": "citharexylum-spinosum",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Duranta erecta",
+  "author": "L.",
+  "genus": "Duranta",
+  "family": "Verbenaceae",
+  "localNames": [
+   "Duranta"
+  ],
+  "commonName": "Duranta",
+  "growthStatus": "Cultivated",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "duranta-erecta",
+  "occurrences": 51,
+  "zones": [
+   "zone-a",
+   "zone-b",
+   "zone-c",
+   "zone-d",
+   "zone-e"
+  ]
+ },
+ {
+  "scientificName": "Glandularia tenera",
+  "author": "(Spreng.) Cabrera",
+  "genus": "Glandularia",
+  "family": "Verbenaceae",
+  "localNames": [
+   "Verbena"
+  ],
+  "commonName": "Verbena",
+  "growthStatus": "Cultivated",
+  "habit": "Herb",
+  "lifeForm": "Perennial",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "glandularia-tenera",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Lantana camara",
+  "author": "L.",
+  "genus": "Lantana",
+  "family": "Verbenaceae",
+  "localNames": [
+   "Lantana"
+  ],
+  "commonName": "Lantana",
+  "growthStatus": "Wild",
+  "habit": "Shrub",
+  "lifeForm": "Perennial",
+  "type": "Shrub",
+  "layer": "shrubs",
+  "badgeColor": "#c99a2e",
+  "slug": "lantana-camara",
+  "occurrences": 1,
+  "zones": [
+   "zone-a"
+  ]
+ },
+ {
+  "scientificName": "Phyla nodiflora",
+  "author": "(L.) Greene",
+  "genus": "Phyla",
+  "family": "Verbenaceae",
+  "localNames": [
+   "Bukan booti"
+  ],
+  "commonName": "Bukan booti",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "phyla-nodiflora",
+  "occurrences": 0,
+  "zones": []
+ },
+ {
+  "scientificName": "Vitis vinifera",
+  "author": "L.",
+  "genus": "Vitis",
+  "family": "Vitaceae",
+  "localNames": [
+   "Angoor",
+   "Grapes"
+  ],
+  "commonName": "Angoor",
+  "growthStatus": "Cultivated",
+  "habit": "Climber",
+  "lifeForm": "Perennial",
+  "type": "Climber",
+  "layer": "shrubs",
+  "badgeColor": "#8163a8",
+  "slug": "vitis-vinifera",
+  "occurrences": 1,
+  "zones": [
+   "zone-c"
+  ]
+ },
+ {
+  "scientificName": "Tribulus terrestris",
+  "author": "L.",
+  "genus": "Tribulus",
+  "family": "Zygophyllaceae",
+  "localNames": [
+   "Bhakra"
+  ],
+  "commonName": "Bhakra",
+  "growthStatus": "Wild",
+  "habit": "Herb",
+  "lifeForm": "Annual",
+  "type": "Herb",
+  "layer": "herbs",
+  "badgeColor": "#5a8a2e",
+  "slug": "tribulus-terrestris",
+  "occurrences": 2,
+  "zones": [
+   "zone-a",
+   "zone-d"
+  ]
+ }
+]

@@ -69,7 +69,7 @@ export function StatusBadge({ status }: { status: string }) {
 
 export function RoleBadge({ role }: { role: UserRole }) {
   return (
-    <span style={{ background: "rgba(127,191,107,.2)", color: "#a7d493", fontSize: 11, fontWeight: 700, padding: "4px 10px", borderRadius: 6, letterSpacing: 0.5, textTransform: "uppercase" }}>
+    <span style={{ background: "rgba(127,191,107,.2)", color: "#a7d493", fontSize: 12, fontWeight: 700, padding: "4px 10px", borderRadius: 6, letterSpacing: 0.5, textTransform: "uppercase" }}>
       {ROLE_LABELS[role]}
     </span>
   );

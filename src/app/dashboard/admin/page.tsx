@@ -14,7 +14,7 @@ export default async function AdminDashboardPage() {
       subtitle="Manage species, users, approvals, and platform analytics."
       activePath="/dashboard/admin"
     >
-      <div className="uf-grid-4" style={{ marginBottom: 28 }}>
+      <div className="uf-grid-4 uf-grid-tiles" style={{ marginBottom: 28 }}>
         {ADMIN_STATS.map((s) => (
           <StatCard key={s.label} {...s} />
         ))}
@@ -24,7 +24,7 @@ export default async function AdminDashboardPage() {
         <Panel
           title="Pending Approvals"
           action={
-            <Link href="/dashboard/admin/approvals" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+            <Link href="/dashboard/admin/approvals" style={{ display: "inline-flex", alignItems: "center", minHeight: 40, color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
               View all →
             </Link>
           }

@@ -1,0 +1,1441 @@
+[
+ {
+  "slug": "acanthaceae",
+  "name": "Acanthaceae",
+  "letter": "A",
+  "genera": [
+   "Eranthemum",
+   "Ruellia",
+   "Sanchezia"
+  ],
+  "speciesCount": 4,
+  "occurrences": 3,
+  "habits": [
+   "Shrub",
+   "Herb"
+  ],
+  "cultivated": 3,
+  "wild": 1
+ },
+ {
+  "slug": "aizoaceae",
+  "name": "Aizoaceae",
+  "letter": "A",
+  "genera": [
+   "Trianthema",
+   "Zaleya"
+  ],
+  "speciesCount": 3,
+  "occurrences": 3,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 3
+ },
+ {
+  "slug": "amaranthaceae",
+  "name": "Amaranthaceae",
+  "letter": "A",
+  "genera": [
+   "Achyranthes",
+   "Aerva",
+   "Alternanthera",
+   "Amaranthus",
+   "Bassia",
+   "Chenopodiastrum",
+   "Chenopodium",
+   "Digera",
+   "Dysphania",
+   "Gomphrena",
+   "Suaeda"
+  ],
+  "speciesCount": 18,
+  "occurrences": 10,
+  "habits": [
+   "Herb",
+   "Shrub"
+  ],
+  "cultivated": 2,
+  "wild": 16
+ },
+ {
+  "slug": "amaryllidaceae",
+  "name": "Amaryllidaceae",
+  "letter": "A",
+  "genera": [
+   "Allium",
+   "Crinum"
+  ],
+  "speciesCount": 3,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 3,
+  "wild": 0
+ },
+ {
+  "slug": "anacardiaceae",
+  "name": "Anacardiaceae",
+  "letter": "A",
+  "genera": [
+   "Mangifera",
+   "Schinus"
+  ],
+  "speciesCount": 2,
+  "occurrences": 20,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "annonaceae",
+  "name": "Annonaceae",
+  "letter": "A",
+  "genera": [
+   "Artabotrys",
+   "Monoon"
+  ],
+  "speciesCount": 2,
+  "occurrences": 321,
+  "habits": [
+   "Climber",
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "apiaceae",
+  "name": "Apiaceae",
+  "letter": "A",
+  "genera": [
+   "Coriandrum",
+   "Foeniculum",
+   "Oenanthe"
+  ],
+  "speciesCount": 3,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 2,
+  "wild": 1
+ },
+ {
+  "slug": "apocynaceae",
+  "name": "Apocynaceae",
+  "letter": "A",
+  "genera": [
+   "Alstonia",
+   "Calotropis",
+   "Carissa",
+   "Cascabela",
+   "Catharanthus",
+   "Cryptostegia",
+   "Holarrhena",
+   "Nerium",
+   "Pentatropis",
+   "Plumeria",
+   "Tabernaemontana"
+  ],
+  "speciesCount": 15,
+  "occurrences": 263,
+  "habits": [
+   "Shrub",
+   "Tree",
+   "Climber",
+   "SubShrub"
+  ],
+  "cultivated": 13,
+  "wild": 2
+ },
+ {
+  "slug": "araceae",
+  "name": "Araceae",
+  "letter": "A",
+  "genera": [
+   "Epipremnum",
+   "Monstera",
+   "Syngonium"
+  ],
+  "speciesCount": 3,
+  "occurrences": 2,
+  "habits": [
+   "Climber"
+  ],
+  "cultivated": 3,
+  "wild": 0
+ },
+ {
+  "slug": "araucariaceae",
+  "name": "Araucariaceae",
+  "letter": "A",
+  "genera": [
+   "Araucaria"
+  ],
+  "speciesCount": 1,
+  "occurrences": 9,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "arecaceae",
+  "name": "Arecaceae",
+  "letter": "A",
+  "genera": [
+   "Bismarckia",
+   "Caryota",
+   "Livistona",
+   "Phoenix",
+   "Rhapis",
+   "Roystonea",
+   "Washingtonia",
+   "Wodyetia"
+  ],
+  "speciesCount": 10,
+  "occurrences": 396,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 9,
+  "wild": 1
+ },
+ {
+  "slug": "asparagaceae",
+  "name": "Asparagaceae",
+  "letter": "A",
+  "genera": [
+   "Agave",
+   "Asparagus",
+   "Beaucarnea",
+   "Chlorophytum",
+   "Cordyline",
+   "Dracaena",
+   "Frucraea",
+   "Yucca"
+  ],
+  "speciesCount": 13,
+  "occurrences": 20,
+  "habits": [
+   "Shrub",
+   "Succulent",
+   "Climber",
+   "Tree",
+   "Herb"
+  ],
+  "cultivated": 13,
+  "wild": 0
+ },
+ {
+  "slug": "asphodelaceae",
+  "name": "Asphodelaceae",
+  "letter": "A",
+  "genera": [
+   "Aloe"
+  ],
+  "speciesCount": 1,
+  "occurrences": 2,
+  "habits": [
+   "Succulent"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "asteraceae",
+  "name": "Asteraceae",
+  "letter": "A",
+  "genera": [
+   "Eclipta",
+   "Erigeron",
+   "Helianthus",
+   "Jurinea",
+   "Lactuca",
+   "Launaea",
+   "Parthenium",
+   "Pseudoconyza",
+   "Pseudognaphalium",
+   "Silybum",
+   "Soliva",
+   "Sonchus",
+   "Sphagneticola",
+   "Tarlmounia",
+   "Xanthium",
+   "Youngia"
+  ],
+  "speciesCount": 20,
+  "occurrences": 6,
+  "habits": [
+   "Herb",
+   "Shrub"
+  ],
+  "cultivated": 3,
+  "wild": 17
+ },
+ {
+  "slug": "bignoniaceae",
+  "name": "Bignoniaceae",
+  "letter": "B",
+  "genera": [
+   "Campsis",
+   "Fernandoa",
+   "Jacaranda",
+   "Kigelia",
+   "Tecoma"
+  ],
+  "speciesCount": 5,
+  "occurrences": 38,
+  "habits": [
+   "Tree",
+   "Climber",
+   "Shrub"
+  ],
+  "cultivated": 5,
+  "wild": 0
+ },
+ {
+  "slug": "boraginaceae",
+  "name": "Boraginaceae",
+  "letter": "B",
+  "genera": [
+   "Cordia",
+   "Ehretia"
+  ],
+  "speciesCount": 2,
+  "occurrences": 5,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "brassicaceae",
+  "name": "Brassicaceae",
+  "letter": "B",
+  "genera": [
+   "Brassica",
+   "Capsella",
+   "Lepidium",
+   "Rorippa",
+   "Sisymbrium"
+  ],
+  "speciesCount": 6,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 1,
+  "wild": 5
+ },
+ {
+  "slug": "cactaceae",
+  "name": "Cactaceae",
+  "letter": "C",
+  "genera": [
+   "Opuntia"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Succulent"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "cannabaceae",
+  "name": "Cannabaceae",
+  "letter": "C",
+  "genera": [
+   "Cannabis",
+   "Celtis"
+  ],
+  "speciesCount": 2,
+  "occurrences": 1,
+  "habits": [
+   "Herb",
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 1
+ },
+ {
+  "slug": "cannaceae",
+  "name": "Cannaceae",
+  "letter": "C",
+  "genera": [
+   "Canna"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "caricaceae",
+  "name": "Caricaceae",
+  "letter": "C",
+  "genera": [
+   "Carica"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "caryophyllaceae",
+  "name": "Caryophyllaceae",
+  "letter": "C",
+  "genera": [
+   "Spergula",
+   "Spergularia",
+   "Stellaria"
+  ],
+  "speciesCount": 3,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 3
+ },
+ {
+  "slug": "celasteraceae",
+  "name": "Celasteraceae",
+  "letter": "C",
+  "genera": [
+   "Euonymus"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Shrub"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "cleomaceae",
+  "name": "Cleomaceae",
+  "letter": "C",
+  "genera": [
+   "Cleome"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "combretaceae",
+  "name": "Combretaceae",
+  "letter": "C",
+  "genera": [
+   "Combretum",
+   "Conocorpus",
+   "Terminalia"
+  ],
+  "speciesCount": 5,
+  "occurrences": 117,
+  "habits": [
+   "Tree",
+   "Climber",
+   "Shrub"
+  ],
+  "cultivated": 5,
+  "wild": 0
+ },
+ {
+  "slug": "commelinaceae",
+  "name": "Commelinaceae",
+  "letter": "C",
+  "genera": [
+   "Tradescantia"
+  ],
+  "speciesCount": 1,
+  "occurrences": 3,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "convolvulaceae",
+  "name": "Convolvulaceae",
+  "letter": "C",
+  "genera": [
+   "Convolvulus",
+   "Cuscuta",
+   "Dichondra",
+   "Ipomoea"
+  ],
+  "speciesCount": 5,
+  "occurrences": 7,
+  "habits": [
+   "Herb",
+   "Succulent",
+   "Climber"
+  ],
+  "cultivated": 1,
+  "wild": 4
+ },
+ {
+  "slug": "crassulaceae",
+  "name": "Crassulaceae",
+  "letter": "C",
+  "genera": [
+   "Kalanchoe"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Succulent"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "cucurbitaceae",
+  "name": "Cucurbitaceae",
+  "letter": "C",
+  "genera": [
+   "Cucumis"
+  ],
+  "speciesCount": 2,
+  "occurrences": 1,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 2
+ },
+ {
+  "slug": "cupressaceae",
+  "name": "Cupressaceae",
+  "letter": "C",
+  "genera": [
+   "Cupressus",
+   "Platycladus"
+  ],
+  "speciesCount": 2,
+  "occurrences": 25,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "cycadaceae",
+  "name": "Cycadaceae",
+  "letter": "C",
+  "genera": [
+   "Cycas"
+  ],
+  "speciesCount": 2,
+  "occurrences": 32,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "cyperaceae",
+  "name": "Cyperaceae",
+  "letter": "C",
+  "genera": [
+   "Cyperus"
+  ],
+  "speciesCount": 3,
+  "occurrences": 1,
+  "habits": [
+   "Sedge"
+  ],
+  "cultivated": 0,
+  "wild": 3
+ },
+ {
+  "slug": "ebenaceae",
+  "name": "Ebenaceae",
+  "letter": "E",
+  "genera": [
+   "Diospyros"
+  ],
+  "speciesCount": 1,
+  "occurrences": 21,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "euphorbiaceae",
+  "name": "Euphorbiaceae",
+  "letter": "E",
+  "genera": [
+   "Acalypha",
+   "Chrozophora",
+   "Croton",
+   "Euphorbia",
+   "Excoecaria",
+   "Jatropha",
+   "Ricinus"
+  ],
+  "speciesCount": 17,
+  "occurrences": 140,
+  "habits": [
+   "Shrub",
+   "Herb",
+   "Succulent Shrub",
+   "Tree"
+  ],
+  "cultivated": 8,
+  "wild": 9
+ },
+ {
+  "slug": "fabaceae",
+  "name": "Fabaceae",
+  "letter": "F",
+  "genera": [
+   "Albizia",
+   "Alhagi",
+   "Alysicarpus",
+   "Arachis",
+   "Bauhinia",
+   "Calliandra",
+   "Cassia",
+   "Cicer",
+   "Clitoria",
+   "Dalbergia",
+   "Delonix",
+   "Erythrina",
+   "Grona",
+   "Indigofera",
+   "Lablab",
+   "Lathyrus",
+   "Leucaena",
+   "Medicago",
+   "Melilotus",
+   "Neltuma",
+   "Pongamia",
+   "Rhynchosia",
+   "Senna",
+   "Sesbania",
+   "Tamarindus",
+   "Trifolium",
+   "Trigonella",
+   "Vachellia"
+  ],
+  "speciesCount": 37,
+  "occurrences": 118,
+  "habits": [
+   "Herb",
+   "Tree",
+   "Shrub",
+   "Climber"
+  ],
+  "cultivated": 20,
+  "wild": 17
+ },
+ {
+  "slug": "funariaceae",
+  "name": "Funariaceae",
+  "letter": "F",
+  "genera": [
+   "Funaria"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "gentianaceae",
+  "name": "Gentianaceae",
+  "letter": "G",
+  "genera": [
+   "Centaurium"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "hydrocharitaceae",
+  "name": "Hydrocharitaceae",
+  "letter": "H",
+  "genera": [
+   "Hydrilla"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "lamiaceae",
+  "name": "Lamiaceae",
+  "letter": "L",
+  "genera": [
+   "Clerodendrum",
+   "Mentha",
+   "Ocimum",
+   "Salvia",
+   "Vitex"
+  ],
+  "speciesCount": 5,
+  "occurrences": 12,
+  "habits": [
+   "Herb",
+   "Climber",
+   "Tree"
+  ],
+  "cultivated": 4,
+  "wild": 1
+ },
+ {
+  "slug": "lythraceae",
+  "name": "Lythraceae",
+  "letter": "L",
+  "genera": [
+   "Lagerstroemia",
+   "Lawsonia",
+   "Punica"
+  ],
+  "speciesCount": 4,
+  "occurrences": 40,
+  "habits": [
+   "Shrub",
+   "Tree"
+  ],
+  "cultivated": 4,
+  "wild": 0
+ },
+ {
+  "slug": "malvaceae",
+  "name": "Malvaceae",
+  "letter": "M",
+  "genera": [
+   "Bombax",
+   "Ceiba",
+   "Corchorus",
+   "Grewia",
+   "Hibiscus",
+   "Malva",
+   "Malvastrum",
+   "Pterospermum"
+  ],
+  "speciesCount": 10,
+  "occurrences": 115,
+  "habits": [
+   "Herb",
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 7,
+  "wild": 3
+ },
+ {
+  "slug": "marchantiaceae",
+  "name": "Marchantiaceae",
+  "letter": "M",
+  "genera": [
+   "Marchantia"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "marsileaceae",
+  "name": "Marsileaceae",
+  "letter": "M",
+  "genera": [
+   "Marsilea"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "mazaceae",
+  "name": "Mazaceae",
+  "letter": "M",
+  "genera": [
+   "Mazus"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "meliaceae",
+  "name": "Meliaceae",
+  "letter": "M",
+  "genera": [
+   "Azadirachta",
+   "Melia"
+  ],
+  "speciesCount": 2,
+  "occurrences": 321,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "menispermaceae",
+  "name": "Menispermaceae",
+  "letter": "M",
+  "genera": [
+   "Tinospora"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Climber"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "moraceae",
+  "name": "Moraceae",
+  "letter": "M",
+  "genera": [
+   "Broussonetia",
+   "Ficus",
+   "Morus"
+  ],
+  "speciesCount": 14,
+  "occurrences": 279,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 13,
+  "wild": 1
+ },
+ {
+  "slug": "moringaceae",
+  "name": "Moringaceae",
+  "letter": "M",
+  "genera": [
+   "Moringa"
+  ],
+  "speciesCount": 1,
+  "occurrences": 8,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "musaceae",
+  "name": "Musaceae",
+  "letter": "M",
+  "genera": [
+   "Musa"
+  ],
+  "speciesCount": 1,
+  "occurrences": 8,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "myrtaceae",
+  "name": "Myrtaceae",
+  "letter": "M",
+  "genera": [
+   "Eucalyptus",
+   "Melaleuca",
+   "Myrtus",
+   "Psidium",
+   "Syzygium"
+  ],
+  "speciesCount": 5,
+  "occurrences": 295,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 5,
+  "wild": 0
+ },
+ {
+  "slug": "nyctaginaceae",
+  "name": "Nyctaginaceae",
+  "letter": "N",
+  "genera": [
+   "Boerhavia",
+   "Bougainvillea"
+  ],
+  "speciesCount": 4,
+  "occurrences": 9,
+  "habits": [
+   "Herb",
+   "Shrub"
+  ],
+  "cultivated": 2,
+  "wild": 2
+ },
+ {
+  "slug": "oleaceae",
+  "name": "Oleaceae",
+  "letter": "O",
+  "genera": [
+   "Jasminum",
+   "Olea"
+  ],
+  "speciesCount": 4,
+  "occurrences": 39,
+  "habits": [
+   "Shrub",
+   "Tree"
+  ],
+  "cultivated": 4,
+  "wild": 0
+ },
+ {
+  "slug": "oxalidaceae",
+  "name": "Oxalidaceae",
+  "letter": "O",
+  "genera": [
+   "Oxalis"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 2
+ },
+ {
+  "slug": "papaveraceae",
+  "name": "Papaveraceae",
+  "letter": "P",
+  "genera": [
+   "Fumaria"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "passifloraceae",
+  "name": "Passifloraceae",
+  "letter": "P",
+  "genera": [
+   "Passiflora"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Climber"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "phyllanthaceae",
+  "name": "Phyllanthaceae",
+  "letter": "P",
+  "genera": [
+   "Phyllanthus"
+  ],
+  "speciesCount": 2,
+  "occurrences": 1,
+  "habits": [
+   "Herb",
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 1
+ },
+ {
+  "slug": "pinaceae",
+  "name": "Pinaceae",
+  "letter": "P",
+  "genera": [
+   "Pinus"
+  ],
+  "speciesCount": 1,
+  "occurrences": 11,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "pittosporaceae",
+  "name": "Pittosporaceae",
+  "letter": "P",
+  "genera": [
+   "Pittosporum"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Shrub"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "plantaginaceae",
+  "name": "Plantaginaceae",
+  "letter": "P",
+  "genera": [
+   "Veronica"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 2
+ },
+ {
+  "slug": "poaceae",
+  "name": "Poaceae",
+  "letter": "P",
+  "genera": [
+   "Avena",
+   "Bothriochloa",
+   "Cenchrus",
+   "Chloris",
+   "Cymbopogon",
+   "Cynodon",
+   "Dactyloctenium",
+   "Desmostachya",
+   "Dichanthium",
+   "Digitaria",
+   "Dinebra",
+   "Echinochloa",
+   "Eleusine",
+   "Eragrostis",
+   "Hemarthria",
+   "Hordeum",
+   "Imperata",
+   "Janochloa",
+   "Oryza",
+   "Paspalum",
+   "Phalaris",
+   "Poa",
+   "Polypogon",
+   "Saccharum",
+   "Setaria",
+   "Sorghum",
+   "Tripidium",
+   "Triticum",
+   "Urochloa"
+  ],
+  "speciesCount": 37,
+  "occurrences": 23,
+  "habits": [
+   "Grass"
+  ],
+  "cultivated": 7,
+  "wild": 30
+ },
+ {
+  "slug": "polygonaceae",
+  "name": "Polygonaceae",
+  "letter": "P",
+  "genera": [
+   "Persicaria",
+   "Polygonum",
+   "Rumex"
+  ],
+  "speciesCount": 5,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 5
+ },
+ {
+  "slug": "portulacaceae",
+  "name": "Portulacaceae",
+  "letter": "P",
+  "genera": [
+   "Portulaca"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb",
+   "Succulent"
+  ],
+  "cultivated": 0,
+  "wild": 2
+ },
+ {
+  "slug": "primulaceae",
+  "name": "Primulaceae",
+  "letter": "P",
+  "genera": [
+   "Lysimachia"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ },
+ {
+  "slug": "proteaceae",
+  "name": "Proteaceae",
+  "letter": "P",
+  "genera": [
+   "Grevillea"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "pteridaceae",
+  "name": "Pteridaceae",
+  "letter": "P",
+  "genera": [
+   "Adiantum",
+   "Pteris"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 1,
+  "wild": 1
+ },
+ {
+  "slug": "putranjivaceae",
+  "name": "Putranjivaceae",
+  "letter": "P",
+  "genera": [
+   "Putranjiva"
+  ],
+  "speciesCount": 1,
+  "occurrences": 16,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "ranunculaceae",
+  "name": "Ranunculaceae",
+  "letter": "R",
+  "genera": [
+   "Ranunculus"
+  ],
+  "speciesCount": 2,
+  "occurrences": 0,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 2
+ },
+ {
+  "slug": "rhamnaceae",
+  "name": "Rhamnaceae",
+  "letter": "R",
+  "genera": [
+   "Ziziphus"
+  ],
+  "speciesCount": 2,
+  "occurrences": 2,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "rosaceae",
+  "name": "Rosaceae",
+  "letter": "R",
+  "genera": [
+   "Eriobotrya",
+   "Prunus",
+   "Rosa"
+  ],
+  "speciesCount": 3,
+  "occurrences": 19,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 3,
+  "wild": 0
+ },
+ {
+  "slug": "rubiaceae",
+  "name": "Rubiaceae",
+  "letter": "R",
+  "genera": [
+   "Hamelia",
+   "Ixora"
+  ],
+  "speciesCount": 2,
+  "occurrences": 1,
+  "habits": [
+   "Shrub"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "rutaceae",
+  "name": "Rutaceae",
+  "letter": "R",
+  "genera": [
+   "Aegle",
+   "Bergera",
+   "Citrus",
+   "Murraya"
+  ],
+  "speciesCount": 7,
+  "occurrences": 124,
+  "habits": [
+   "Tree",
+   "Shrub"
+  ],
+  "cultivated": 7,
+  "wild": 0
+ },
+ {
+  "slug": "salicaceae",
+  "name": "Salicaceae",
+  "letter": "S",
+  "genera": [
+   "Populus"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "sapindaceae",
+  "name": "Sapindaceae",
+  "letter": "S",
+  "genera": [
+   "Dodonaea",
+   "Litchi"
+  ],
+  "speciesCount": 2,
+  "occurrences": 17,
+  "habits": [
+   "Shrub",
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "sapotaceae",
+  "name": "Sapotaceae",
+  "letter": "S",
+  "genera": [
+   "Manilkara",
+   "Mimusops"
+  ],
+  "speciesCount": 2,
+  "occurrences": 7,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 2,
+  "wild": 0
+ },
+ {
+  "slug": "scrophulariaceae",
+  "name": "Scrophulariaceae",
+  "letter": "S",
+  "genera": [
+   "Leucophyllum"
+  ],
+  "speciesCount": 1,
+  "occurrences": 0,
+  "habits": [
+   "Shrub"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "solanaceae",
+  "name": "Solanaceae",
+  "letter": "S",
+  "genera": [
+   "Capsicum",
+   "Cestrum",
+   "Datura",
+   "Nicotiana",
+   "Physalis",
+   "Solanum",
+   "Withania"
+  ],
+  "speciesCount": 10,
+  "occurrences": 21,
+  "habits": [
+   "Herb",
+   "Shrub"
+  ],
+  "cultivated": 4,
+  "wild": 6
+ },
+ {
+  "slug": "strelitziaceae",
+  "name": "Strelitziaceae",
+  "letter": "S",
+  "genera": [
+   "Ravenala"
+  ],
+  "speciesCount": 1,
+  "occurrences": 3,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "tamaricaceae",
+  "name": "Tamaricaceae",
+  "letter": "T",
+  "genera": [
+   "Tamarix"
+  ],
+  "speciesCount": 1,
+  "occurrences": 2,
+  "habits": [
+   "Tree"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "verbenaceae",
+  "name": "Verbenaceae",
+  "letter": "V",
+  "genera": [
+   "Citharexylum",
+   "Duranta",
+   "Glandularia",
+   "Lantana",
+   "Phyla"
+  ],
+  "speciesCount": 5,
+  "occurrences": 52,
+  "habits": [
+   "Shrub",
+   "Herb",
+   "Tree"
+  ],
+  "cultivated": 3,
+  "wild": 2
+ },
+ {
+  "slug": "vitaceae",
+  "name": "Vitaceae",
+  "letter": "V",
+  "genera": [
+   "Vitis"
+  ],
+  "speciesCount": 1,
+  "occurrences": 1,
+  "habits": [
+   "Climber"
+  ],
+  "cultivated": 1,
+  "wild": 0
+ },
+ {
+  "slug": "zygophyllaceae",
+  "name": "Zygophyllaceae",
+  "letter": "Z",
+  "genera": [
+   "Tribulus"
+  ],
+  "speciesCount": 1,
+  "occurrences": 2,
+  "habits": [
+   "Herb"
+  ],
+  "cultivated": 0,
+  "wild": 1
+ }
+]

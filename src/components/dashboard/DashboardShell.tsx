@@ -116,7 +116,7 @@ export function DashboardShell({ user, title, subtitle, activePath, children }: 
             </div>
             <div>
               <div style={{ fontSize: 18, fontWeight: 700, color: "#fff" }}>UniFlora</div>
-              <div style={{ fontSize: 9, fontWeight: 600, letterSpacing: 2, color: "#8fb890", marginTop: 3 }}>DASHBOARD</div>
+              <div style={{ fontSize: 10.5, fontWeight: 600, letterSpacing: 1.8, color: "#8fb890", marginTop: 3 }}>DASHBOARD</div>
             </div>
           </Link>
         </div>
@@ -160,7 +160,10 @@ export function DashboardShell({ user, title, subtitle, activePath, children }: 
         </nav>
 
         <div style={{ padding: "16px 20px 24px", borderTop: "1px solid rgba(255,255,255,.1)" }}>
-          <Link href="/" style={{ display: "block", fontSize: 13, color: "#8fb890", textDecoration: "none", marginBottom: 12 }}>
+          <Link
+            href="/"
+            style={{ display: "flex", alignItems: "center", minHeight: 40, fontSize: 13.5, color: "#8fb890", textDecoration: "none", marginBottom: 6 }}
+          >
             ← Back to public site
           </Link>
           <LogoutButton action={logoutAction} />

@@ -14,7 +14,7 @@ export default async function ContributorDashboardPage() {
       subtitle="Review student submissions, curate specimens, and verify identifications."
       activePath="/dashboard/contributor"
     >
-      <div className="uf-grid-4" style={{ marginBottom: 28 }}>
+      <div className="uf-grid-4 uf-grid-tiles" style={{ marginBottom: 28 }}>
         {CONTRIBUTOR_STATS.map((s) => (
           <StatCard key={s.label} {...s} />
         ))}
@@ -24,7 +24,7 @@ export default async function ContributorDashboardPage() {
         <Panel
           title="Review Queue"
           action={
-            <Link href="/dashboard/contributor/reviews" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+            <Link href="/dashboard/contributor/reviews" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
               Open queue →
             </Link>
           }

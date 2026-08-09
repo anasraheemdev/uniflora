@@ -154,7 +154,7 @@ export default function HomePage() {
       </section>
 
       <section className="uf-page-pad" style={{ maxWidth: 1400, margin: "0 auto", paddingTop: 34, paddingBottom: 8 }}>
-        <div className="uf-grid-6">
+        <div className="uf-grid-6 uf-grid-tiles">
           {EXPLORE_TYPES.map((card) => (
             <div key={card.title} className="uf-card" style={{ background: "#fbf9f1", border: "1px solid #e6e1cf", borderRadius: 14, padding: 22 }}>
               {card.icon}

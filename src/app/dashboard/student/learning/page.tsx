@@ -19,9 +19,9 @@ export default async function StudentLearningPage() {
         </Panel>
         <Panel title="Continue learning">
           <div style={{ padding: "16px 22px", display: "flex", flexDirection: "column", gap: 12 }}>
-            <Link href="/learn" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Plant Identification →</Link>
-            <Link href="/learn" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Botanical Glossary →</Link>
-            <Link href="/learn" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Take a Quiz →</Link>
+            <Link href="/learn" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Plant Identification →</Link>
+            <Link href="/learn" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Botanical Glossary →</Link>
+            <Link href="/learn" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, fontSize: 15, textDecoration: "none" }}>Take a Quiz →</Link>
           </div>
         </Panel>
       </div>

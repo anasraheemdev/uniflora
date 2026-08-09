@@ -1,0 +1,36 @@
+{
+ "generatedAt": "2026-08-09T03:09:18+00:00",
+ "sources": {
+  "floristicList": "Floristic list of Uniflora_2026730 (2).xlsx",
+  "mapLocations": "map_locations2026730 (1).csv"
+ },
+ "counts": {
+  "families": 81,
+  "species": 355,
+  "markers": 2998,
+  "distinctFixes": 298,
+  "droppedRows": 28,
+  "speciesWithoutMarkers": 165
+ },
+ "coordinateRepairs": {
+  "latitude": {
+   "merged_minute_second": 2
+  },
+  "longitude": {
+   "second_rollover": 92,
+   "merged_degree_minute": 39,
+   "degree_74_to_72": 8,
+   "degree_32_to_72": 31
+  }
+ },
+ "rejectedOffCampusFixes": {
+  "lat='32 4 20' lng='72 54 53' (21.8 km off) — Roystonea regia (Kunth) O.F.Cook": 5,
+  "lat='32 4 20' lng='72 54 53' (21.8 km off) — Monoon longifolium (Sonn.) B.Xue & R.M.K.Saunders": 5
+ },
+ "nameResolution": {
+  "Ficus binnendykii (Miq.)Miq.  ->  UNRESOLVED": 4,
+  "Pyrus ?  ->  UNRESOLVED": 1,
+  "Cestrum small ?  ->  UNRESOLVED": 10,
+  "Ficus amplissima  ->  UNRESOLVED": 3
+ }
+}

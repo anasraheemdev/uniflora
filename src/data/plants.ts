@@ -1,31 +1,62 @@
+/**
+ * Campus species catalogue.
+ *
+ * Built from the 2026 floristic survey (`src/data/generated/species.json`,
+ * produced by `scripts/import_flora_data.py`) with hand-written profiles from
+ * `src/data/curated.ts` layered on top where we have them.
+ */
+
+import generatedSpecies from "@/data/generated/species.json";
+import importReport from "@/data/generated/import-report.json";
+import { CURATED_PROFILES, FAMILY_ORDERS } from "@/data/curated";
+import { hasPlantImage, PHOTOGRAPHED_SPECIES } from "@/lib/images";
+
 export type PlantType =
-  | "Big Tree"
-  | "Small Tree"
+  | "Tree"
+  | "Palm"
   | "Shrub"
-  | "Herb"
+  | "Subshrub"
   | "Climber"
-  | "Palm";
+  | "Succulent"
+  | "Herb"
+  | "Grass"
+  | "Sedge";
+
+export type GrowthStatus = "Cultivated" | "Wild";
+export type LifeForm = "Annual" | "Perennial";
+export type MapLayer = "trees" | "shrubs" | "herbs";
 
 export type Plant = {
   slug: string;
   scientificName: string;
   author?: string;
   commonName: string;
-  commonNames?: string[];
-  localName?: string;
+  localNames: string[];
   family: string;
   genus: string;
-  order: string;
+  order?: string;
   type: PlantType;
-  nativeStatus: "Native" | "Exotic";
-  medicinal?: boolean;
   habit: string;
+  lifeForm: LifeForm;
+  growthStatus: GrowthStatus;
+  layer: MapLayer;
+  /** Individuals recorded during the GPS survey. */
+  occurrences: number;
+  zones: string[];
+  badgeColor: string;
+  hasImage: boolean;
+  /** True when a written profile exists beyond the survey fields. */
+  hasProfile: boolean;
+
+  // Curated detail — absent for species not yet written up.
+  nativeStatus?: "Native" | "Exotic";
+  medicinal?: boolean;
   height?: string;
-  habitat: string;
+  habitat?: string;
   conservationStatus?: string;
   description: string[];
   diagnosticCharacters: { label: string; value: string }[];
-  phenology: {
+  phenology?: {
     flowering: number[];
     fruiting: number[];
     floweringLabel: string;
@@ -33,299 +64,95 @@ export type Plant = {
   };
   ethnobotany: { title: string; text: string }[];
   references: string[];
-  voucher?: {
-    number: string;
-    collector: string;
-    date: string;
-    barcode: string;
+  voucher?: { number: string; collector: string; date: string; barcode: string };
+};
+
+type GeneratedSpecies = (typeof generatedSpecies)[number];
+
+function buildPlant(record: GeneratedSpecies): Plant {
+  const curated = CURATED_PROFILES[record.slug];
+
+  return {
+    slug: record.slug,
+    scientificName: record.scientificName,
+    author: record.author || undefined,
+    commonName: curated?.commonName ?? record.commonName,
+    localNames: record.localNames,
+    family: record.family,
+    genus: record.genus,
+    order: curated?.order ?? FAMILY_ORDERS[record.family],
+    type: record.type as PlantType,
+    habit: record.habit,
+    lifeForm: record.lifeForm as LifeForm,
+    growthStatus: record.growthStatus as GrowthStatus,
+    layer: record.layer as MapLayer,
+    occurrences: record.occurrences,
+    zones: record.zones,
+    badgeColor: record.badgeColor,
+    hasImage: hasPlantImage(record.slug),
+    hasProfile: Boolean(curated?.description?.length),
+
+    nativeStatus: curated?.nativeStatus,
+    medicinal: curated?.medicinal,
+    height: curated?.height,
+    habitat: curated?.habitat,
+    conservationStatus: curated?.conservationStatus,
+    description: curated?.description ?? [],
+    diagnosticCharacters: curated?.diagnosticCharacters ?? [],
+    phenology: curated?.phenology,
+    ethnobotany: curated?.ethnobotany ?? [],
+    references: curated?.references ?? [],
+    voucher: curated?.voucher,
   };
-  mapLocations: number;
-  badgeColor: string;
-};
-
-export const PLANTS: Plant[] = [
-  {
-    slug: "azadirachta-indica",
-    scientificName: "Azadirachta indica",
-    author: "A. Juss.",
-    commonName: "Neem",
-    commonNames: ["Neem", "Margosa"],
-    localName: "نیم (Nim)",
-    family: "Meliaceae",
-    genus: "Azadirachta",
-    order: "Sapindales",
-    type: "Big Tree",
-    nativeStatus: "Native",
-    medicinal: true,
-    habit: "Evergreen tree",
-    height: "15–20 m",
-    habitat: "Avenues, open ground",
-    conservationStatus: "LC",
-    description: [
-      "Azadirachta indica is a fast-growing evergreen tree reaching 15–20 m in height, with a broad, rounded crown and deeply furrowed grey-brown bark. The tree is highly valued across the campus for its dense shade, drought tolerance, and its extraordinary range of medicinal and pesticidal properties.",
-      "Leaves are alternate, imparipinnate, 20–40 cm long, with 8–19 serrated leaflets. Small, fragrant white flowers appear in drooping axillary panicles, followed by smooth yellow-green drupes containing a single seed. It is planted extensively along campus avenues and near residential blocks.",
-    ],
-    diagnosticCharacters: [
-      { label: "Leaf", value: "Imparipinnate, 8–19 serrated leaflets, dark green" },
-      { label: "Flower", value: "White, fragrant, in axillary panicles" },
-      { label: "Fruit", value: "Smooth ellipsoid drupe, yellow when ripe" },
-      { label: "Bark", value: "Grey-brown, longitudinally fissured" },
-    ],
-    phenology: {
-      flowering: [2, 3, 4],
-      fruiting: [5, 6, 7],
-      floweringLabel: "Flowering (Mar–May)",
-      fruitingLabel: "Fruiting (Jun–Aug)",
-    },
-    ethnobotany: [
-      { title: "Medicinal", text: "Antibacterial, antifungal and antiviral; used for skin conditions, dental care and blood purification." },
-      { title: "Agriculture", text: "Seed oil (azadirachtin) is a potent natural pesticide and soil amendment." },
-      { title: "Timber & Shade", text: "Durable termite-resistant wood; widely planted as an avenue shade tree." },
-      { title: "Cultural", text: 'Traditionally regarded as the "village pharmacy" across South Asia.' },
-    ],
-    references: [
-      "Plants of the World Online (POWO), Royal Botanic Gardens, Kew.",
-      "World Flora Online — Azadirachta indica A.Juss.",
-      "Flora of Pakistan, eFloras.org.",
-    ],
-    voucher: { number: "UF-HB-0412", collector: "Dr. A. Rehman", date: "14 Apr 2025", barcode: "UNIF00412" },
-    mapLocations: 14,
-    badgeColor: "#2e6b3a",
-  },
-  {
-    slug: "bougainvillea-glabra",
-    scientificName: "Bougainvillea glabra",
-    commonName: "Paper Flower",
-    family: "Nyctaginaceae",
-    genus: "Bougainvillea",
-    order: "Caryophyllales",
-    type: "Climber",
-    nativeStatus: "Exotic",
-    habit: "Woody climber",
-    habitat: "Walls, fences, pergolas",
-    description: ["A vigorous ornamental climber with papery magenta bracts surrounding small white flowers."],
-    diagnosticCharacters: [
-      { label: "Leaf", value: "Ovate, glabrous, alternate" },
-      { label: "Flower", value: "Small white, surrounded by colourful bracts" },
-    ],
-    phenology: { flowering: [0, 1, 2, 10, 11], fruiting: [], floweringLabel: "Flowering (Nov–Mar)", fruitingLabel: "" },
-    ethnobotany: [{ title: "Ornamental", text: "Widely planted for vibrant colour on campus walls and gates." }],
-    references: ["Plants of the World Online (POWO), Royal Botanic Gardens, Kew."],
-    mapLocations: 8,
-    badgeColor: "#8163a8",
-  },
-  {
-    slug: "ficus-religiosa",
-    scientificName: "Ficus religiosa",
-    commonName: "Peepal",
-    family: "Moraceae",
-    genus: "Ficus",
-    order: "Rosales",
-    type: "Big Tree",
-    nativeStatus: "Native",
-    habit: "Deciduous tree",
-    habitat: "Sacred groves, lawns",
-    description: ["A large sacred fig with heart-shaped leaves and long tapering tips, often planted near temples and academic buildings."],
-    diagnosticCharacters: [
-      { label: "Leaf", value: "Cordate with long drip-tip" },
-      { label: "Bark", value: "Grey, smooth when young" },
-    ],
-    phenology: { flowering: [2, 3], fruiting: [4, 5], floweringLabel: "Flowering (Mar–Apr)", fruitingLabel: "Fruiting (May–Jun)" },
-    ethnobotany: [{ title: "Cultural", text: "Sacred in Hindu and Buddhist traditions; planted across campus courtyards." }],
-    references: ["Flora of Pakistan, eFloras.org."],
-    mapLocations: 11,
-    badgeColor: "#2e6b3a",
-  },
-  {
-    slug: "cassia-fistula",
-    scientificName: "Cassia fistula",
-    commonName: "Golden Shower",
-    family: "Fabaceae",
-    genus: "Cassia",
-    order: "Fabales",
-    type: "Small Tree",
-    nativeStatus: "Native",
-    habit: "Deciduous tree",
-    habitat: "Open lawns, avenues",
-    description: ["Medium-sized tree famous for pendulous racemes of bright yellow flowers in late spring."],
-    diagnosticCharacters: [
-      { label: "Flower", value: "Bright yellow in long drooping racemes" },
-      { label: "Fruit", value: "Cylindrical dark brown pods" },
-    ],
-    phenology: { flowering: [3, 4, 5], fruiting: [6, 7, 8], floweringLabel: "Flowering (Apr–Jun)", fruitingLabel: "Fruiting (Jul–Sep)" },
-    ethnobotany: [{ title: "Ornamental", text: "National flower of Thailand; prized avenue tree on campus." }],
-    references: ["World Flora Online."],
-    mapLocations: 6,
-    badgeColor: "#c99a2e",
-  },
-  {
-    slug: "calliandra-haematocephala",
-    scientificName: "Calliandra haematocephala",
-    commonName: "Pink Powder Puff",
-    family: "Fabaceae",
-    genus: "Calliandra",
-    order: "Fabales",
-    type: "Shrub",
-    nativeStatus: "Exotic",
-    habit: "Evergreen shrub",
-    habitat: "Shrub borders, gardens",
-    description: ["Compact shrub with spherical pink-red flower heads resembling powder puffs."],
-    diagnosticCharacters: [{ label: "Flower", value: "Globose pink-red inflorescences" }],
-    phenology: { flowering: [0, 1, 2, 10, 11], fruiting: [3], floweringLabel: "Flowering (Nov–Mar)", fruitingLabel: "Fruiting (Apr)" },
-    ethnobotany: [{ title: "Ornamental", text: "Popular hedge and border plant across campus gardens." }],
-    references: ["Plants of the World Online (POWO)."],
-    mapLocations: 4,
-    badgeColor: "#a63b6b",
-  },
-  {
-    slug: "pongamia-pinnata",
-    scientificName: "Pongamia pinnata",
-    commonName: "Indian Beech",
-    family: "Fabaceae",
-    genus: "Pongamia",
-    order: "Fabales",
-    type: "Big Tree",
-    nativeStatus: "Native",
-    habit: "Evergreen tree",
-    habitat: "Water margins, avenues",
-    description: ["Hardy native tree with glossy compound leaves and lilac pea-like flowers."],
-    diagnosticCharacters: [{ label: "Leaf", value: "Imparipinnate, glossy" }],
-    phenology: { flowering: [2, 3, 4], fruiting: [5, 6], floweringLabel: "Flowering (Mar–May)", fruitingLabel: "Fruiting (Jun–Jul)" },
-    ethnobotany: [{ title: "Biofuel", text: "Seeds yield oil used in lamps and biodiesel research." }],
-    references: ["Flora of Pakistan."],
-    mapLocations: 9,
-    badgeColor: "#2e6b3a",
-  },
-  {
-    slug: "acacia-nilotica",
-    scientificName: "Acacia nilotica",
-    commonName: "Gum Arabic Tree",
-    family: "Fabaceae",
-    genus: "Acacia",
-    order: "Fabales",
-    type: "Big Tree",
-    nativeStatus: "Native",
-    habit: "Thorny tree",
-    habitat: "Dry open areas",
-    description: ["Thorny tree with paired stipular spines and fragrant yellow flower balls."],
-    diagnosticCharacters: [{ label: "Thorns", value: "Paired, straight, white" }],
-    phenology: { flowering: [1, 2, 3], fruiting: [4, 5], floweringLabel: "Flowering (Feb–Apr)", fruitingLabel: "Fruiting (May–Jun)" },
-    ethnobotany: [{ title: "Timber", text: "Dense durable wood; gum used commercially." }],
-    references: ["World Flora Online."],
-    mapLocations: 7,
-    badgeColor: "#2e6b3a",
-  },
-  {
-    slug: "nerium-oleander",
-    scientificName: "Nerium oleander",
-    commonName: "Oleander",
-    family: "Apocynaceae",
-    genus: "Nerium",
-    order: "Gentianales",
-    type: "Shrub",
-    nativeStatus: "Exotic",
-    habit: "Evergreen shrub",
-    habitat: "Roadsides, borders",
-    description: ["Evergreen shrub with lanceolate leaves and showy pink or white flowers; all parts toxic."],
-    diagnosticCharacters: [{ label: "Flower", value: "Funnel-shaped, pink or white" }],
-    phenology: { flowering: [2, 3, 4, 5, 6, 7, 8], fruiting: [8, 9], floweringLabel: "Flowering (Mar–Sep)", fruitingLabel: "Fruiting (Sep–Oct)" },
-    ethnobotany: [{ title: "Toxicity", text: "Highly toxic if ingested; used ornamentally with caution." }],
-    references: ["Plants of the World Online."],
-    mapLocations: 5,
-    badgeColor: "#a63b6b",
-  },
-  {
-    slug: "delonix-regia",
-    scientificName: "Delonix regia",
-    commonName: "Gulmohar",
-    family: "Fabaceae",
-    genus: "Delonix",
-    order: "Fabales",
-    type: "Big Tree",
-    nativeStatus: "Exotic",
-    habit: "Deciduous tree",
-    habitat: "Avenues, lawns",
-    description: ["Spectacular flame tree with fern-like leaves and scarlet flowers; iconic campus avenue tree."],
-    diagnosticCharacters: [{ label: "Flower", value: "Scarlet with long stamens" }],
-    phenology: { flowering: [4, 5, 6], fruiting: [7, 8], floweringLabel: "Flowering (May–Jul)", fruitingLabel: "Fruiting (Aug–Sep)" },
-    ethnobotany: [{ title: "Ornamental", text: "One of the most photographed trees on campus during summer." }],
-    references: ["World Flora Online."],
-    mapLocations: 12,
-    badgeColor: "#2e6b3a",
-  },
-  {
-    slug: "jasminum-sambac",
-    scientificName: "Jasminum sambac",
-    commonName: "Arabian Jasmine",
-    family: "Oleaceae",
-    genus: "Jasminum",
-    order: "Lamiales",
-    type: "Shrub",
-    nativeStatus: "Exotic",
-    habit: "Evergreen shrub",
-    habitat: "Gardens, courtyards",
-    description: ["Fragrant white flowers used in garlands; compact shrub near residential blocks."],
-    diagnosticCharacters: [{ label: "Flower", value: "White, highly fragrant, waxy" }],
-    phenology: { flowering: [2, 3, 4, 5, 6, 7, 8, 9], fruiting: [10], floweringLabel: "Flowering (Mar–Oct)", fruitingLabel: "Fruiting (Nov)" },
-    ethnobotany: [{ title: "Cultural", text: "Flowers used in ceremonial garlands and perfumes." }],
-    references: ["Plants of the World Online."],
-    mapLocations: 3,
-    badgeColor: "#a63b6b",
-  },
-  {
-    slug: "ocimum-tenuiflorum",
-    scientificName: "Ocimum tenuiflorum",
-    commonName: "Holy Basil (Tulsi)",
-    family: "Lamiaceae",
-    genus: "Ocimum",
-    order: "Lamiales",
-    type: "Herb",
-    nativeStatus: "Native",
-    medicinal: true,
-    habit: "Aromatic herb",
-    habitat: "Herb gardens, courtyards",
-    description: ["Sacred aromatic herb with purple-tinged leaves; cultivated in campus herb gardens."],
-    diagnosticCharacters: [{ label: "Leaf", value: "Ovate, pubescent, aromatic" }],
-    phenology: { flowering: [0, 1, 10, 11], fruiting: [2], floweringLabel: "Flowering (Nov–Feb)", fruitingLabel: "Fruiting (Mar)" },
-    ethnobotany: [{ title: "Medicinal", text: "Used in traditional medicine and as a sacred plant in households." }],
-    references: ["Flora of Pakistan."],
-    mapLocations: 2,
-    badgeColor: "#5a8a2e",
-  },
-  {
-    slug: "terminalia-arjuna",
-    scientificName: "Terminalia arjuna",
-    commonName: "Arjuna",
-    family: "Combretaceae",
-    genus: "Terminalia",
-    order: "Myrtales",
-    type: "Big Tree",
-    nativeStatus: "Native",
-    medicinal: true,
-    habit: "Large deciduous tree",
-    habitat: "Riparian areas, lawns",
-    description: ["Large riparian tree with thick spongy bark and small white flowers; bark used medicinally."],
-    diagnosticCharacters: [{ label: "Bark", value: "Thick, grey, exfoliating in patches" }],
-    phenology: { flowering: [2, 3, 4], fruiting: [5, 6], floweringLabel: "Flowering (Mar–May)", fruitingLabel: "Fruiting (Jun–Jul)" },
-    ethnobotany: [{ title: "Medicinal", text: "Bark used in Ayurvedic cardiac tonics." }],
-    references: ["World Flora Online."],
-    mapLocations: 6,
-    badgeColor: "#2e6b3a",
-  },
-];
-
-export const STATS = {
-  species: 512,
-  families: 128,
-  genera: 340,
-  locations: 346,
-  images: 2845,
-  vouchers: 2845,
-  collectors: 37,
-};
-
-export function getPlantBySlug(slug: string): Plant | undefined {
-  return PLANTS.find((p) => p.slug === slug);
 }
 
-export const RECENT_PLANTS = PLANTS.slice(0, 5);
+export const PLANTS: Plant[] = (generatedSpecies as GeneratedSpecies[])
+  .map(buildPlant)
+  .sort((a, b) => a.scientificName.localeCompare(b.scientificName));
+
+const BY_SLUG = new Map(PLANTS.map((p) => [p.slug, p]));
+
+export function getPlantBySlug(slug: string): Plant | undefined {
+  return BY_SLUG.get(slug);
+}
+
+export const PLANT_TYPES: PlantType[] = [
+  "Tree",
+  "Palm",
+  "Shrub",
+  "Subshrub",
+  "Climber",
+  "Succulent",
+  "Herb",
+  "Grass",
+  "Sedge",
+];
+
+export function countByType(type: PlantType): number {
+  return PLANTS.filter((p) => p.type === type).length;
+}
+
+/** Species with the most individuals recorded in the survey. */
+export const MOST_ABUNDANT: Plant[] = [...PLANTS]
+  .filter((p) => p.occurrences > 0)
+  .sort((a, b) => b.occurrences - a.occurrences)
+  .slice(0, 12);
+
+/** Feature the written-up species first, then fall back to abundant ones. */
+export const RECENT_PLANTS: Plant[] = [
+  ...PLANTS.filter((p) => p.hasImage),
+  ...MOST_ABUNDANT.filter((p) => !p.hasImage),
+].slice(0, 5);
+
+export const STATS = {
+  species: PLANTS.length,
+  families: new Set(PLANTS.map((p) => p.family)).size,
+  genera: new Set(PLANTS.map((p) => p.genus)).size,
+  /** Individual plants pinned by GPS during the survey. */
+  locations: PLANTS.reduce((sum, p) => sum + p.occurrences, 0),
+  photographed: PHOTOGRAPHED_SPECIES,
+  profiled: PLANTS.filter((p) => p.hasProfile).length,
+  cultivated: PLANTS.filter((p) => p.growthStatus === "Cultivated").length,
+  wild: PLANTS.filter((p) => p.growthStatus === "Wild").length,
+  surveyedAt: importReport.generatedAt,
+};

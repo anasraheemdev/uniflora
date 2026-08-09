@@ -48,7 +48,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
           <LoginForm action={loginAction} error={error} />
 
           <p style={{ textAlign: "center", marginTop: 22, fontSize: 13, color: "#8a9682" }}>
-            <Link href="/" style={{ color: "#2e6b3a", fontWeight: 600, textDecoration: "none" }}>← Back to UniFlora</Link>
+            <Link href="/" className="uf-tap" style={{ color: "#2e6b3a", fontWeight: 600, textDecoration: "none" }}>← Back to UniFlora</Link>
           </p>
         </div>
       </div>

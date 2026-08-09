@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "import:flora": "python scripts/import_flora_data.py --zones 5",
+    "verify:flora": "node scripts/verify_markers.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

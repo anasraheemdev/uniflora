@@ -22,6 +22,10 @@
 .DS_Store
 *.pem
 
+# screenshots from the scripts/ layout checks
+/scripts/shots/
+/scripts/*-failure.png
+
 # debug
 npm-debug.log*
 yarn-debug.log*

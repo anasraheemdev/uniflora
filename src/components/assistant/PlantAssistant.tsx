@@ -338,7 +338,7 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
               </button>
             </form>
 
-            <p style={{ margin: "10px 0 0", fontSize: 11.5, color: "#8a9682", lineHeight: 1.4 }}>
+            <p style={{ margin: "10px 0 0", fontSize: 12.5, color: "#8a9682", lineHeight: 1.4 }}>
               {source === "openai"
                 ? "Powered by UniFlora AI · Answers grounded in campus species data."
                 : "Powered by UniFlora knowledge base · Add OPENAI_API_KEY for enhanced AI responses."}

@@ -27,7 +27,7 @@ export default async function AdminQrPage() {
               download
               target="_blank"
               rel="noopener noreferrer"
-              style={{ display: "block", textAlign: "center", marginTop: 12, fontSize: 13, fontWeight: 600, color: "#2e6b3a", textDecoration: "none" }}
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: 40, marginTop: 8, fontSize: 13.5, fontWeight: 600, color: "#2e6b3a", textDecoration: "none" }}
             >
               Download QR image
             </a>

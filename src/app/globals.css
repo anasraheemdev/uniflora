@@ -201,6 +201,24 @@ body {
   font-size: 12px !important;
 }
 
+/* Hover label that names the plant under the cursor. */
+.uf-map-plant-tip {
+  font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 600;
+  color: #fff !important;
+  background: rgba(28, 46, 30, 0.94) !important;
+  border: none !important;
+  border-radius: 7px !important;
+  padding: 5px 9px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+  white-space: nowrap;
+}
+
+.uf-map-plant-tip::before {
+  border-top-color: rgba(28, 46, 30, 0.94) !important;
+}
+
 .leaflet-container {
   font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
 }
@@ -209,6 +227,8 @@ body {
 :root {
   --uf-pad: 40px;
   --uf-pad-sm: 24px;
+  /* How much of the mobile map sheet stays visible when collapsed. */
+  --uf-sheet-peek: 62px;
 }
 
 @media (max-width: 768px) {
@@ -438,15 +458,213 @@ body {
   min-height: 280px;
 }
 
+.uf-map-panel-inner {
+  padding: 24px;
+}
+
+.uf-map-card-media {
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.uf-species-scroll {
+  max-height: 420px;
+}
+
+/* Sheet chrome only exists on small screens. */
+.uf-sheet-handle,
+.uf-sheet-scrim {
+  display: none;
+}
+
 .uf-map-view {
   min-height: 360px;
   height: 50vh;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 901px) {
   .uf-map-view {
     min-height: 640px;
     height: calc(100vh - 72px);
+  }
+}
+
+/* ── Map on phones: full-bleed map with a bottom sheet of controls ── */
+@media (max-width: 900px) {
+  .uf-split-map {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: 0;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .uf-map-view {
+    /* dvh tracks the shrinking URL bar; vh would leave a dead strip. */
+    height: calc(100dvh - 64px);
+    min-height: 420px;
+  }
+
+  .uf-map-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    min-height: 0;
+    max-height: 85dvh;
+    display: flex;
+    flex-direction: column;
+    border-right: none !important;
+    border-top: 1px solid #e6e1cf;
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -12px 34px rgba(20, 40, 24, 0.18);
+    overflow: hidden;
+    /* Collapsed: only the handle peeks above the fold. */
+    transform: translateY(calc(100% - var(--uf-sheet-peek)));
+    transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  .uf-sheet-open .uf-map-panel {
+    transform: translateY(0);
+  }
+
+  .uf-map-panel-inner {
+    padding: 4px 16px calc(20px + env(safe-area-inset-bottom));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .uf-sheet-handle {
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+    border: none;
+    background: #fbf9f1;
+    padding: 8px 16px 12px;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .uf-sheet-grip {
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 0 auto 10px;
+    border-radius: 999px;
+    background: #d9d3bd;
+  }
+
+  .uf-sheet-handle-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .uf-sheet-handle-label {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1e2b1f;
+    flex-shrink: 0;
+  }
+
+  .uf-sheet-handle-count {
+    font-size: 12.5px;
+    color: #8a9682;
+    margin-left: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .uf-sheet-chevron {
+    color: #6b7360;
+    flex-shrink: 0;
+    transition: transform 0.28s ease;
+  }
+
+  .uf-sheet-open .uf-sheet-chevron {
+    transform: rotate(180deg);
+  }
+
+  .uf-sheet-scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    border: none;
+    padding: 0;
+    background: rgba(18, 34, 20, 0.38);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.28s ease;
+  }
+
+  .uf-sheet-open .uf-sheet-scrim {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* The page title lives in the site header on mobile; the sheet needs the room. */
+  .uf-map-title,
+  .uf-map-intro,
+  .uf-map-legend {
+    display: none;
+  }
+
+  .uf-species-scroll {
+    max-height: none;
+  }
+
+  /* Keep Leaflet's own chrome clear of the collapsed sheet. */
+  .leaflet-bottom.leaflet-right {
+    bottom: calc(var(--uf-sheet-peek) - 6px);
+  }
+
+  .uf-map-zoom {
+    top: 12px !important;
+    right: 12px !important;
+  }
+
+  .uf-map-zone-label {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+  }
+
+  /* Selected plant becomes a wide, short card that sits above the sheet. */
+  .uf-map-card {
+    left: 12px !important;
+    right: 12px !important;
+    bottom: calc(var(--uf-sheet-peek) + 12px) !important;
+    width: auto !important;
+    display: flex;
+    align-items: stretch;
+    border-radius: 16px !important;
+  }
+
+  .uf-map-card-media {
+    width: 104px;
+    height: auto;
+  }
+
+  .uf-map-card-body {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px !important;
+  }
+
+  /* Thumb-sized targets. */
+  .uf-zone-chip {
+    padding: 9px 14px !important;
+    font-size: 13.5px !important;
+  }
+
+  .uf-layer {
+    padding: 11px 10px !important;
   }
 }
 
@@ -481,10 +699,14 @@ body {
   border: none;
   color: #c3d4bf;
   cursor: pointer;
-  padding: 8px;
+  padding: 9px;
   border-radius: 8px;
   align-items: center;
   justify-content: center;
+}
+
+.uf-login {
+  padding: 10px 20px;
 }
 
 .uf-mobile-drawer {
@@ -502,6 +724,16 @@ body {
 
   .uf-login-label {
     display: none;
+  }
+
+  /* Search/upload live in the drawer's reach on desktop only; on a phone the
+     header needs the width for the wordmark and the menu button. */
+  .uf-header-icon {
+    display: none !important;
+  }
+
+  .uf-login {
+    padding: 10px 14px;
   }
 
   .uf-mobile-drawer {
@@ -697,7 +929,8 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+/* Tablet only — below 901px the panel becomes a bottom sheet with its own borders. */
+@media (min-width: 901px) and (max-width: 1024px) {
   .uf-map-panel {
     border-right: none !important;
     border-bottom: 1px solid #e6e1cf;
@@ -727,6 +960,138 @@ body {
   .uf-login,
   .uf-searchbtn {
     min-height: 44px;
+  }
+}
+
+/* ── Mobile ergonomics ──
+   Most of this file's components are styled inline, so these overrides need
+   !important to win the cascade. */
+@media (max-width: 900px) {
+  /* Anything under 16px makes iOS Safari zoom the page when the field is
+     focused, and it never zooms back out. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* 16px boxes are hard to hit; the surrounding label stays the real target. */
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 19px !important;
+    height: 19px !important;
+    flex-shrink: 0;
+  }
+
+  /* Footer link columns: give each row a finger's worth of height. */
+  .uf-footer-grid a {
+    display: inline-block;
+    padding: 7px 0;
+  }
+
+  /* Breadcrumb trails sit on one line, so pad vertically only. */
+  .uf-breadcrumb a {
+    display: inline-block;
+    padding: 8px 0;
+  }
+
+  /* The brand lockup's kicker was small enough to be unreadable. */
+  .uf-logo-tagline {
+    font-size: 10.5px !important;
+    letter-spacing: 1.8px !important;
+  }
+
+  /* Pill links ("Neem", "Explore", "View All") were ~20px tall. */
+  .uf-chip {
+    min-height: 36px;
+    align-items: center;
+  }
+
+  /* Opt-in utility for standalone links that would otherwise be line-height tall. */
+  .uf-tap {
+    display: inline-flex !important;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  /* Borderless search fields sit inside a padded wrapper; without this the
+     input itself is only ~24px of the visually larger box. */
+  input[type="search"] {
+    min-height: 38px;
+  }
+
+  /* Wide tables scroll sideways — say so, since nothing else hints at it. */
+  .uf-table-wrap::before {
+    content: "Swipe the table sideways for more columns";
+    position: sticky;
+    left: 0;
+    display: block;
+    font-size: 12.5px;
+    color: #8a9682;
+    padding-bottom: 9px;
+  }
+}
+
+/* Explore filters: a disclosure on phones, always-open on desktop. */
+.uf-filter-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .uf-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px 14px;
+    border: 1px solid #e6e1cf;
+    border-radius: 10px;
+    background: #fff;
+    color: #1e2b1f;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .uf-filter-badge {
+    display: inline-block;
+    margin-left: 8px;
+    min-width: 20px;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: #2e6b3a;
+    color: #fff;
+    font-size: 12.5px;
+    text-align: center;
+  }
+
+  .uf-filter-chevron {
+    color: #6b7360;
+    transition: transform 0.2s ease;
+  }
+
+  .uf-filter-toggle[aria-expanded="true"] .uf-filter-chevron {
+    transform: rotate(180deg);
+  }
+
+  .uf-filter-body {
+    display: none;
+  }
+
+  .uf-filter-body.uf-open {
+    display: block;
+  }
+}
+
+/* Compact tiles stay two-up on phones; collapsing them to one column turns
+   dashboards into an endless scroll. */
+@media (max-width: 420px) {
+  .uf-grid-tiles {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
   }
 }
 

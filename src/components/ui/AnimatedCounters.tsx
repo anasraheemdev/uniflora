@@ -3,79 +3,48 @@
 import { useEffect, useState } from "react";
 import { STATS } from "@/data/plants";
 
-type AnimatedCountersProps = {
-  animate?: boolean;
+type Counts = {
+  species: number;
+  families: number;
+  genera: number;
+  locations: number;
 };
 
-export function AnimatedCounters({ animate = true }: AnimatedCountersProps) {
-  const [values, setValues] = useState({ s: 0, f: 0, l: 0, i: 0 });
+const TARGETS: Counts = {
+  species: STATS.species,
+  families: STATS.families,
+  genera: STATS.genera,
+  locations: STATS.locations,
+};
+
+/** Counts up to the real survey totals on mount. */
+export function useAnimatedStats(animate = true): Counts {
+  const [values, setValues] = useState<Counts>({ species: 0, families: 0, genera: 0, locations: 0 });
 
   useEffect(() => {
-    const targets = {
-      s: STATS.species,
-      f: STATS.families,
-      l: STATS.locations,
-      i: STATS.images,
-    };
-
     if (!animate) {
-      setValues(targets);
+      setValues(TARGETS);
       return;
     }
 
-    const dur = 1400;
+    const duration = 1400;
     const start = performance.now();
+    let frame = 0;
 
     const tick = (now: number) => {
-      const p = Math.min(1, (now - start) / dur);
-      const e = 1 - Math.pow(1 - p, 3);
+      const progress = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
       setValues({
-        s: Math.round(targets.s * e),
-        f: Math.round(targets.f * e),
-        l: Math.round(targets.l * e),
-        i: Math.round(targets.i * e),
+        species: Math.round(TARGETS.species * eased),
+        families: Math.round(TARGETS.families * eased),
+        genera: Math.round(TARGETS.genera * eased),
+        locations: Math.round(TARGETS.locations * eased),
       });
-      if (p < 1) requestAnimationFrame(tick);
+      if (progress < 1) frame = requestAnimationFrame(tick);
     };
 
-    requestAnimationFrame(tick);
-  }, [animate]);
-
-  return { values };
-}
-
-export function useAnimatedStats(animate = true) {
-  const [values, setValues] = useState({ s: 0, f: 0, l: 0, i: 0 });
-
-  useEffect(() => {
-    const targets = {
-      s: STATS.species,
-      f: STATS.families,
-      l: STATS.locations,
-      i: STATS.images,
-    };
-
-    if (!animate) {
-      setValues(targets);
-      return;
-    }
-
-    const dur = 1400;
-    const start = performance.now();
-
-    const tick = (now: number) => {
-      const p = Math.min(1, (now - start) / dur);
-      const e = 1 - Math.pow(1 - p, 3);
-      setValues({
-        s: Math.round(targets.s * e),
-        f: Math.round(targets.f * e),
-        l: Math.round(targets.l * e),
-        i: Math.round(targets.i * e),
-      });
-      if (p < 1) requestAnimationFrame(tick);
-    };
-
-    requestAnimationFrame(tick);
+    frame = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(frame);
   }, [animate]);
 
   return values;

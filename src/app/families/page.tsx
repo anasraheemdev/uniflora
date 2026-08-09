@@ -3,12 +3,11 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { FamiliesBrowser } from "@/components/families/FamiliesBrowser";
-import { FAMILIES, FAMILY_LETTERS, getFamiliesWithCampusCounts } from "@/data/families";
+import { FAMILIES, FAMILY_LETTERS, getFeaturedFamilies } from "@/data/families";
 import { STATS } from "@/data/plants";
 
 export default function FamiliesPage() {
-  const families = getFamiliesWithCampusCounts();
-  const featured = [...families].sort((a, b) => b.campusSpecies - a.campusSpecies).slice(0, 3);
+  const featured = getFeaturedFamilies(3);
 
   return (
     <div style={{ fontFamily: "var(--font-source-sans), 'Source Sans 3', system-ui, sans-serif", background: "#f5f1e6", color: "#1e2b1f", minHeight: "100%", overflowX: "hidden" }}>
@@ -42,13 +41,15 @@ export default function FamiliesPage() {
             >
               <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1, color: "#8fb890", textTransform: "uppercase" }}>Featured family</div>
               <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontWeight: 600, fontSize: 22, marginTop: 6 }}>{f.name}</div>
-              <div style={{ fontSize: 14, color: "rgba(255,255,255,.8)", marginTop: 4 }}>{f.campusSpecies} species on campus</div>
+              <div style={{ fontSize: 14, color: "rgba(255,255,255,.8)", marginTop: 4 }}>
+                {f.speciesCount} species · {f.occurrences} plants mapped
+              </div>
             </Link>
           ))}
         </div>
       </div>
 
-      <FamiliesBrowser families={families} letters={FAMILY_LETTERS} />
+      <FamiliesBrowser families={FAMILIES} letters={FAMILY_LETTERS} />
 
       <Footer />
     </div>
