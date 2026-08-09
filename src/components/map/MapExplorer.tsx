@@ -472,7 +472,9 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       {/* Tap-away target for the mobile sheet; inert on desktop. */}
       <button type="button" className="uf-sheet-scrim" aria-hidden={!sheetOpen} tabIndex={-1} onClick={() => setSheetOpen(false)} />
 
-      <aside className="uf-map-panel" style={{ background: "#fbf9f1", borderRight: "1px solid #e6e1cf", overflowY: "auto" }}>
+      {/* Scrolling is left to CSS: the panel is a bottom sheet on phones and a
+          fixed-height column on desktop, and each owns a different scroll region. */}
+      <aside className="uf-map-panel" style={{ background: "#fbf9f1", borderRight: "1px solid #e6e1cf" }}>
         {/* Collapsed handle doubles as the button that opens the sheet. */}
         <button
           type="button"

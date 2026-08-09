@@ -306,7 +306,17 @@ body {
 }
 
 .uf-split-explore { grid-template-columns: 280px 1fr; gap: 28px; }
-.uf-split-map { grid-template-columns: 340px 1fr; height: calc(100vh - 72px); min-height: 640px; }
+/* `align-items: start` from the shared rule sizes the sidebar to its content,
+   so a 190-species list makes the grid row taller than the viewport: the page
+   scrolls, the map slides out of view, and dead space opens beside it.
+   Stretching both columns keeps them viewport-tall and lets the sidebar scroll
+   within its own column. */
+.uf-split-map {
+  grid-template-columns: 340px 1fr;
+  height: calc(100vh - 72px);
+  min-height: 640px;
+  align-items: stretch;
+}
 .uf-split-species { grid-template-columns: 1fr 360px; gap: 36px; }
 .uf-split-stats { grid-template-columns: 400px 1fr; gap: 22px; align-items: stretch; }
 .uf-split-dash { grid-template-columns: 1.4fr 1fr; gap: 22px; }
@@ -455,7 +465,10 @@ body {
 
 /* Map */
 .uf-map-panel {
-  min-height: 280px;
+  /* Grid items default to `min-height: auto`, which refuses to shrink below the
+     content and would defeat the panel's own overflow-y. */
+  min-height: 0;
+  overflow-y: auto;
 }
 
 .uf-map-panel-inner {
@@ -469,6 +482,17 @@ body {
 
 .uf-species-scroll {
   max-height: 420px;
+}
+
+/* Two-column layout only exists above 1024px, where the panel is a fixed-height
+   column that scrolls. Capping the list there would nest a second scrollbar
+   inside the first; instead let the list run full length so the panel is the
+   one scroll region, as it already is in the phone sheet. */
+@media (min-width: 1025px) {
+  .uf-species-scroll {
+    max-height: none;
+    overflow: visible;
+  }
 }
 
 /* Sheet chrome only exists on small screens. */
