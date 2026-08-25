@@ -1,5 +1,9 @@
 # UniFlora — Campus Flora Information System
 
+<div align="center">
+  <img src="public/logo-uniflora.png" alt="UniFlora logo" width="180" />
+</div>
+
 UniFlora is a digital biodiversity platform for a university campus: it documents,
 maps, teaches, and helps conserve the campus's plant life. It is built with
 **Next.js 15 (App Router) + React 19 + TypeScript**, a **Supabase** (Postgres +
@@ -16,6 +20,18 @@ Inspired by biodiversity references like Plants of the World Online, World Flora
 Online, and GBIF, the goal is to make campus plant knowledge accessible to
 students, researchers, conservationists, and the public — for education,
 research, and outreach.
+
+## Visual preview
+
+<div align="center">
+  <img src="public/hero.jpg" alt="UniFlora campus flora" width="48%" />
+  <img src="public/field-guide.jpg" alt="UniFlora field guide" width="48%" />
+</div>
+
+The catalogue also includes curated photographs for representative species,
+including [Azadirachta indica](public/plants/azadirachta-indica.jpg),
+[Cassia fistula](public/plants/cassia-fistula.jpg), and
+[Ficus religiosa](public/plants/ficus-religiosa.jpg).
 
 ## What's actually in it
 
@@ -261,3 +277,7 @@ Optional env vars (app works without either):
   unchanged for comparison.
 - `scripts/shots/` contains QA screenshots from responsive/visual regression
   checks (desktop, tablet, mobile) across the main pages and dashboards.
+
+## License
+
+UniFlora is licensed under the [MIT License](LICENSE).
