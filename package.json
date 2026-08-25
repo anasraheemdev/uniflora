@@ -8,9 +8,15 @@
     "start": "next start",
     "lint": "next lint",
     "import:flora": "python scripts/import_flora_data.py --zones 5",
-    "verify:flora": "node scripts/verify_markers.mjs"
+    "verify:flora": "node scripts/verify_markers.mjs",
+    "db:migrate-data": "tsx scripts/migrate-to-supabase.ts",
+    "db:seed-users": "tsx scripts/seed-demo-users.ts"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.2",
     "leaflet": "^1.9.4",
     "next": "^15.2.4",
     "react": "^19.0.0",
@@ -21,8 +27,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "^15.2.4",
+    "tsx": "^4.23.12",
     "typescript": "^5"
   }
 }

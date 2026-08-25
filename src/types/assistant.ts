@@ -12,5 +12,5 @@ export type AssistantRequest = {
 
 export type AssistantResponse = {
   message: string;
-  source: "openai" | "local";
+  source: "groq" | "openai" | "local";
 };

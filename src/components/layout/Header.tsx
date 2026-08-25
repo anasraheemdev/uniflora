@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { LeafIcon } from "@/components/icons";
+import { CloseIcon, MenuIcon, SearchIcon } from "@/components/icons";
+import { LOGO_IMAGE } from "@/lib/images";
+import { color, font } from "@/lib/theme";
 
 export type NavKey =
   | "home"
@@ -60,30 +63,27 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
   }, [menuOpen]);
 
   const headerStyle: React.CSSProperties = {
-    background: "#0e2a17",
-    color: "#dfe9dc",
+    background: color.forest950,
+    color: color.onDark,
+    borderBottom: "1px solid rgba(255,255,255,.06)",
     ...(sticky ? { position: "sticky", top: 0, zIndex: 50 } : {}),
   };
 
   const LogoContent = (
     <>
-      <div
-        style={{
-          width: 44,
-          height: 44,
-          borderRadius: "50%",
-          background: "linear-gradient(160deg,#4f8f43,#2e6b3a)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flex: "0 0 auto",
-        }}
-      >
-        <LeafIcon />
+      <div style={{ width: 42, height: 42, position: "relative", flex: "0 0 auto" }}>
+        <Image src={LOGO_IMAGE} alt="UniFlora" fill sizes="42px" style={{ objectFit: "contain" }} priority />
       </div>
       <div style={{ lineHeight: 1 }}>
-        <div style={{ fontSize: 23, fontWeight: 700, color: "#ffffff", letterSpacing: 0.2 }}>UniFlora</div>
-        <div className="uf-logo-tagline" style={{ fontSize: 9.5, fontWeight: 600, letterSpacing: 2.4, color: "#8fb890", marginTop: 4 }}>EXPLORE · LEARN · CONSERVE</div>
+        <div style={{ fontFamily: font.display, fontSize: 22, fontWeight: 600, color: "#ffffff", letterSpacing: 0.2 }}>
+          UniFlora
+        </div>
+        <div
+          className="uf-logo-tagline"
+          style={{ fontSize: 9.5, fontWeight: 700, letterSpacing: 2.6, color: color.onDarkGold, marginTop: 4 }}
+        >
+          EXPLORE · LEARN · CONSERVE
+        </div>
       </div>
     </>
   );
@@ -108,10 +108,12 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
                 className="uf-navlink"
                 href={item.href}
                 style={{
-                  color: isActive ? "#ffffff" : "#c3d4bf",
+                  fontFamily: font.body,
+                  color: isActive ? "#ffffff" : color.onDarkMuted,
                   textDecoration: "none",
                   whiteSpace: "nowrap",
-                  ...(isActive ? { paddingBottom: 4, borderBottom: "2px solid #7dbf6b" } : {}),
+                  padding: "4px 0",
+                  ...(isActive ? { borderBottom: `2px solid ${color.gold600}` } : {}),
                 }}
               >
                 {item.label}
@@ -128,33 +130,22 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((o) => !o)}
           >
-            {menuOpen ? (
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
+            {menuOpen ? <CloseIcon size={26} /> : <MenuIcon size={26} />}
           </button>
 
           <button
             type="button"
             className="uf-header-icon"
-            style={{ background: "none", border: "none", color: "#c3d4bf", cursor: "pointer", padding: 6 }}
+            style={{ background: "none", border: "none", color: color.onDarkMuted, cursor: "pointer", padding: 6 }}
             aria-label="Search"
           >
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
+            <SearchIcon size={21} strokeWidth={1.8} />
           </button>
           {active === "home" && (
             <button
               type="button"
               className="uf-header-icon"
-              style={{ background: "none", border: "none", color: "#c3d4bf", cursor: "pointer", padding: 6 }}
+              style={{ background: "none", border: "none", color: color.onDarkMuted, cursor: "pointer", padding: 6 }}
               aria-label="Upload"
             >
               <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -166,21 +157,19 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
           )}
 
           <Link
-            className="uf-login"
+            className="uf-login uf-btn-primary"
             href="/login"
             style={{
               display: "flex",
               alignItems: "center",
               gap: 8,
-              background: "#2e6b3a",
-              color: "#fff",
               border: "none",
               borderRadius: 9,
+              fontFamily: font.body,
               fontSize: 14.5,
               fontWeight: 600,
               cursor: "pointer",
               textDecoration: "none",
-              fontFamily: "inherit",
               flexShrink: 0,
             }}
           >
@@ -203,18 +192,16 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
           style={{ border: "none", cursor: "pointer", padding: 0 }}
         />
         <div className="uf-mobile-panel">
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
-            <span style={{ fontWeight: 700, color: "#fff", fontSize: 17 }}>Menu</span>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 22 }}>
+            <span style={{ fontFamily: font.display, fontWeight: 600, color: "#fff", fontSize: 18 }}>Menu</span>
             <button
               type="button"
               onClick={() => setMenuOpen(false)}
               aria-label="Close"
               tabIndex={menuOpen ? 0 : -1}
-              style={{ background: "none", border: "none", color: "#c3d4bf", cursor: "pointer", padding: 8, display: "flex" }}
+              style={{ background: "none", border: "none", color: color.onDarkMuted, cursor: "pointer", padding: 8, display: "flex" }}
             >
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
+              <CloseIcon size={22} />
             </button>
           </div>
           {NAV_ITEMS.map((item) => (
@@ -224,13 +211,14 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
               className={`uf-mobile-navlink${active === item.key ? " uf-active" : ""}`}
               tabIndex={menuOpen ? 0 : -1}
               onClick={() => setMenuOpen(false)}
+              style={{ fontFamily: font.body }}
             >
               {item.label}
             </Link>
           ))}
           <Link
             href="/login"
-            className="uf-login"
+            className="uf-login uf-btn-primary"
             tabIndex={menuOpen ? 0 : -1}
             onClick={() => setMenuOpen(false)}
             style={{
@@ -238,10 +226,9 @@ export function Header({ active = null, sticky = true, logoLink = true }: Header
               alignItems: "center",
               justifyContent: "center",
               gap: 8,
-              background: "#2e6b3a",
-              color: "#fff",
               padding: "14px 20px",
               borderRadius: 10,
+              fontFamily: font.body,
               fontWeight: 600,
               textDecoration: "none",
               marginTop: 24,

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
 import { getPlantImage } from "@/lib/images";
-import type { PlantType } from "@/data/plants";
+import { placeholderTint } from "@/lib/theme";
+import type { PlantType } from "@/lib/data-types";
 
 type PlantImageProps = {
   slug?: string;
@@ -16,20 +17,8 @@ type PlantImageProps = {
   priority?: boolean;
 };
 
-const PLACEHOLDER_TINTS: Record<string, [string, string]> = {
-  Tree: ["#dfe9d5", "#b9d0aa"],
-  Palm: ["#dcebdd", "#aecfb6"],
-  Shrub: ["#f0e8cf", "#dcd0a5"],
-  Subshrub: ["#f0e8cf", "#dcd0a5"],
-  Climber: ["#e7dff0", "#cdc0e0"],
-  Succulent: ["#d9ece6", "#aed3c8"],
-  Herb: ["#e6edd2", "#c8d7a6"],
-  Grass: ["#eaeed3", "#d2daa6"],
-  Sedge: ["#e3ead4", "#c3d0a8"],
-};
-
 function PlaceholderIcon({ type }: { type?: PlantType }) {
-  const stroke = "#3f6b47";
+  const stroke = placeholderTint[type ?? "Herb"]?.icon ?? placeholderTint.Herb.icon;
   const common = {
     fill: "none",
     stroke,
@@ -114,7 +103,7 @@ export function PlantImage({
   const borderRadius = rounded ? radius : (style?.borderRadius ?? 0);
 
   if (!imageSrc) {
-    const [from, to] = PLACEHOLDER_TINTS[type ?? "Herb"] ?? PLACEHOLDER_TINTS.Herb;
+    const tint = placeholderTint[type ?? "Herb"] ?? placeholderTint.Herb;
     return (
       <div
         className={`plant-image-slot ${className}`}
@@ -122,7 +111,7 @@ export function PlantImage({
           ...style,
           borderRadius,
           position: "relative",
-          background: `linear-gradient(135deg, ${from}, ${to})`,
+          background: `linear-gradient(135deg, ${tint.from}, ${tint.to})`,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -130,7 +119,7 @@ export function PlantImage({
         role="img"
         aria-label={`${alt} — no photograph on file`}
       >
-        <svg width="42%" height="42%" viewBox="0 0 24 24" style={{ maxWidth: 64, maxHeight: 64, opacity: 0.55 }}>
+        <svg width="40%" height="40%" viewBox="0 0 24 24" style={{ maxWidth: 60, maxHeight: 60, opacity: 0.6 }}>
           <PlaceholderIcon type={type} />
         </svg>
       </div>

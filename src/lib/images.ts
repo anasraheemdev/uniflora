@@ -20,6 +20,7 @@ export const PLANT_IMAGES: Record<string, string> = {
 export const HERO_IMAGE = "/hero.jpg";
 export const FIELD_GUIDE_IMAGE = "/field-guide.jpg";
 export const QR_CODE_IMAGE = "/qr.jpeg";
+export const LOGO_IMAGE = "/logo-uniflora.png";
 
 export function getPlantImage(slug: string): string | null {
   return PLANT_IMAGES[slug] ?? null;

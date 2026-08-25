@@ -1,11 +1,21 @@
 import Link from "next/link";
 import { DashboardShell } from "@/components/dashboard/DashboardShell";
 import { Panel, ProgressBar, QuickAction, StatCard, StatusBadge } from "@/components/dashboard/DashboardUI";
-import { STUDENT_LEARNING, STUDENT_STATS, STUDENT_SUBMISSIONS } from "@/data/dashboard";
+import { color, font } from "@/lib/theme";
+import { getLearningProgress, getStudentStats, getStudentSubmissions, displayId } from "@/lib/dashboard-data";
 import { requireRole } from "@/lib/require-role";
+import { getSessionUserId } from "@/lib/auth";
+import { getStats } from "@/lib/data";
 
 export default async function StudentDashboardPage() {
   const user = await requireRole("student");
+  const userId = (await getSessionUserId())!;
+  const [stats, submissions, learning, catalogueStats] = await Promise.all([
+    getStudentStats(userId),
+    getStudentSubmissions(userId, 4),
+    getLearningProgress(userId),
+    getStats(),
+  ]);
 
   return (
     <DashboardShell
@@ -15,7 +25,7 @@ export default async function StudentDashboardPage() {
       activePath="/dashboard/student"
     >
       <div className="uf-grid-4 uf-grid-tiles" style={{ marginBottom: 28 }}>
-        {STUDENT_STATS.map((s) => (
+        {stats.map((s) => (
           <StatCard key={s.label} {...s} />
         ))}
       </div>
@@ -24,7 +34,7 @@ export default async function StudentDashboardPage() {
         <Panel
           title="My Submissions"
           action={
-            <Link href="/dashboard/student/submissions" style={{ display: "inline-flex", alignItems: "center", minHeight: 40, color: "#2e6b3a", fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
+            <Link href="/dashboard/student/submissions" style={{ display: "inline-flex", alignItems: "center", minHeight: 40, color: color.forest600, fontWeight: 600, fontSize: 14, textDecoration: "none" }}>
               View all →
             </Link>
           }
@@ -32,7 +42,7 @@ export default async function StudentDashboardPage() {
           <div className="uf-table-wrap">
           <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
             <thead>
-              <tr style={{ color: "#8a9682", fontSize: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+              <tr style={{ color: color.faint, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
                 <th style={{ textAlign: "left", padding: "10px 22px", fontWeight: 700 }}>ID</th>
                 <th style={{ textAlign: "left", padding: "10px 12px", fontWeight: 700 }}>Species</th>
                 <th style={{ textAlign: "left", padding: "10px 12px", fontWeight: 700 }}>Type</th>
@@ -40,11 +50,14 @@ export default async function StudentDashboardPage() {
               </tr>
             </thead>
             <tbody>
-              {STUDENT_SUBMISSIONS.map((row) => (
-                <tr key={row.id} className="uf-dashrow" style={{ borderTop: "1px solid #f0ecdd" }}>
-                  <td style={{ padding: "14px 22px", fontWeight: 600, color: "#2e6b3a" }}>{row.id}</td>
-                  <td style={{ padding: "14px 12px", fontStyle: "italic", fontFamily: "var(--font-playfair), serif" }}>{row.species}</td>
-                  <td style={{ padding: "14px 12px", color: "#3f4a3a" }}>{row.type}</td>
+              {submissions.length === 0 && (
+                <tr><td colSpan={4} style={{ padding: "20px 22px", color: color.faint }}>No submissions yet — <Link href="/dashboard/student/submit" style={{ color: color.forest600 }}>submit your first observation</Link>.</td></tr>
+              )}
+              {submissions.map((row) => (
+                <tr key={row.id} className="uf-dashrow" style={{ borderTop: `1px solid ${color.borderStrong}` }}>
+                  <td style={{ padding: "14px 22px", fontWeight: 600, color: color.forest600 }}>{displayId(row.id)}</td>
+                  <td style={{ padding: "14px 12px", fontStyle: "italic", fontFamily: font.display }}>{row.species}</td>
+                  <td style={{ padding: "14px 12px" }}>{row.type}</td>
                   <td style={{ padding: "14px 12px" }}><StatusBadge status={row.status} /></td>
                 </tr>
               ))}
@@ -60,7 +73,7 @@ export default async function StudentDashboardPage() {
                 <QuickAction label="Submit Observation" desc="Photo, GPS, and identification" />
               </Link>
               <Link href="/explore" style={{ textDecoration: "none", color: "inherit" }}>
-                <QuickAction label="Browse Campus Flora" desc="512 documented species" />
+                <QuickAction label="Browse Campus Flora" desc={`${catalogueStats.species} documented species`} />
               </Link>
               <Link href="/learn" style={{ textDecoration: "none", color: "inherit" }}>
                 <QuickAction label="Take a Quiz" desc="Test your plant knowledge" />
@@ -70,7 +83,7 @@ export default async function StudentDashboardPage() {
 
           <Panel title="Learning Progress">
             <div style={{ padding: "18px 22px 8px" }}>
-              {STUDENT_LEARNING.map((item) => (
+              {learning.map((item) => (
                 <ProgressBar key={item.title} value={item.progress} label={`${item.title} — ${item.label}`} />
               ))}
             </div>
@@ -78,9 +91,9 @@ export default async function StudentDashboardPage() {
         </div>
       </div>
 
-      <div style={{ background: "#eef0e2", border: "1px solid #e0e2cf", borderRadius: 16, padding: "26px 30px" }}>
-        <h3 style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontWeight: 600, fontSize: 20, margin: "0 0 10px" }}>How contributions work</h3>
-        <p style={{ fontSize: 15, color: "#3f4a3a", lineHeight: 1.6, margin: 0 }}>
+      <div style={{ background: color.parchmentDeep, border: `1px solid ${color.borderStrong}`, borderRadius: 18, padding: "26px 30px" }}>
+        <h3 style={{ fontFamily: font.display, fontWeight: 600, fontSize: 20, margin: "0 0 10px" }}>How contributions work</h3>
+        <p style={{ fontSize: 15, color: color.inkSoft, lineHeight: 1.6, margin: 0 }}>
           Upload plant observations with photos and optional GPS coordinates. A contributor or taxonomist will review your submission. Once approved, your sighting appears on the campus map and species pages.
         </p>
       </div>

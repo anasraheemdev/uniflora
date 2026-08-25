@@ -1,5 +1,4 @@
-import type { Family } from "@/data/families";
-import type { Plant } from "@/data/plants";
+import type { Family, Plant } from "@/lib/data-types";
 
 function matches(q: string, ...keywords: string[]): boolean {
   return keywords.some((k) => q.includes(k));

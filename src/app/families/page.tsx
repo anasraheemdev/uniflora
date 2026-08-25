@@ -2,46 +2,54 @@ import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { SectionKicker } from "@/components/ui/SectionKicker";
 import { FamiliesBrowser } from "@/components/families/FamiliesBrowser";
-import { FAMILIES, FAMILY_LETTERS, getFeaturedFamilies } from "@/data/families";
-import { STATS } from "@/data/plants";
+import { color, font } from "@/lib/theme";
+import { getAllFamilies, getFamilyLetters, getFeaturedFamilies, getStats } from "@/lib/data";
 
-export default function FamiliesPage() {
-  const featured = getFeaturedFamilies(3);
+export default async function FamiliesPage() {
+  const [families, letters, featured, stats] = await Promise.all([
+    getAllFamilies(),
+    getFamilyLetters(),
+    getFeaturedFamilies(3),
+    getStats(),
+  ]);
 
   return (
-    <div style={{ fontFamily: "var(--font-source-sans), 'Source Sans 3', system-ui, sans-serif", background: "#f5f1e6", color: "#1e2b1f", minHeight: "100%", overflowX: "hidden" }}>
+    <div style={{ fontFamily: font.body, background: color.parchment, color: color.ink, minHeight: "100%", overflowX: "hidden" }}>
       <Header active="families" />
 
       <PageHeader
         breadcrumb="Home &nbsp;/&nbsp; Families"
+        kicker="Taxonomic index"
         title="Plant Families"
         description={
           <>
             Browse the campus flora by taxonomic family — from legumes and figs to mints and palms.{" "}
-            <span style={{ color: "#a7d493", fontWeight: 600 }}>{FAMILIES.length} families indexed</span> ·{" "}
-            <span style={{ color: "#a7d493", fontWeight: 600 }}>{STATS.species} species</span> documented.
+            <span style={{ color: color.onDarkGold, fontWeight: 600 }}>{families.length} families indexed</span> ·{" "}
+            <span style={{ color: color.onDarkGold, fontWeight: 600 }}>{stats.species} species</span> documented.
           </>
         }
       />
 
-      <div className="uf-page-pad" style={{ maxWidth: 1400, margin: "0 auto", paddingTop: 8, paddingBottom: 8 }}>
-        <div className="uf-grid-3" style={{ gap: 16 }}>
+      <div className="uf-page-pad" style={{ maxWidth: 1440, margin: "0 auto", paddingTop: 40, paddingBottom: 8 }}>
+        <SectionKicker>Largest on campus</SectionKicker>
+        <div className="uf-grid-3" style={{ gap: 16, marginTop: 14 }}>
           {featured.map((f) => (
             <Link
               key={f.slug}
               href={`/families/${f.slug}`}
               style={{
-                background: "linear-gradient(135deg,#12341f,#1a4a2c)",
-                borderRadius: 14,
-                padding: "20px 22px",
+                background: `linear-gradient(155deg, ${color.forest900}, ${color.forest800})`,
+                borderRadius: 16,
+                padding: "22px 24px",
                 textDecoration: "none",
                 color: "#fff",
               }}
             >
-              <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1, color: "#8fb890", textTransform: "uppercase" }}>Featured family</div>
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontWeight: 600, fontSize: 22, marginTop: 6 }}>{f.name}</div>
-              <div style={{ fontSize: 14, color: "rgba(255,255,255,.8)", marginTop: 4 }}>
+              <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 1, color: color.onDarkGold, textTransform: "uppercase" }}>Featured family</div>
+              <div style={{ fontFamily: font.display, fontWeight: 600, fontSize: 23, marginTop: 8 }}>{f.name}</div>
+              <div style={{ fontSize: 14, color: "rgba(255,255,255,.78)", marginTop: 5 }}>
                 {f.speciesCount} species · {f.occurrences} plants mapped
               </div>
             </Link>
@@ -49,7 +57,7 @@ export default function FamiliesPage() {
         </div>
       </div>
 
-      <FamiliesBrowser families={FAMILIES} letters={FAMILY_LETTERS} />
+      <FamiliesBrowser families={families} letters={letters} />
 
       <Footer />
     </div>

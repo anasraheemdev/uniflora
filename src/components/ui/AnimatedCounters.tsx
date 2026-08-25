@@ -1,29 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { STATS } from "@/data/plants";
 
-type Counts = {
+export type Counts = {
   species: number;
   families: number;
   genera: number;
   locations: number;
 };
 
-const TARGETS: Counts = {
-  species: STATS.species,
-  families: STATS.families,
-  genera: STATS.genera,
-  locations: STATS.locations,
-};
-
-/** Counts up to the real survey totals on mount. */
-export function useAnimatedStats(animate = true): Counts {
+/** Counts up to the real survey totals (fetched server-side, passed in as `targets`) on mount. */
+export function useAnimatedStats(targets: Counts, animate = true): Counts {
   const [values, setValues] = useState<Counts>({ species: 0, families: 0, genera: 0, locations: 0 });
 
   useEffect(() => {
     if (!animate) {
-      setValues(TARGETS);
+      setValues(targets);
       return;
     }
 
@@ -35,16 +27,17 @@ export function useAnimatedStats(animate = true): Counts {
       const progress = Math.min(1, (now - start) / duration);
       const eased = 1 - Math.pow(1 - progress, 3);
       setValues({
-        species: Math.round(TARGETS.species * eased),
-        families: Math.round(TARGETS.families * eased),
-        genera: Math.round(TARGETS.genera * eased),
-        locations: Math.round(TARGETS.locations * eased),
+        species: Math.round(targets.species * eased),
+        families: Math.round(targets.families * eased),
+        genera: Math.round(targets.genera * eased),
+        locations: Math.round(targets.locations * eased),
       });
       if (progress < 1) frame = requestAnimationFrame(tick);
     };
 
     frame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(frame);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- targets is a fresh object each render (server-fetched props); re-keying the animation on its identity would restart the count-up on every parent re-render.
   }, [animate]);
 
   return values;

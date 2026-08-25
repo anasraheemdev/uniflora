@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { getSuggestedQuestions } from "@/lib/plant-assistant";
+import { color, font } from "@/lib/theme";
 import type { AssistantMessage } from "@/types/assistant";
 
 type PlantAssistantProps = {
@@ -17,7 +18,7 @@ function renderInline(text: string): ReactNode[] {
   return parts.map((part, i) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       return (
-        <strong key={i} style={{ fontWeight: 700, color: "#1e2b1f" }}>
+        <strong key={i} style={{ fontWeight: 700, color: color.ink }}>
           {part.slice(2, -2)}
         </strong>
       );
@@ -39,7 +40,7 @@ function renderMarkdown(text: string) {
       if (isExternal) {
         return (
           <p key={i} style={{ margin: "0 0 8px", lineHeight: 1.55 }}>
-            <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: "#2e6b3a", fontWeight: 600 }}>
+            <a href={href} target="_blank" rel="noopener noreferrer" style={{ color: color.forest600, fontWeight: 600 }}>
               {label}
             </a>
           </p>
@@ -47,7 +48,7 @@ function renderMarkdown(text: string) {
       }
       return (
         <p key={i} style={{ margin: "0 0 8px", lineHeight: 1.55 }}>
-          <Link href={href} style={{ color: "#2e6b3a", fontWeight: 600, textDecoration: "none" }}>
+          <Link href={href} style={{ color: color.forest600, fontWeight: 600, textDecoration: "none" }}>
             {label}
           </Link>
         </p>
@@ -64,7 +65,7 @@ function renderMarkdown(text: string) {
 
     if (trimmed.startsWith("_") && trimmed.endsWith("_")) {
       return (
-        <p key={i} style={{ margin: "8px 0 0", fontSize: 12.5, color: "#8a9682", fontStyle: "italic", lineHeight: 1.45 }}>
+        <p key={i} style={{ margin: "8px 0 0", fontSize: 12.5, color: color.faint, fontStyle: "italic", lineHeight: 1.45 }}>
           {trimmed.slice(1, -1)}
         </p>
       );
@@ -93,7 +94,7 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
   const [open, setOpen] = useState(true);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [source, setSource] = useState<"openai" | "local" | null>(null);
+  const [source, setSource] = useState<"groq" | "openai" | "local" | null>(null);
   const [messages, setMessages] = useState<AssistantMessage[]>([
     {
       role: "assistant",
@@ -136,7 +137,7 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
           throw new Error((err as { error?: string }).error || "Request failed");
         }
 
-        const data = (await res.json()) as { message: string; source: "openai" | "local" };
+        const data = (await res.json()) as { message: string; source: "groq" | "openai" | "local" };
         setSource(data.source);
         setMessages((prev) => [...prev, { role: "assistant", content: data.message }]);
       } catch {
@@ -165,15 +166,15 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
       id="uf-plant-assistant"
       style={{
         background: "#fff",
-        border: "1px solid #e6e1cf",
-        borderRadius: 16,
+        border: `1px solid ${color.border}`,
+        borderRadius: 18,
         overflow: "hidden",
-        boxShadow: open ? "0 12px 40px rgba(14,42,23,.12)" : "none",
+        boxShadow: open ? "0 20px 48px rgba(10,24,16,.14)" : "none",
       }}
     >
       <div
         style={{
-          background: "linear-gradient(135deg,#12341f,#1a4a2c)",
+          background: `linear-gradient(135deg, ${color.forest900}, ${color.forest800})`,
           color: "#fff",
           padding: "18px 20px",
           display: "flex",
@@ -188,18 +189,18 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
               width: 40,
               height: 40,
               borderRadius: 12,
-              background: "rgba(127,191,107,.25)",
+              background: "rgba(182,134,45,.22)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "#a7d493",
+              color: color.onDarkGold,
               flexShrink: 0,
             }}
           >
             <LeafSparkleIcon />
           </span>
           <div style={{ minWidth: 0 }}>
-            <div style={{ fontWeight: 700, fontSize: 16 }}>UniFlora AI Assistant</div>
+            <div style={{ fontFamily: font.display, fontWeight: 600, fontSize: 16.5 }}>UniFlora AI Assistant</div>
             <div style={{ fontSize: 13, color: "rgba(255,255,255,.75)", marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
               Ask about {commonName}
             </div>
@@ -207,13 +208,11 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
         </div>
         <button
           type="button"
+          className="uf-btn-outline-dark"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-controls="uf-assistant-body"
           style={{
-            background: "rgba(255,255,255,.12)",
-            border: "1px solid rgba(255,255,255,.2)",
-            color: "#fff",
             borderRadius: 8,
             padding: "8px 12px",
             fontSize: 13,
@@ -235,7 +234,7 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
               height: "clamp(280px, 45vh, 380px)",
               overflowY: "auto",
               padding: "18px 16px",
-              background: "#fbf9f1",
+              background: color.parchmentDeep,
               display: "flex",
               flexDirection: "column",
               gap: 14,
@@ -247,11 +246,11 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
                 style={{
                   alignSelf: msg.role === "user" ? "flex-end" : "flex-start",
                   maxWidth: "92%",
-                  background: msg.role === "user" ? "#2e6b3a" : "#fff",
-                  color: msg.role === "user" ? "#fff" : "#33402f",
+                  background: msg.role === "user" ? color.forest600 : "#fff",
+                  color: msg.role === "user" ? "#fff" : color.inkSoft,
                   padding: "12px 14px",
                   borderRadius: msg.role === "user" ? "14px 14px 4px 14px" : "14px 14px 14px 4px",
-                  border: msg.role === "user" ? "none" : "1px solid #e6e1cf",
+                  border: msg.role === "user" ? "none" : `1px solid ${color.border}`,
                   fontSize: 14.5,
                 }}
               >
@@ -259,13 +258,13 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
               </div>
             ))}
             {loading && (
-              <div style={{ alignSelf: "flex-start", background: "#fff", border: "1px solid #e6e1cf", padding: "12px 16px", borderRadius: "14px 14px 14px 4px", fontSize: 14, color: "#8a9682" }}>
+              <div style={{ alignSelf: "flex-start", background: "#fff", border: `1px solid ${color.border}`, padding: "12px 16px", borderRadius: "14px 14px 14px 4px", fontSize: 14, color: color.faint }}>
                 <span className="uf-assistant-typing">Thinking</span>
               </div>
             )}
           </div>
 
-          <div style={{ padding: "12px 16px", borderTop: "1px solid #e6e1cf", background: "#fff" }}>
+          <div style={{ padding: "12px 16px", borderTop: `1px solid ${color.border}`, background: "#fff" }}>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 12 }}>
               {suggested.slice(0, 4).map((q) => (
                 <button
@@ -274,12 +273,12 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
                   disabled={loading}
                   onClick={() => void sendMessage(q)}
                   style={{
-                    background: "#eef0e2",
+                    background: color.statusDraftBg,
                     border: "1px solid #e0e2cf",
                     borderRadius: 999,
                     padding: "6px 12px",
                     fontSize: 12.5,
-                    color: "#3f4a3a",
+                    color: color.inkSoft,
                     cursor: loading ? "not-allowed" : "pointer",
                     fontFamily: "inherit",
                     opacity: loading ? 0.6 : 1,
@@ -307,7 +306,7 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
                 style={{
                   flex: 1,
                   resize: "none",
-                  border: "1px solid #e6e1cf",
+                  border: `1px solid ${color.border}`,
                   borderRadius: 10,
                   padding: "11px 14px",
                   fontSize: 14.5,
@@ -315,14 +314,15 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
                   lineHeight: 1.4,
                   minHeight: 44,
                   outline: "none",
-                  background: "#fbf9f1",
+                  background: color.parchmentDeep,
+                  color: color.ink,
                 }}
               />
               <button
                 type="submit"
                 disabled={loading || !input.trim()}
                 style={{
-                  background: loading || !input.trim() ? "#a8c4a0" : "#2e6b3a",
+                  background: loading || !input.trim() ? "#a8c4a0" : color.forest600,
                   color: "#fff",
                   border: "none",
                   borderRadius: 10,
@@ -338,11 +338,10 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
               </button>
             </form>
 
-            <p style={{ margin: "10px 0 0", fontSize: 12.5, color: "#8a9682", lineHeight: 1.4 }}>
-              {source === "openai"
+            <p style={{ margin: "10px 0 0", fontSize: 12.5, color: color.faint, lineHeight: 1.4 }}>
+              {source === "groq" || source === "openai"
                 ? "Powered by UniFlora AI · Answers grounded in campus species data."
-                : "Powered by UniFlora knowledge base · Add OPENAI_API_KEY for enhanced AI responses."}
-              {" "}Not medical advice.
+                : "Powered by UniFlora knowledge base."}
             </p>
           </div>
         </div>
@@ -371,10 +370,10 @@ export function PlantAssistant({ slug, commonName, scientificName, medicinal }: 
             width: 56,
             height: 56,
             borderRadius: "50%",
-            background: "linear-gradient(145deg,#2e6b3a,#1a4a2c)",
+            background: `linear-gradient(145deg, ${color.forest600}, ${color.forest900})`,
             color: "#fff",
             border: "2px solid rgba(255,255,255,.3)",
-            boxShadow: "0 8px 24px rgba(14,42,23,.35)",
+            boxShadow: "0 8px 24px rgba(10,24,16,.4)",
             cursor: "pointer",
             display: "flex",
             alignItems: "center",

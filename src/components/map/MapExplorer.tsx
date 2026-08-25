@@ -3,27 +3,30 @@
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import type { Canvas, CircleMarker, LayerGroup, Map as LeafletMap } from "leaflet";
+import { ChevronDownIcon, SearchIcon } from "@/components/icons";
 import { PlantImage } from "@/components/ui/PlantImage";
+import { color } from "@/lib/theme";
 import {
-  CAMPUS_BOUNDS,
-  CAMPUS_CENTER,
-  CAMPUS_ZONES,
-  CAMPUS_ZOOM,
   LAYER_COLORS,
-  LAYER_COUNTS,
   LAYER_LABELS,
-  PLANT_MARKERS,
+  getLayerCounts,
   getZoneById,
+  type CampusSettings,
+  type CampusZone,
   type MapLayer,
+  type Plant,
   type PlantMarker,
-} from "@/data/campus-map";
-import { STATS, getPlantBySlug } from "@/data/plants";
+} from "@/lib/data-types";
 import "leaflet/dist/leaflet.css";
 
 type BasemapStyle = "satellite" | "street";
 
 type MapExplorerProps = {
   initialSlug?: string;
+  campusSettings: CampusSettings;
+  zones: CampusZone[];
+  markers: PlantMarker[];
+  plants: Plant[];
 };
 
 const MAX_ZOOM = 20;
@@ -75,9 +78,9 @@ function stepButtonStyle(disabled: boolean): CSSProperties {
     height: 26,
     flexShrink: 0,
     borderRadius: "50%",
-    border: "1px solid #e6e1cf",
+    border: `1px solid ${color.border}`,
     background: "#fff",
-    color: disabled ? "#c4ccb9" : "#2e6b3a",
+    color: disabled ? "#c4ccb9" : color.forest600,
     fontSize: 15,
     lineHeight: 1,
     cursor: disabled ? "default" : "pointer",
@@ -85,7 +88,10 @@ function stepButtonStyle(disabled: boolean): CSSProperties {
   };
 }
 
-export function MapExplorer({ initialSlug }: MapExplorerProps) {
+export function MapExplorer({ initialSlug, campusSettings, zones, markers, plants }: MapExplorerProps) {
+  const plantBySlug = useMemo(() => new Map(plants.map((p) => [p.slug, p])), [plants]);
+  const layerCounts = useMemo(() => getLayerCounts(markers), [markers]);
+
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<LeafletMap | null>(null);
   const markerLayerRef = useRef<LayerGroup | null>(null);
@@ -101,7 +107,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
   const [activeZone, setActiveZone] = useState<string | null>(null);
   const [showZones, setShowZones] = useState(true);
   const [mapReady, setMapReady] = useState(false);
-  const [zoom, setZoom] = useState(CAMPUS_ZOOM);
+  const [zoom, setZoom] = useState(campusSettings.zoom);
   /** Which individual of the selected species the map is currently parked on. */
   const [individualIndex, setIndividualIndex] = useState(0);
   const rowRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -124,11 +130,11 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
 
   const filteredMarkers = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return PLANT_MARKERS.filter((m) => {
+    return markers.filter((m) => {
       if (!layers[m.layer]) return false;
       if (activeZone && m.zoneId !== activeZone) return false;
       if (!q) return true;
-      const plant = getPlantBySlug(m.slug);
+      const plant = plantBySlug.get(m.slug);
       if (!plant) return false;
       return (
         plant.scientificName.toLowerCase().includes(q) ||
@@ -138,22 +144,22 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
         m.id.toLowerCase().includes(q)
       );
     });
-  }, [search, layers, activeZone]);
+  }, [markers, plantBySlug, search, layers, activeZone]);
 
   /** Sidebar lists species, not 3,000 individual pins. */
   const speciesRows = useMemo(() => {
     const counts = new Map<string, number>();
     for (const m of filteredMarkers) counts.set(m.slug, (counts.get(m.slug) ?? 0) + 1);
     return [...counts.entries()]
-      .map(([slug, count]) => ({ slug, count, plant: getPlantBySlug(slug)! }))
+      .map(([slug, count]) => ({ slug, count, plant: plantBySlug.get(slug)! }))
       .filter((row) => row.plant)
       .sort((a, b) => b.count - a.count || a.plant.scientificName.localeCompare(b.plant.scientificName));
-  }, [filteredMarkers]);
+  }, [filteredMarkers, plantBySlug]);
 
   /** Every individual of the selected species, in map-record order. */
   const selectedMarkers = useMemo(
-    () => (selectedSlug ? PLANT_MARKERS.filter((m) => m.slug === selectedSlug) : []),
-    [selectedSlug],
+    () => (selectedSlug ? markers.filter((m) => m.slug === selectedSlug) : []),
+    [markers, selectedSlug],
   );
 
   /** Frame all individuals of a species — used by the sidebar list. */
@@ -165,13 +171,13 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
 
     const map = mapInstance.current;
     if (!map) return;
-    const points = PLANT_MARKERS.filter((m) => m.slug === slug);
+    const points = markers.filter((m) => m.slug === slug);
     if (points.length === 0) return;
 
     const L = (await import("leaflet")).default;
     const bounds = L.latLngBounds(points.map((p) => [p.lat, p.lng] as [number, number]));
     map.flyToBounds(bounds, { ...fitPadding(), maxZoom: 19, duration: 0.7 });
-  }, [fitPadding]);
+  }, [fitPadding, markers]);
 
   /** Dismiss the plant card and drop the highlight from the map. */
   const clearSelection = useCallback(() => {
@@ -206,12 +212,12 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
     if (!map) return;
     const L = (await import("leaflet")).default;
     if (!zoneId) {
-      map.flyToBounds(L.latLngBounds(CAMPUS_BOUNDS), { ...fitPadding(), duration: 0.6 });
+      map.flyToBounds(L.latLngBounds(campusSettings.bounds), { ...fitPadding(), duration: 0.6 });
       return;
     }
-    const zone = getZoneById(zoneId);
+    const zone = getZoneById(zones, zoneId);
     if (zone) map.flyToBounds(L.latLngBounds(zone.polygon), { ...fitPadding(), duration: 0.6 });
-  }, [fitPadding]);
+  }, [fitPadding, campusSettings.bounds, zones]);
 
   // --- map init -----------------------------------------------------------
   useEffect(() => {
@@ -223,12 +229,12 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       if (cancelled || !mapRef.current) return;
 
       const map = L.map(mapRef.current, {
-        center: CAMPUS_CENTER,
-        zoom: CAMPUS_ZOOM,
+        center: campusSettings.center,
+        zoom: campusSettings.zoom,
         minZoom: 15,
         maxZoom: MAX_ZOOM,
         zoomControl: false,
-        maxBounds: L.latLngBounds(CAMPUS_BOUNDS).pad(0.6),
+        maxBounds: L.latLngBounds(campusSettings.bounds).pad(0.6),
         maxBoundsViscosity: 0.7,
         preferCanvas: true,
         // Integer-only zoom makes fitBounds undershoot by up to a full step,
@@ -268,7 +274,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       // A fixed zoom shows far too little ground on a phone-width viewport, so
       // frame the campus itself and let the zoom fall out of the container size.
       if (window.matchMedia(MOBILE_QUERY).matches) {
-        map.fitBounds(L.latLngBounds(CAMPUS_BOUNDS), { paddingTopLeft: [16, 16], paddingBottomRight: [16, 80] });
+        map.fitBounds(L.latLngBounds(campusSettings.bounds), { paddingTopLeft: [16, 16], paddingBottomRight: [16, 80] });
         setZoom(map.getZoom());
       }
 
@@ -284,6 +290,10 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       zonesLayerRef.current = null;
       drawnRef.current = [];
     };
+    // Intentionally run once: `mapInstance.current` guards re-init, and
+    // campusSettings is server-fetched once per page load, never changing
+    // identity during this component's lifetime.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -322,7 +332,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       drawnRef.current = [];
 
       for (const item of filteredMarkers) {
-        const plant = getPlantBySlug(item.slug);
+        const plant = plantBySlug.get(item.slug);
         if (!plant) continue;
 
         const marker = L.circleMarker([item.lat, item.lng], {
@@ -349,22 +359,22 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
         marker.bindPopup(
           () =>
             `<div class="uf-map-popup">
-              <strong style="font-style:italic;font-family:Georgia,serif">${plant.scientificName}</strong>
-              <div style="font-size:13px;color:#3f4a3a;margin-top:4px">${
+              <strong style="font-style:italic;font-family:var(--font-display),Georgia,serif">${plant.scientificName}</strong>
+              <div style="font-size:13px;color:${color.inkSoft};margin-top:4px">${
                 plant.localNames[0] ? `${plant.localNames[0]} · ` : ""
               }${plant.family}</div>
-              <div style="font-size:12px;color:#8a9682;margin-top:6px">${
-                getZoneById(item.zoneId)?.shortName ?? ""
+              <div style="font-size:12px;color:${color.faint};margin-top:6px">${
+                getZoneById(zones, item.zoneId)?.shortName ?? ""
               } · Record ${item.id}</div>
-              <div style="font-size:12px;color:#8a9682;margin-top:2px">${plant.type} · ${plant.growthStatus}</div>
-              <a href="/species/${plant.slug}" style="display:block;text-align:center;margin-top:10px;background:#2e6b3a;color:#fff;padding:8px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none">View species ›</a>
+              <div style="font-size:12px;color:${color.faint};margin-top:2px">${plant.type} · ${plant.growthStatus}</div>
+              <a href="/species/${plant.slug}" style="display:block;text-align:center;margin-top:10px;background:${color.forest600};color:#fff;padding:8px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none">View species ›</a>
             </div>`,
           { maxWidth: 280, className: "uf-leaflet-popup" },
         );
 
         marker.on("click", () => {
           setSelectedSlug(item.slug);
-          const position = PLANT_MARKERS.filter((m) => m.slug === item.slug).findIndex((m) => m.id === item.id);
+          const position = markers.filter((m) => m.slug === item.slug).findIndex((m) => m.id === item.id);
           setIndividualIndex(position < 0 ? 0 : position);
         });
 
@@ -376,7 +386,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
     return () => {
       cancelled = true;
     };
-  }, [filteredMarkers, mapReady]);
+  }, [filteredMarkers, mapReady, plantBySlug, zones, markers]);
 
   // Rotating a phone or the URL bar collapsing resizes the map container, and
   // Leaflet only recomputes its canvas when told to.
@@ -416,7 +426,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       marker.setStyle({
         radius: isSelected ? 8 : 5,
         weight: isSelected ? 2.5 : 1.2,
-        color: isSelected ? "#12341f" : "#ffffff",
+        color: isSelected ? color.forest900 : "#ffffff",
         fillOpacity: selectedSlug && !isSelected ? 0.35 : 0.9,
       });
       if (isSelected) marker.bringToFront();
@@ -433,7 +443,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
       const L = (await import("leaflet")).default;
       if (!zonesLayerRef.current) return;
 
-      for (const zone of CAMPUS_ZONES) {
+      for (const zone of zones) {
         const dimmed = activeZone !== null && activeZone !== zone.id;
         L.polygon(zone.polygon, {
           color: zone.color,
@@ -456,14 +466,14 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
           .addTo(zonesLayerRef.current);
       }
     })();
-  }, [showZones, mapReady, activeZone]);
+  }, [showZones, mapReady, activeZone, zones]);
 
   const handleZoom = (delta: number) => {
     if (delta > 0) mapInstance.current?.zoomIn();
     else mapInstance.current?.zoomOut();
   };
 
-  const selectedPlant = selectedSlug ? getPlantBySlug(selectedSlug) : null;
+  const selectedPlant = selectedSlug ? plantBySlug.get(selectedSlug) ?? null : null;
   const selectedCount = selectedMarkers.length;
   const currentIndividual = selectedMarkers[individualIndex] ?? selectedMarkers[0] ?? null;
 
@@ -474,7 +484,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
 
       {/* Scrolling is left to CSS: the panel is a bottom sheet on phones and a
           fixed-height column on desktop, and each owns a different scroll region. */}
-      <aside className="uf-map-panel" style={{ background: "#fbf9f1", borderRight: "1px solid #e6e1cf" }}>
+      <aside className="uf-map-panel" style={{ background: color.parchmentDeep, borderRight: `1px solid ${color.border}` }}>
         {/* Collapsed handle doubles as the button that opens the sheet. */}
         <button
           type="button"
@@ -489,35 +499,32 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
             <span className="uf-sheet-handle-count">
               {numberFmt.format(speciesRows.length)} species · {numberFmt.format(filteredMarkers.length)} plants
             </span>
-            <svg className="uf-sheet-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="m6 15 6-6 6 6" />
-            </svg>
+            <span className="uf-sheet-chevron">
+              <ChevronDownIcon size={18} strokeWidth={2.2} />
+            </span>
           </span>
         </button>
 
         <div className="uf-map-panel-inner">
-          <h1 className="uf-map-title" style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontWeight: 600, fontSize: 26, margin: "0 0 4px" }}>Campus Map</h1>
-          <p className="uf-map-intro" style={{ fontSize: 14, color: "#6b7360", margin: "0 0 18px", lineHeight: 1.55 }}>
-            <b style={{ color: "#2e6b3a" }}>{numberFmt.format(STATS.locations)}</b> individual plants pinned by GPS across{" "}
-            <b style={{ color: "#2e6b3a" }}>{CAMPUS_ZONES.length}</b> campus zones. Tap a marker or pick a species below.
+          <h1 className="uf-map-title" style={{ fontFamily: "var(--font-display), 'Fraunces', serif", fontWeight: 600, fontSize: 27, margin: "0 0 4px", color: color.ink }}>Campus Map</h1>
+          <p className="uf-map-intro" style={{ fontSize: 14, color: color.muted, margin: "0 0 18px", lineHeight: 1.55 }}>
+            <b style={{ color: color.forest600 }}>{numberFmt.format(markers.length)}</b> individual plants pinned by GPS across{" "}
+            <b style={{ color: color.forest600 }}>{zones.length}</b> campus zones. Tap a marker or pick a species below.
           </p>
 
-          <div style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: "1px solid #e6e1cf", borderRadius: 10, padding: "9px 12px", marginBottom: 18 }}>
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#6b7360" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="7" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff", border: `1px solid ${color.border}`, borderRadius: 10, padding: "9px 12px", marginBottom: 18 }}>
+            <SearchIcon size={17} color={color.muted} strokeWidth={1.9} />
             <input
               type="search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search species, family, local name…"
               /* 16px keeps iOS Safari from zooming the viewport on focus. */
-              style={{ flex: 1, border: "none", outline: "none", fontSize: 16, fontFamily: "inherit", background: "transparent", minWidth: 0 }}
+              style={{ flex: 1, border: "none", outline: "none", fontSize: 16, fontFamily: "inherit", background: "transparent", minWidth: 0, color: color.ink }}
             />
           </div>
 
-          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: "#8a9682", marginBottom: 10 }}>Basemap</div>
+          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: color.faint, marginBottom: 10 }}>Basemap</div>
           <div style={{ display: "flex", gap: 8, marginBottom: 18 }}>
             {(["satellite", "street"] as BasemapStyle[]).map((style) => (
               <button
@@ -526,9 +533,9 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                 onClick={() => setBasemap(style)}
                 style={{
                   flex: 1,
-                  border: basemap === style ? "2px solid #2e6b3a" : "1px solid #e6e1cf",
-                  background: basemap === style ? "#e2ecda" : "#fff",
-                  color: "#1e2b1f",
+                  border: basemap === style ? `2px solid ${color.forest600}` : `1px solid ${color.border}`,
+                  background: basemap === style ? color.sage100 : "#fff",
+                  color: color.ink,
                   padding: "11px 12px",
                   borderRadius: 9,
                   fontSize: 13.5,
@@ -543,26 +550,26 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
             ))}
           </div>
 
-          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: "#8a9682", marginBottom: 10 }}>Growth form</div>
+          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: color.faint, marginBottom: 10 }}>Growth form</div>
           {(Object.keys(LAYER_LABELS) as MapLayer[]).map((layer) => (
-            <label key={layer} className="uf-layer" style={{ display: "flex", alignItems: "center", gap: 9, fontSize: 14.5, color: "#3f4a3a", padding: "8px 10px", borderRadius: 8, cursor: "pointer" }}>
+            <label key={layer} className="uf-layer" style={{ display: "flex", alignItems: "center", gap: 9, fontSize: 14.5, color: color.inkSoft, padding: "8px 10px", borderRadius: 8, cursor: "pointer" }}>
               <input
                 type="checkbox"
                 checked={layers[layer]}
                 onChange={() => setLayers((prev) => ({ ...prev, [layer]: !prev[layer] }))}
-                style={{ accentColor: "#2e6b3a", width: 16, height: 16 }}
+                style={{ accentColor: color.forest600, width: 16, height: 16 }}
               />
               <span style={{ width: 11, height: 11, borderRadius: "50%", background: LAYER_COLORS[layer] }} /> {LAYER_LABELS[layer]}
-              <span style={{ marginLeft: "auto", color: "#8a9682", fontSize: 13 }}>{numberFmt.format(LAYER_COUNTS[layer])}</span>
+              <span style={{ marginLeft: "auto", color: color.faint, fontSize: 13 }}>{numberFmt.format(layerCounts[layer])}</span>
             </label>
           ))}
 
-          <label className="uf-layer" style={{ display: "flex", alignItems: "center", gap: 9, fontSize: 14.5, color: "#3f4a3a", padding: "8px 10px", borderRadius: 8, cursor: "pointer", marginTop: 4 }}>
-            <input type="checkbox" checked={showZones} onChange={() => setShowZones((v) => !v)} style={{ accentColor: "#2e6b3a", width: 16, height: 16 }} />
+          <label className="uf-layer" style={{ display: "flex", alignItems: "center", gap: 9, fontSize: 14.5, color: color.inkSoft, padding: "8px 10px", borderRadius: 8, cursor: "pointer", marginTop: 4 }}>
+            <input type="checkbox" checked={showZones} onChange={() => setShowZones((v) => !v)} style={{ accentColor: color.forest600, width: 16, height: 16 }} />
             Show zone outlines
           </label>
 
-          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: "#8a9682", margin: "18px 0 10px" }}>Zones</div>
+          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: color.faint, margin: "18px 0 10px" }}>Zones</div>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
             <button
               type="button"
@@ -571,9 +578,9 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
               style={{
                 padding: "6px 11px",
                 borderRadius: 999,
-                border: activeZone === null ? "1px solid #2e6b3a" : "1px solid #e6e1cf",
-                background: activeZone === null ? "#2e6b3a" : "#fff",
-                color: activeZone === null ? "#fff" : "#3f4a3a",
+                border: activeZone === null ? `1px solid ${color.forest600}` : `1px solid ${color.border}`,
+                background: activeZone === null ? color.forest600 : "#fff",
+                color: activeZone === null ? "#fff" : color.inkSoft,
                 fontSize: 12.5,
                 fontWeight: 600,
                 cursor: "pointer",
@@ -582,7 +589,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
             >
               All
             </button>
-            {CAMPUS_ZONES.map((zone) => {
+            {zones.map((zone) => {
               const active = activeZone === zone.id;
               return (
                 <button
@@ -597,9 +604,9 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                     gap: 6,
                     padding: "6px 11px",
                     borderRadius: 999,
-                    border: active ? "1px solid #2e6b3a" : "1px solid #e6e1cf",
-                    background: active ? "#e2ecda" : "#fff",
-                    color: "#3f4a3a",
+                    border: active ? `1px solid ${color.forest600}` : `1px solid ${color.border}`,
+                    background: active ? color.sage100 : "#fff",
+                    color: color.inkSoft,
                     fontSize: 12.5,
                     fontWeight: 600,
                     cursor: "pointer",
@@ -613,17 +620,17 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
             })}
           </div>
 
-          <div style={{ height: 1, background: "#e6e1cf", margin: "20px 0" }} />
-          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: "#8a9682", marginBottom: 4 }}>
+          <div style={{ height: 1, background: color.border, margin: "20px 0" }} />
+          <div style={{ fontWeight: 700, fontSize: 12.5, letterSpacing: 0.5, textTransform: "uppercase", color: color.faint, marginBottom: 4 }}>
             Species in view ({speciesRows.length})
           </div>
-          <div style={{ fontSize: 12.5, color: "#8a9682", marginBottom: 10 }}>
+          <div style={{ fontSize: 12.5, color: color.faint, marginBottom: 10 }}>
             {numberFmt.format(filteredMarkers.length)} plants shown
           </div>
 
           <div className="uf-species-scroll" style={{ display: "flex", flexDirection: "column", gap: 3, overflowY: "auto" }}>
             {speciesRows.length === 0 && (
-              <div style={{ fontSize: 14, color: "#8a9682", padding: "14px 4px" }}>No plants match these filters.</div>
+              <div style={{ fontSize: 14, color: color.faint, padding: "14px 4px" }}>No plants match these filters.</div>
             )}
             {speciesRows.map(({ slug, count, plant }) => {
               const isActive = selectedSlug === slug;
@@ -644,8 +651,8 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                       padding: 9,
                       borderRadius: 10,
                       textAlign: "left",
-                      border: isActive ? "2px solid #2e6b3a" : "1px solid transparent",
-                      background: isActive ? "#e2ecda" : "transparent",
+                      border: isActive ? `2px solid ${color.forest600}` : "1px solid transparent",
+                      background: isActive ? color.sage100 : "transparent",
                       cursor: "pointer",
                       alignItems: "center",
                       fontFamily: "inherit",
@@ -662,14 +669,14 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                       style={{ display: "block", width: 42, height: 42, borderRadius: 9, overflow: "hidden", flex: "0 0 auto" }}
                     />
                     <div style={{ minWidth: 0, flex: 1 }}>
-                      <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontStyle: "italic", fontSize: 14, fontWeight: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                      <div style={{ fontFamily: "var(--font-display), 'Fraunces', serif", fontStyle: "italic", fontSize: 14, fontWeight: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", color: color.ink }}>
                         {plant.scientificName}
                       </div>
-                      <div style={{ fontSize: 12, color: "#8a9682", whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
+                      <div style={{ fontSize: 12, color: color.faint, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>
                         {plant.localNames[0] ?? plant.family}
                       </div>
                     </div>
-                    <span style={{ fontSize: 12.5, fontWeight: 700, color: "#2e6b3a", flexShrink: 0 }}>{count}</span>
+                    <span style={{ fontSize: 12.5, fontWeight: 700, color: color.forest600, flexShrink: 0 }}>{count}</span>
                     <span style={{ width: 9, height: 9, borderRadius: "50%", background: LAYER_COLORS[plant.layer], flexShrink: 0 }} />
                   </button>
 
@@ -684,7 +691,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                       >
                         ‹
                       </button>
-                      <span style={{ fontSize: 12, color: "#5a6553", whiteSpace: "nowrap" }}>
+                      <span style={{ fontSize: 12, color: color.inkSoft, whiteSpace: "nowrap" }}>
                         Plant {Math.min(individualIndex + 1, selectedMarkers.length)} of {selectedMarkers.length}
                       </span>
                       <button
@@ -698,7 +705,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                       </button>
                       <Link
                         href={`/species/${slug}`}
-                        style={{ marginLeft: "auto", fontSize: 12, fontWeight: 600, color: "#2e6b3a", textDecoration: "none", whiteSpace: "nowrap" }}
+                        style={{ marginLeft: "auto", fontSize: 12, fontWeight: 600, color: color.forest600, textDecoration: "none", whiteSpace: "nowrap" }}
                       >
                         Details →
                       </Link>
@@ -715,27 +722,27 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
         <div ref={mapRef} style={{ position: "absolute", inset: 0, zIndex: 1 }} />
 
         <div className="uf-map-zoom" style={{ position: "absolute", top: 16, right: 16, zIndex: 500, display: "flex", flexDirection: "column", background: "#fff", borderRadius: 10, overflow: "hidden", boxShadow: "0 4px 14px rgba(0,0,0,.15)" }}>
-          <button type="button" className="uf-zoom" onClick={() => handleZoom(1)} style={{ border: "none", background: "#fff", color: "#3f4a3a", width: 44, height: 44, fontSize: 22, cursor: "pointer", borderBottom: "1px solid #eee" }} aria-label="Zoom in">
+          <button type="button" className="uf-zoom" onClick={() => handleZoom(1)} style={{ border: "none", background: "#fff", color: color.inkSoft, width: 44, height: 44, fontSize: 22, cursor: "pointer", borderBottom: "1px solid #eee" }} aria-label="Zoom in">
             +
           </button>
-          <button type="button" className="uf-zoom" onClick={() => handleZoom(-1)} style={{ border: "none", background: "#fff", color: "#3f4a3a", width: 44, height: 44, fontSize: 22, cursor: "pointer" }} aria-label="Zoom out">
+          <button type="button" className="uf-zoom" onClick={() => handleZoom(-1)} style={{ border: "none", background: "#fff", color: color.inkSoft, width: 44, height: 44, fontSize: 22, cursor: "pointer" }} aria-label="Zoom out">
             −
           </button>
         </div>
 
         <div className="uf-map-legend" style={{ position: "absolute", bottom: 16, right: 16, zIndex: 500, background: "#fff", borderRadius: 12, padding: "13px 15px", boxShadow: "0 4px 14px rgba(0,0,0,.15)", fontSize: 13, maxWidth: 220 }}>
-          <div style={{ fontWeight: 700, marginBottom: 8 }}>Legend</div>
+          <div style={{ fontWeight: 700, marginBottom: 8, color: color.ink }}>Legend</div>
           {(Object.keys(LAYER_LABELS) as MapLayer[]).map((layer) => (
-            <div key={layer} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5 }}>
+            <div key={layer} style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5, color: color.inkSoft }}>
               <span style={{ width: 12, height: 12, borderRadius: "50%", background: LAYER_COLORS[layer] }} /> {LAYER_LABELS[layer]}
             </div>
           ))}
-          <div style={{ fontSize: 11.5, color: "#8a9682", lineHeight: 1.45, marginTop: 8, paddingTop: 8, borderTop: "1px solid #f0ecdd" }}>
+          <div style={{ fontSize: 11.5, color: color.faint, lineHeight: 1.45, marginTop: 8, paddingTop: 8, borderTop: "1px solid #f0ecdd" }}>
             Field GPS readings are recorded to the nearest arc-second, so plants sharing a reading are spread slightly to
             stay individually selectable.
           </div>
           {zoom > TILES[basemap].maxNativeZoom && (
-            <div style={{ fontSize: 11.5, color: "#96702b", background: "#f7efdd", borderRadius: 7, padding: "7px 9px", lineHeight: 1.45, marginTop: 8 }}>
+            <div style={{ fontSize: 11.5, color: color.gold700, background: color.gold100, borderRadius: 7, padding: "7px 9px", lineHeight: 1.45, marginTop: 8 }}>
               Past the sharpest {basemap} imagery for this area (zoom {TILES[basemap].maxNativeZoom}), so tiles are
               enlarged. Marker positions stay accurate.
             </div>
@@ -743,7 +750,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
         </div>
 
         {selectedPlant && (
-          <div className="uf-map-card" style={{ position: "absolute", bottom: 16, left: 16, zIndex: 500, width: "min(300px, calc(100% - 32px))", background: "#fff", borderRadius: 14, boxShadow: "0 18px 40px rgba(0,0,0,.25)", overflow: "hidden" }}>
+          <div className="uf-map-card" style={{ position: "absolute", bottom: 16, left: 16, zIndex: 500, width: "min(300px, calc(100% - 32px))", background: "#fff", borderRadius: 16, boxShadow: "0 18px 40px rgba(0,0,0,.25)", overflow: "hidden" }}>
             <button
               type="button"
               onClick={clearSelection}
@@ -761,7 +768,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                 borderRadius: "50%",
                 border: "none",
                 background: "rgba(255,255,255,.92)",
-                color: "#3f4a3a",
+                color: color.inkSoft,
                 fontSize: 17,
                 lineHeight: 1,
                 cursor: "pointer",
@@ -780,12 +787,12 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
               />
             </div>
             <div className="uf-map-card-body" style={{ padding: 14 }}>
-              <div style={{ fontFamily: "var(--font-playfair), 'Playfair Display', serif", fontStyle: "italic", fontSize: 17, fontWeight: 600 }}>{selectedPlant.scientificName}</div>
-              <div style={{ fontSize: 13, color: "#3f4a3a", marginTop: 3 }}>
+              <div style={{ fontFamily: "var(--font-display), 'Fraunces', serif", fontStyle: "italic", fontSize: 17, fontWeight: 600, color: color.ink }}>{selectedPlant.scientificName}</div>
+              <div style={{ fontSize: 13, color: color.inkSoft, marginTop: 3 }}>
                 {selectedPlant.localNames[0] ? `${selectedPlant.localNames[0]} · ` : ""}
                 {selectedPlant.family}
               </div>
-              <div style={{ fontSize: 12.5, color: "#8a9682", marginTop: 6 }}>
+              <div style={{ fontSize: 12.5, color: color.faint, marginTop: 6 }}>
                 {selectedCount} mapped on campus · {selectedPlant.type} · {selectedPlant.growthStatus}
               </div>
 
@@ -800,9 +807,9 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                   >
                     ‹
                   </button>
-                  <div style={{ fontSize: 12, color: "#5a6553", lineHeight: 1.35, flex: 1, textAlign: "center" }}>
+                  <div style={{ fontSize: 12, color: color.inkSoft, lineHeight: 1.35, flex: 1, textAlign: "center" }}>
                     <div style={{ fontWeight: 600 }}>Record {currentIndividual.id}</div>
-                    <div style={{ color: "#8a9682" }}>{getZoneById(currentIndividual.zoneId)?.shortName}</div>
+                    <div style={{ color: color.faint }}>{getZoneById(zones, currentIndividual.zoneId)?.shortName}</div>
                   </div>
                   <button
                     type="button"
@@ -816,7 +823,7 @@ export function MapExplorer({ initialSlug }: MapExplorerProps) {
                 </div>
               )}
 
-              <Link href={`/species/${selectedPlant.slug}`} style={{ display: "block", textAlign: "center", marginTop: 12, background: "#2e6b3a", color: "#fff", padding: 9, borderRadius: 8, fontSize: 13.5, fontWeight: 600, textDecoration: "none" }}>
+              <Link href={`/species/${selectedPlant.slug}`} className="uf-btn-primary" style={{ display: "block", textAlign: "center", marginTop: 12, padding: 10, borderRadius: 9, fontSize: 13.5, fontWeight: 600, textDecoration: "none" }}>
                 View full species page ›
               </Link>
             </div>

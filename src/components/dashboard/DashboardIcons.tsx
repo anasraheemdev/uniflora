@@ -176,7 +176,7 @@ export function IconMap(props: IconProps) {
 
 export function IconPending(props: IconProps) {
   return (
-    <Icon {...props} stroke={props.stroke ?? "#c99a2e"}>
+    <Icon {...props} stroke={props.stroke ?? "#b6862d"}>
       <circle cx="12" cy="12" r="10" />
       <path d="M12 6v6l4 2" />
     </Icon>

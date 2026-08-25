@@ -1,233 +1,91 @@
+/* ──────────────────────────────────────────────────────────────────────
+   UniFlora — "Modern Botanical Editorial" design system
+   Deep forest green + warm parchment, Fraunces + Inter, gold accent.
+   ────────────────────────────────────────────────────────────────────── */
+
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
 }
 
-.uf-nav a {
-  position: relative;
+::selection {
+  background: #dcead0;
+  color: #16241c;
 }
 
-.uf-card {
-  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-}
-
-.uf-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(20, 50, 28, 0.12);
-  border-color: #cfe0c4 !important;
-}
-
-.uf-plant {
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-}
-
-.uf-plant:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 16px 34px rgba(20, 50, 28, 0.16);
-}
-
-.uf-ql {
-  transition: background 0.18s ease;
-}
-
-.uf-ql:hover {
-  background: rgba(255, 255, 255, 0.6) !important;
-}
-
-.uf-navlink:hover {
-  color: #ffffff !important;
-}
-
-.uf-btn:hover {
-  background: #245730 !important;
-}
-
-.uf-searchbtn:hover {
-  background: #245730 !important;
-}
-
-.uf-chip:hover {
-  color: #245730 !important;
-}
-
-.uf-login:hover {
-  background: #3a7d47 !important;
-}
-
-.uf-filter:hover {
-  color: #2e6b3a !important;
-}
-
-.uf-tab:hover {
-  background: #e2ecda !important;
-}
-
-.uf-az:hover {
-  background: #2e6b3a !important;
-  color: #fff !important;
-}
-
-.uf-dl:hover {
-  background: #eef0e2 !important;
-  border-color: #cfe0c4 !important;
-}
-
-.uf-thumb {
-  transition: transform 0.18s;
-}
-
-.uf-thumb:hover {
-  transform: scale(1.04);
-}
-
-.uf-fchip {
-  transition: all 0.15s;
-}
-
-.uf-fchip:hover {
-  border-color: #2e6b3a !important;
-  color: #2e6b3a !important;
-}
-
-.uf-g {
-  position: relative;
-  break-inside: avoid;
-  margin-bottom: 16px;
-  border-radius: 14px;
-  overflow: hidden;
-}
-
-.uf-g figcaption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 26px 16px 14px;
-  background: linear-gradient(transparent, rgba(9, 26, 15, 0.85));
-  color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.uf-g:hover figcaption {
-  opacity: 1;
-}
-
-.uf-marker {
-  cursor: pointer;
-  transition: transform 0.15s;
-}
-
-.uf-marker:hover {
-  transform: scale(1.25);
-}
-
-.uf-layer:hover {
-  background: #eef0e2 !important;
-}
-
-.uf-listitem:hover {
-  background: #f5f1e6 !important;
-}
-
-.uf-zoom:hover {
-  background: #eef0e2 !important;
-}
-
-.plant-image-slot {
-  background: #16351f;
-  overflow: hidden;
-  position: relative;
-}
-
-.plant-image-slot img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.uf-dashnav:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  color: #fff !important;
-}
-
-.uf-dashrow:hover {
-  background: #fbf9f1;
-}
-
-/* Leaflet map */
-.uf-leaflet-marker {
-  background: transparent !important;
-  border: none !important;
-}
-
-.uf-map-zone-label {
-  background: rgba(14, 42, 23, 0.82) !important;
-  border: none !important;
-  border-radius: 6px !important;
-  color: #fff !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
-  padding: 4px 8px !important;
-  box-shadow: none !important;
-}
-
-.uf-map-building-label {
-  background: rgba(255, 255, 255, 0.92) !important;
-  border: 1px solid #e6e1cf !important;
-  border-radius: 4px !important;
-  color: #3f4a3a !important;
-  font-size: 10px !important;
-  font-weight: 600 !important;
-  padding: 2px 6px !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
-}
-
-.uf-leaflet-popup .leaflet-popup-content-wrapper {
-  border-radius: 12px !important;
-  box-shadow: 0 12px 28px rgba(20, 50, 28, 0.18) !important;
-}
-
-.uf-leaflet-popup .leaflet-popup-content {
-  margin: 12px 14px !important;
-  font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
-}
-
-.uf-map-tooltip {
-  font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
-  font-size: 12px !important;
-}
-
-/* Hover label that names the plant under the cursor. */
-.uf-map-plant-tip {
-  font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
-  font-size: 12.5px !important;
-  font-weight: 600;
-  color: #fff !important;
-  background: rgba(28, 46, 30, 0.94) !important;
-  border: none !important;
-  border-radius: 7px !important;
-  padding: 5px 9px !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
-  white-space: nowrap;
-}
-
-.uf-map-plant-tip::before {
-  border-top-color: rgba(28, 46, 30, 0.94) !important;
-}
-
-.leaflet-container {
-  font-family: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif !important;
-}
-
-/* ── Responsive layout system ── */
+/* ── Design tokens ── */
 :root {
+  /* ink */
+  --uf-ink: #16241c;
+  --uf-ink-soft: #3d4a3f;
+  --uf-muted: #74806f;
+  --uf-faint: #9aa494;
+
+  /* forest (brand) */
+  --uf-forest-950: #0a1f13;
+  --uf-forest-900: #123420;
+  --uf-forest-800: #1c4a2c;
+  --uf-forest-700: #245534;
+  --uf-forest-600: #2f6b3f;
+  --uf-forest-500: #3f8a4f;
+  --uf-forest-400: #55a566;
+
+  /* sage */
+  --uf-sage-100: #e4ecda;
+  --uf-sage-200: #d3e2c4;
+
+  /* gold — the editorial accent */
+  --uf-gold-600: #b6862d;
+  --uf-gold-700: #8f6a21;
+  --uf-gold-100: #f6ecd2;
+
+  /* parchment / surfaces */
+  --uf-parchment: #faf6ec;
+  --uf-parchment-deep: #f2ecdb;
+  --uf-surface: #ffffff;
+  --uf-border: #e6ded0;
+  --uf-border-strong: #d8cdb2;
+
+  /* text on dark (forest) surfaces */
+  --uf-on-dark: #f4f1e6;
+  --uf-on-dark-muted: #aec6a7;
+  --uf-on-dark-faint: #7f9a79;
+  --uf-on-dark-gold: #e3c37c;
+
+  /* status */
+  --uf-status-pending-bg: #f6ecd2;
+  --uf-status-pending-fg: #8f6a21;
+  --uf-status-review-bg: #e7edf6;
+  --uf-status-review-fg: #3a5a8a;
+  --uf-status-approved-bg: #deead9;
+  --uf-status-approved-fg: #2f6b3f;
+  --uf-status-draft-bg: #eef0e6;
+  --uf-status-draft-fg: #6b7360;
+
+  /* radii + shadow */
+  --uf-radius-sm: 8px;
+  --uf-radius-md: 12px;
+  --uf-radius-lg: 16px;
+  --uf-radius-xl: 24px;
+  --uf-shadow-card: 0 1px 2px rgba(20, 40, 25, .04), 0 10px 28px rgba(20, 40, 25, .07);
+  --uf-shadow-lifted: 0 20px 44px rgba(16, 32, 20, .16);
+  --uf-shadow-popover: 0 18px 40px rgba(16, 32, 20, .22);
+
+  /* legacy var names — old inline styles reference these directly; keep
+     them pointed at the new type family so nothing silently falls back to
+     system fonts before every file is migrated. */
+  --font-playfair: var(--font-display);
+  --font-source-sans: var(--font-body);
+
   --uf-pad: 40px;
   --uf-pad-sm: 24px;
-  /* How much of the mobile map sheet stays visible when collapsed. */
   --uf-sheet-peek: 62px;
 }
 
@@ -245,6 +103,319 @@ body {
   }
 }
 
+body {
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+a {
+  transition: color 0.15s ease;
+}
+
+/* ── Focus ring (keyboard only) ── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--uf-forest-500);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Editorial text utilities ── */
+.uf-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.uf-kicker::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--uf-gold-600);
+  flex-shrink: 0;
+}
+
+/* ── Buttons ── */
+.uf-btn-primary {
+  background: var(--uf-forest-600);
+  color: #fff;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.uf-btn-primary:hover {
+  background: var(--uf-forest-800);
+}
+
+.uf-btn-primary:active {
+  transform: translateY(1px);
+}
+
+.uf-btn-secondary {
+  background: #fff;
+  color: var(--uf-forest-600);
+  border: 1px solid var(--uf-border-strong);
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.uf-btn-secondary:hover {
+  border-color: var(--uf-forest-600);
+  background: var(--uf-sage-100);
+}
+
+.uf-btn-ghost {
+  background: transparent;
+  color: var(--uf-forest-600);
+  transition: background 0.18s ease;
+}
+
+.uf-btn-ghost:hover {
+  background: var(--uf-sage-100);
+}
+
+.uf-btn-outline-dark {
+  background: rgba(255, 255, 255, .06);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .32);
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.uf-btn-outline-dark:hover {
+  background: rgba(255, 255, 255, .14);
+  border-color: rgba(255, 255, 255, .5);
+}
+
+.uf-btn-gold {
+  background: var(--uf-gold-600);
+  color: #1c1404;
+  transition: background 0.18s ease;
+}
+
+.uf-btn-gold:hover {
+  background: #a1791f;
+}
+
+/* ── Card / hover system ── */
+.uf-card {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.uf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--uf-shadow-lifted);
+  border-color: var(--uf-forest-500) !important;
+}
+
+.uf-plant {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.uf-plant:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--uf-shadow-lifted);
+}
+
+.uf-ql {
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.uf-ql:hover {
+  background: rgba(255, 255, 255, .7) !important;
+  transform: translateX(2px);
+}
+
+.uf-navlink:hover {
+  color: #ffffff !important;
+}
+
+.uf-searchbtn:hover {
+  background: var(--uf-forest-800) !important;
+}
+
+.uf-chip:hover {
+  color: var(--uf-forest-800) !important;
+  border-color: var(--uf-forest-500) !important;
+}
+
+.uf-login:hover {
+  background: var(--uf-forest-500) !important;
+}
+
+.uf-filter:hover {
+  color: var(--uf-forest-600) !important;
+}
+
+.uf-tab:hover {
+  background: var(--uf-sage-100) !important;
+}
+
+.uf-az:hover {
+  background: var(--uf-forest-600) !important;
+  color: #fff !important;
+  border-color: var(--uf-forest-600) !important;
+}
+
+.uf-dl:hover {
+  background: var(--uf-parchment-deep) !important;
+  border-color: var(--uf-border-strong) !important;
+}
+
+.uf-thumb {
+  transition: transform 0.25s ease;
+}
+
+.uf-thumb:hover {
+  transform: scale(1.05);
+}
+
+.uf-fchip {
+  transition: all 0.15s ease;
+}
+
+.uf-fchip:hover {
+  border-color: var(--uf-forest-600) !important;
+  color: var(--uf-forest-600) !important;
+}
+
+.uf-g {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: var(--uf-radius-lg);
+  overflow: hidden;
+}
+
+.uf-g figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 18px 16px;
+  background: linear-gradient(transparent, rgba(10, 24, 15, .9));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.uf-g:hover figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.uf-marker {
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.uf-marker:hover {
+  transform: scale(1.25);
+}
+
+.uf-layer:hover {
+  background: var(--uf-parchment-deep) !important;
+}
+
+.uf-listitem:hover {
+  background: var(--uf-parchment) !important;
+}
+
+.uf-zoom:hover {
+  background: var(--uf-parchment-deep) !important;
+}
+
+.plant-image-slot {
+  background: var(--uf-forest-950);
+  overflow: hidden;
+  position: relative;
+}
+
+.plant-image-slot img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.uf-dashnav:hover {
+  background: rgba(255, 255, 255, .08) !important;
+  color: #fff !important;
+}
+
+.uf-dashrow:hover {
+  background: var(--uf-parchment);
+}
+
+/* Leaflet map */
+.uf-leaflet-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.uf-map-zone-label {
+  background: rgba(10, 31, 19, .85) !important;
+  border: none !important;
+  border-radius: 6px !important;
+  color: #fff !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+  box-shadow: none !important;
+}
+
+.uf-map-building-label {
+  background: rgba(255, 255, 255, .94) !important;
+  border: 1px solid var(--uf-border) !important;
+  border-radius: 4px !important;
+  color: var(--uf-ink-soft) !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  padding: 2px 6px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .08) !important;
+}
+
+.uf-leaflet-popup .leaflet-popup-content-wrapper {
+  border-radius: var(--uf-radius-md) !important;
+  box-shadow: var(--uf-shadow-popover) !important;
+}
+
+.uf-leaflet-popup .leaflet-popup-content {
+  margin: 12px 14px !important;
+  font-family: var(--font-body), "Inter", system-ui, sans-serif !important;
+}
+
+.uf-map-tooltip {
+  font-family: var(--font-body), "Inter", system-ui, sans-serif !important;
+  font-size: 12px !important;
+}
+
+.uf-map-plant-tip {
+  font-family: var(--font-body), "Inter", system-ui, sans-serif !important;
+  font-size: 12.5px !important;
+  font-weight: 600;
+  color: #fff !important;
+  background: rgba(10, 24, 16, .95) !important;
+  border: none !important;
+  border-radius: 7px !important;
+  padding: 5px 9px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .28) !important;
+  white-space: nowrap;
+}
+
+.uf-map-plant-tip::before {
+  border-top-color: rgba(10, 24, 16, .95) !important;
+}
+
+.leaflet-container {
+  font-family: var(--font-body), "Inter", system-ui, sans-serif !important;
+}
+
+/* ── Responsive layout system ── */
 .uf-page-pad {
   padding-left: var(--uf-pad);
   padding-right: var(--uf-pad);
@@ -262,26 +433,26 @@ body {
 .uf-grid-3,
 .uf-grid-2 {
   display: grid;
-  gap: 18px;
+  gap: 20px;
 }
 
-.uf-grid-6 { grid-template-columns: repeat(6, 1fr); gap: 16px; }
-.uf-grid-5 { grid-template-columns: repeat(5, 1fr); gap: 14px; }
-.uf-grid-4 { grid-template-columns: repeat(4, 1fr); }
-.uf-grid-3 { grid-template-columns: repeat(3, 1fr); }
-.uf-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.uf-grid-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; }
+.uf-grid-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.uf-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.uf-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.uf-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 @media (max-width: 1024px) {
-  .uf-grid-6 { grid-template-columns: repeat(3, 1fr); }
-  .uf-grid-5 { grid-template-columns: repeat(3, 1fr); }
-  .uf-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .uf-grid-6 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .uf-grid-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .uf-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 640px) {
   .uf-grid-6,
   .uf-grid-5,
   .uf-grid-4,
-  .uf-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .uf-grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 420px) {
@@ -289,7 +460,7 @@ body {
   .uf-grid-5,
   .uf-grid-4,
   .uf-grid-3,
-  .uf-grid-2 { grid-template-columns: 1fr; }
+  .uf-grid-2 { grid-template-columns: minmax(0, 1fr); }
 }
 
 /* Split layouts */
@@ -305,29 +476,24 @@ body {
   align-items: start;
 }
 
-.uf-split-explore { grid-template-columns: 280px 1fr; gap: 28px; }
-/* `align-items: start` from the shared rule sizes the sidebar to its content,
-   so a 190-species list makes the grid row taller than the viewport: the page
-   scrolls, the map slides out of view, and dead space opens beside it.
-   Stretching both columns keeps them viewport-tall and lets the sidebar scroll
-   within its own column. */
+.uf-split-explore { grid-template-columns: 292px minmax(0, 1fr); gap: 30px; }
 .uf-split-map {
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 360px minmax(0, 1fr);
   height: calc(100vh - 72px);
   min-height: 640px;
   align-items: stretch;
 }
-.uf-split-species { grid-template-columns: 1fr 360px; gap: 36px; }
-.uf-split-stats { grid-template-columns: 400px 1fr; gap: 22px; align-items: stretch; }
-.uf-split-dash { grid-template-columns: 1.4fr 1fr; gap: 22px; }
-.uf-split-users { grid-template-columns: 1fr 280px; gap: 22px; }
-.uf-split-login { grid-template-columns: 1fr 1fr; gap: 40px; }
-.uf-split-promo { grid-template-columns: 1fr 1fr; }
+.uf-split-species { grid-template-columns: minmax(0, 1fr) 372px; gap: 40px; }
+.uf-split-stats { grid-template-columns: 420px minmax(0, 1fr); gap: 24px; align-items: stretch; }
+.uf-split-dash { grid-template-columns: 1.4fr 1fr; gap: 24px; }
+.uf-split-users { grid-template-columns: minmax(0, 1fr) 296px; gap: 24px; }
+.uf-split-login { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; }
+.uf-split-promo { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 
 @media (max-width: 1024px) {
   .uf-split-stats,
-  .uf-split-species { grid-template-columns: 1fr; }
-  .uf-split-map { grid-template-columns: 1fr; height: auto; min-height: 0; }
+  .uf-split-species { grid-template-columns: minmax(0, 1fr); }
+  .uf-split-map { grid-template-columns: minmax(0, 1fr); height: auto; min-height: 0; }
 }
 
 @media (max-width: 768px) {
@@ -335,7 +501,7 @@ body {
   .uf-split-dash,
   .uf-split-users,
   .uf-split-login,
-  .uf-split-promo { grid-template-columns: 1fr; }
+  .uf-split-promo { grid-template-columns: minmax(0, 1fr); }
 }
 
 .uf-sticky-aside {
@@ -352,23 +518,23 @@ body {
 /* Hero */
 .uf-hero-inner {
   position: relative;
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 52px var(--uf-pad) 64px;
+  padding: 60px var(--uf-pad) 72px;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 44px;
 }
 
 .uf-hero-quicklinks {
-  width: 340px;
-  flex: 0 0 340px;
+  width: 352px;
+  flex: 0 0 352px;
   align-self: flex-start;
 }
 
 .uf-hero-title {
-  font-size: clamp(30px, 7vw, 58px);
-  line-height: 1.08;
+  font-size: clamp(32px, 7vw, 64px);
+  line-height: 1.06;
 }
 
 .uf-hero-search {
@@ -381,8 +547,8 @@ body {
 @media (max-width: 1024px) {
   .uf-hero-inner {
     flex-direction: column;
-    padding-top: 36px;
-    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 44px;
   }
 
   .uf-hero-quicklinks {
@@ -400,14 +566,14 @@ body {
 
 /* Page header */
 .uf-page-header-inner {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 30px var(--uf-pad) 40px;
+  padding: 34px var(--uf-pad) 44px;
 }
 
 .uf-page-title {
-  font-size: clamp(28px, 5vw, 42px);
-  margin: 12px 0 8px;
+  font-size: clamp(30px, 5vw, 46px);
+  margin: 14px 0 10px;
   letter-spacing: -0.5px;
 }
 
@@ -465,18 +631,16 @@ body {
 
 /* Map */
 .uf-map-panel {
-  /* Grid items default to `min-height: auto`, which refuses to shrink below the
-     content and would defeat the panel's own overflow-y. */
   min-height: 0;
   overflow-y: auto;
 }
 
 .uf-map-panel-inner {
-  padding: 24px;
+  padding: 26px;
 }
 
 .uf-map-card-media {
-  height: 120px;
+  height: 126px;
   flex-shrink: 0;
 }
 
@@ -484,10 +648,6 @@ body {
   max-height: 420px;
 }
 
-/* Two-column layout only exists above 1024px, where the panel is a fixed-height
-   column that scrolls. Capping the list there would nest a second scrollbar
-   inside the first; instead let the list run full length so the panel is the
-   one scroll region, as it already is in the phone sheet. */
 @media (min-width: 1025px) {
   .uf-species-scroll {
     max-height: none;
@@ -495,7 +655,6 @@ body {
   }
 }
 
-/* Sheet chrome only exists on small screens. */
 .uf-sheet-handle,
 .uf-sheet-scrim {
   display: none;
@@ -525,7 +684,6 @@ body {
   }
 
   .uf-map-view {
-    /* dvh tracks the shrinking URL bar; vh would leave a dead strip. */
     height: calc(100dvh - 64px);
     min-height: 420px;
   }
@@ -541,11 +699,10 @@ body {
     display: flex;
     flex-direction: column;
     border-right: none !important;
-    border-top: 1px solid #e6e1cf;
-    border-radius: 18px 18px 0 0;
-    box-shadow: 0 -12px 34px rgba(20, 40, 24, 0.18);
+    border-top: 1px solid var(--uf-border);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -14px 38px rgba(10, 24, 16, .2);
     overflow: hidden;
-    /* Collapsed: only the handle peeks above the fold. */
     transform: translateY(calc(100% - var(--uf-sheet-peek)));
     transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
   }
@@ -566,7 +723,7 @@ body {
     width: 100%;
     flex-shrink: 0;
     border: none;
-    background: #fbf9f1;
+    background: var(--uf-parchment);
     padding: 8px 16px 12px;
     font-family: inherit;
     color: inherit;
@@ -580,7 +737,7 @@ body {
     height: 4px;
     margin: 0 auto 10px;
     border-radius: 999px;
-    background: #d9d3bd;
+    background: var(--uf-border-strong);
   }
 
   .uf-sheet-handle-row {
@@ -592,13 +749,13 @@ body {
   .uf-sheet-handle-label {
     font-weight: 700;
     font-size: 15px;
-    color: #1e2b1f;
+    color: var(--uf-ink);
     flex-shrink: 0;
   }
 
   .uf-sheet-handle-count {
     font-size: 12.5px;
-    color: #8a9682;
+    color: var(--uf-faint);
     margin-left: auto;
     white-space: nowrap;
     overflow: hidden;
@@ -606,7 +763,7 @@ body {
   }
 
   .uf-sheet-chevron {
-    color: #6b7360;
+    color: var(--uf-muted);
     flex-shrink: 0;
     transition: transform 0.28s ease;
   }
@@ -622,7 +779,7 @@ body {
     z-index: 1100;
     border: none;
     padding: 0;
-    background: rgba(18, 34, 20, 0.38);
+    background: rgba(10, 20, 14, .4);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.28s ease;
@@ -633,7 +790,6 @@ body {
     pointer-events: auto;
   }
 
-  /* The page title lives in the site header on mobile; the sheet needs the room. */
   .uf-map-title,
   .uf-map-intro,
   .uf-map-legend {
@@ -644,7 +800,6 @@ body {
     max-height: none;
   }
 
-  /* Keep Leaflet's own chrome clear of the collapsed sheet. */
   .leaflet-bottom.leaflet-right {
     bottom: calc(var(--uf-sheet-peek) - 6px);
   }
@@ -659,7 +814,6 @@ body {
     padding: 3px 6px !important;
   }
 
-  /* Selected plant becomes a wide, short card that sits above the sheet. */
   .uf-map-card {
     left: 12px !important;
     right: 12px !important;
@@ -667,11 +821,11 @@ body {
     width: auto !important;
     display: flex;
     align-items: stretch;
-    border-radius: 16px !important;
+    border-radius: 18px !important;
   }
 
   .uf-map-card-media {
-    width: 104px;
+    width: 108px;
     height: auto;
   }
 
@@ -681,7 +835,6 @@ body {
     padding: 12px 14px !important;
   }
 
-  /* Thumb-sized targets. */
   .uf-zone-chip {
     padding: 9px 14px !important;
     font-size: 13.5px !important;
@@ -694,9 +847,9 @@ body {
 
 /* Header mobile */
 .uf-header-bar {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 14px var(--uf-pad);
+  padding: 16px var(--uf-pad);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -706,7 +859,7 @@ body {
 .uf-nav-desktop {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 32px;
   font-size: 15px;
   font-weight: 500;
 }
@@ -721,16 +874,16 @@ body {
   display: none;
   background: none;
   border: none;
-  color: #c3d4bf;
+  color: #c9d6c5;
   cursor: pointer;
   padding: 9px;
-  border-radius: 8px;
+  border-radius: var(--uf-radius-sm);
   align-items: center;
   justify-content: center;
 }
 
 .uf-login {
-  padding: 10px 20px;
+  padding: 11px 22px;
 }
 
 .uf-mobile-drawer {
@@ -750,8 +903,6 @@ body {
     display: none;
   }
 
-  /* Search/upload live in the drawer's reach on desktop only; on a phone the
-     header needs the width for the wordmark and the menu button. */
   .uf-header-icon {
     display: none !important;
   }
@@ -778,7 +929,7 @@ body {
   .uf-mobile-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(9, 26, 15, 0.55);
+    background: rgba(8, 18, 12, .58);
     opacity: 0;
     transition: opacity 0.25s;
   }
@@ -793,13 +944,13 @@ body {
     right: 0;
     width: min(320px, 88vw);
     height: 100%;
-    background: #0e2a17;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 20px var(--uf-pad) 32px;
+    background: var(--uf-forest-950);
+    border-left: 1px solid rgba(255, 255, 255, .1);
+    padding: 22px var(--uf-pad) 32px;
     overflow-y: auto;
     transform: translateX(100%);
     transition: transform 0.28s ease;
-    box-shadow: -8px 0 32px rgba(0, 0, 0, 0.25);
+    box-shadow: -8px 0 32px rgba(0, 0, 0, .25);
   }
 
   .uf-mobile-drawer.uf-open .uf-mobile-panel {
@@ -809,11 +960,11 @@ body {
   .uf-mobile-navlink {
     display: block;
     padding: 14px 0;
-    color: #c3d4bf;
+    color: #c9d6c5;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
   }
 
   .uf-mobile-navlink.uf-active {
@@ -829,15 +980,14 @@ body {
 
 .uf-dash-menu-btn {
   display: none;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .2);
   color: #fff;
   cursor: pointer;
   padding: 8px 10px;
-  border-radius: 8px;
+  border-radius: var(--uf-radius-sm);
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .uf-dash-header-row {
@@ -857,7 +1007,7 @@ body {
   .uf-dash-sidebar {
     transform: translateX(-100%);
     transition: transform 0.28s ease;
-    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, .3);
   }
 
   .uf-dash-sidebar.uf-open {
@@ -876,7 +1026,7 @@ body {
     display: block;
     position: fixed;
     inset: 0;
-    background: rgba(9, 26, 15, 0.5);
+    background: rgba(8, 18, 12, .52);
     z-index: 15;
     opacity: 0;
     pointer-events: none;
@@ -901,7 +1051,7 @@ body {
     text-align: left;
     width: 100%;
     padding-top: 4px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, .12);
     margin-top: 4px;
   }
 
@@ -916,15 +1066,15 @@ body {
   }
 }
 
-/* Mission grid inside padded box */
+/* Mission grid */
 .uf-mission-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 34px;
+  gap: 36px;
 }
 
 @media (max-width: 900px) {
-  .uf-mission-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .uf-mission-grid { grid-template-columns: repeat(2, 1fr); gap: 26px; }
 }
 
 @media (max-width: 480px) {
@@ -953,11 +1103,10 @@ body {
   }
 }
 
-/* Tablet only — below 901px the panel becomes a bottom sheet with its own borders. */
 @media (min-width: 901px) and (max-width: 1024px) {
   .uf-map-panel {
     border-right: none !important;
-    border-bottom: 1px solid #e6e1cf;
+    border-bottom: 1px solid var(--uf-border);
   }
 }
 
@@ -991,15 +1140,12 @@ body {
    Most of this file's components are styled inline, so these overrides need
    !important to win the cascade. */
 @media (max-width: 900px) {
-  /* Anything under 16px makes iOS Safari zoom the page when the field is
-     focused, and it never zooms back out. */
   input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
   select,
   textarea {
     font-size: 16px !important;
   }
 
-  /* 16px boxes are hard to hit; the surrounding label stays the real target. */
   input[type="checkbox"],
   input[type="radio"] {
     width: 19px !important;
@@ -1007,51 +1153,43 @@ body {
     flex-shrink: 0;
   }
 
-  /* Footer link columns: give each row a finger's worth of height. */
   .uf-footer-grid a {
     display: inline-block;
     padding: 7px 0;
   }
 
-  /* Breadcrumb trails sit on one line, so pad vertically only. */
   .uf-breadcrumb a {
     display: inline-block;
     padding: 8px 0;
   }
 
-  /* The brand lockup's kicker was small enough to be unreadable. */
   .uf-logo-tagline {
     font-size: 10.5px !important;
     letter-spacing: 1.8px !important;
   }
 
-  /* Pill links ("Neem", "Explore", "View All") were ~20px tall. */
   .uf-chip {
     min-height: 36px;
     align-items: center;
   }
 
-  /* Opt-in utility for standalone links that would otherwise be line-height tall. */
   .uf-tap {
     display: inline-flex !important;
     align-items: center;
     min-height: 40px;
   }
 
-  /* Borderless search fields sit inside a padded wrapper; without this the
-     input itself is only ~24px of the visually larger box. */
   input[type="search"] {
     min-height: 38px;
   }
 
-  /* Wide tables scroll sideways — say so, since nothing else hints at it. */
   .uf-table-wrap::before {
     content: "Swipe the table sideways for more columns";
     position: sticky;
     left: 0;
     display: block;
     font-size: 12.5px;
-    color: #8a9682;
+    color: var(--uf-faint);
     padding-bottom: 9px;
   }
 }
@@ -1070,10 +1208,10 @@ body {
     width: 100%;
     margin-top: 14px;
     padding: 12px 14px;
-    border: 1px solid #e6e1cf;
-    border-radius: 10px;
+    border: 1px solid var(--uf-border);
+    border-radius: var(--uf-radius-md);
     background: #fff;
-    color: #1e2b1f;
+    color: var(--uf-ink);
     font-family: inherit;
     font-size: 15px;
     font-weight: 600;
@@ -1086,14 +1224,14 @@ body {
     min-width: 20px;
     padding: 1px 6px;
     border-radius: 999px;
-    background: #2e6b3a;
+    background: var(--uf-forest-600);
     color: #fff;
     font-size: 12.5px;
     text-align: center;
   }
 
   .uf-filter-chevron {
-    color: #6b7360;
+    color: var(--uf-muted);
     transition: transform 0.2s ease;
   }
 
@@ -1110,8 +1248,6 @@ body {
   }
 }
 
-/* Compact tiles stay two-up on phones; collapsing them to one column turns
-   dashboards into an endless scroll. */
 @media (max-width: 420px) {
   .uf-grid-tiles {
     grid-template-columns: repeat(2, 1fr) !important;

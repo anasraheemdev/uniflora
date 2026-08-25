@@ -2,27 +2,31 @@ import { ExploreBrowser } from "@/components/explore/ExploreBrowser";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { STATS } from "@/data/plants";
+import { color, font } from "@/lib/theme";
+import { getAllFamilies, getAllPlants, getStats } from "@/lib/data";
 
-export default function ExplorePage() {
+export default async function ExplorePage() {
+  const [plants, families, stats] = await Promise.all([getAllPlants(), getAllFamilies(), getStats()]);
+
   return (
-    <div style={{ fontFamily: "var(--font-source-sans), 'Source Sans 3', system-ui, sans-serif", background: "#f5f1e6", color: "#1e2b1f", minHeight: "100%", overflowX: "hidden" }}>
+    <div style={{ fontFamily: font.body, background: color.parchment, color: color.ink, minHeight: "100%", overflowX: "hidden" }}>
       <Header active="explore" />
 
       <PageHeader
         breadcrumb="Home &nbsp;/&nbsp; Explore Plants"
+        kicker="The full catalogue"
         title="Explore Campus Flora"
         description={
           <>
             Every species recorded in the university floristic survey — searchable by name, family, growth form and
-            cultivation status. <span style={{ color: "#a7d493", fontWeight: 600 }}>{STATS.species} species</span> across{" "}
-            <span style={{ color: "#a7d493", fontWeight: 600 }}>{STATS.families} families</span> and{" "}
-            <span style={{ color: "#a7d493", fontWeight: 600 }}>{STATS.genera} genera</span>.
+            cultivation status. <span style={{ color: color.onDarkGold, fontWeight: 600 }}>{stats.species} species</span> across{" "}
+            <span style={{ color: color.onDarkGold, fontWeight: 600 }}>{stats.families} families</span> and{" "}
+            <span style={{ color: color.onDarkGold, fontWeight: 600 }}>{stats.genera} genera</span>.
           </>
         }
       />
 
-      <ExploreBrowser />
+      <ExploreBrowser plants={plants} families={families} />
 
       <Footer />
     </div>

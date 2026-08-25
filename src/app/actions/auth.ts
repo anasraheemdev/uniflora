@@ -1,12 +1,10 @@
 "use server";
 
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
 
 export async function logoutAction() {
-  const jar = await cookies();
-  jar.delete("uf-role");
-  jar.delete("uf-email");
-  jar.delete("uf-name");
+  const supabase = await createClient();
+  await supabase.auth.signOut();
   redirect("/login");
 }

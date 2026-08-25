@@ -1,5 +1,4 @@
-import type { Family } from "@/data/families";
-import type { Plant } from "@/data/plants";
+import type { Family, Plant } from "@/lib/data-types";
 
 /** Serialize plant (+ optional family) data for the AI system prompt. */
 export function buildPlantContext(plant: Plant, family?: Family): string {

@@ -1,19 +1,25 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { Fraunces, Inter } from "next/font/google";
+import { VisitBeacon } from "@/components/VisitBeacon";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-playfair",
-});
-
-const sourceSans = Source_Sans_3({
+const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-source-sans",
+  style: ["normal", "italic"],
+  variable: "--font-display",
 });
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-body",
+});
+
+// `--font-playfair` / `--font-source-sans` aliases (aliased to the new type
+// pairing in globals.css :root) are kept as a safety net — nothing in the app
+// references them directly anymore, but a stray inline style or future
+// content page copy-pasted from an old snippet won't silently lose type.
 
 export const metadata: Metadata = {
   title: "UniFlora — Campus Flora Information System",
@@ -33,11 +39,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${sourceSans.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${fraunces.variable} ${inter.variable}`} suppressHydrationWarning>
       <body
-        style={{ fontFamily: "var(--font-source-sans), 'Source Sans 3', system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-body), Inter, system-ui, sans-serif" }}
         suppressHydrationWarning
       >
+        <VisitBeacon />
         {children}
       </body>
     </html>

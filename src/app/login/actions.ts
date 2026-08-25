@@ -1,29 +1,39 @@
 "use server";
 
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { DEMO_ACCOUNTS, roleDashboardPath } from "@/types/auth";
+import { createClient } from "@/lib/supabase/server";
+import { roleDashboardPath } from "@/types/auth";
 import type { UserRole } from "@/types/auth";
+
+const ROLES: UserRole[] = ["admin", "contributor", "student"];
 
 export async function loginAction(formData: FormData) {
   const email = String(formData.get("email") ?? "").trim();
   const password = String(formData.get("password") ?? "");
   const role = String(formData.get("role") ?? "") as UserRole;
 
-  if (!["admin", "contributor", "student"].includes(role)) {
+  if (!ROLES.includes(role)) {
     redirect(`/login?error=${encodeURIComponent("Please select a valid role.")}`);
   }
 
-  const account = DEMO_ACCOUNTS.find((a) => a.role === role);
-  if (!account || email !== account.email || password !== account.password) {
-    redirect(`/login?error=${encodeURIComponent("Invalid email or password for the selected role.")}`);
+  const supabase = await createClient();
+  const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+
+  if (error || !data.user) {
+    redirect(`/login?error=${encodeURIComponent("Invalid email or password.")}`);
   }
 
-  const jar = await cookies();
-  const opts = { httpOnly: true, path: "/", maxAge: 60 * 60 * 24 * 7 };
-  jar.set("uf-role", role, opts);
-  jar.set("uf-email", account.email, opts);
-  jar.set("uf-name", account.name, opts);
+  const { data: profile } = await supabase.from("profiles").select("role").eq("id", data.user.id).single();
 
-  redirect(roleDashboardPath(role));
+  if (!profile) {
+    await supabase.auth.signOut();
+    redirect(`/login?error=${encodeURIComponent("Account has no profile — contact an admin.")}`);
+  }
+
+  if (profile.role !== role) {
+    await supabase.auth.signOut();
+    redirect(`/login?error=${encodeURIComponent("That account isn't registered with the selected role.")}`);
+  }
+
+  redirect(roleDashboardPath(profile.role));
 }
